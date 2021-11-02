@@ -1,0 +1,8 @@
+<block>
+	<block_name>Post Comments</block_name>
+	<author>Kernel Team</author>
+	<version>5.2.0</version>
+	<package>premium</package>
+	<types>context,list</types>
+	<functionalities>posts</functionalities>
+</block>

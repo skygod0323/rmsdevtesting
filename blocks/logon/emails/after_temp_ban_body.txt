@@ -1,0 +1,12 @@
+Dear {{$username}}!
+
+Your account has been banned because of the suspicion of using it by different persons. Your password has been reset to: {{$new_pass}}
+
+Please use the confirmation link below for unblocking your account:
+
+{{$link}}
+
+Please use the new password to log on to your memberzone: {{$new_pass}}
+
+Thank you,
+{{$project_name}}

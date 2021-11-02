@@ -1,0 +1,8 @@
+<block>
+	<block_name>DVD Group View Information</block_name>
+	<author>Kernel Team</author>
+	<version>5.0.0</version>
+	<package>ultimate</package>
+	<types>context</types>
+	<functionalities>videos,community</functionalities>
+</block>

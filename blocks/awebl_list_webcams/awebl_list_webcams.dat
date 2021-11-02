@@ -1,0 +1,7 @@
+<block>
+	<block_name>AWE Webcams List</block_name>
+	<author>AWE</author>
+	<version>5.2.0</version>
+	<types>list</types>
+	<functionalities>AWE Black Label</functionalities>
+</block>

@@ -1,0 +1,7 @@
+<plugin>
+	<plugin_name>AWE Black Label</plugin_name>
+	<author>AWEmpire</author>
+	<version>1.0</version>
+	<kvs_version>5.2.0</kvs_version>
+	<plugin_types>api</plugin_types>
+</plugin>

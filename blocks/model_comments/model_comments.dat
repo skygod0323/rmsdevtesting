@@ -1,0 +1,8 @@
+<block>
+	<block_name>Model Comments</block_name>
+	<author>Kernel Team</author>
+	<version>5.2.0</version>
+	<package>advanced</package>
+	<types>context,list</types>
+	<functionalities>categorization</functionalities>
+</block>

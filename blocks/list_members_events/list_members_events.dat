@@ -1,0 +1,8 @@
+<block>
+	<block_name>Members Events List</block_name>
+	<author>Kernel Team</author>
+	<version>5.0.0</version>
+	<package>ultimate</package>
+	<types>list</types>
+	<functionalities>community</functionalities>
+</block>

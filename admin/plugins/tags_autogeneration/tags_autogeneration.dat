@@ -1,0 +1,7 @@
+<plugin>
+	<plugin_name>Tags Autogeneration</plugin_name>
+	<author>Kernel Team</author>
+	<version>1.7</version>
+	<kvs_version>5.0.0</kvs_version>
+	<plugin_types>process_object</plugin_types>
+</plugin>

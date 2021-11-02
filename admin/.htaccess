@@ -1,0 +1,31 @@
+RewriteEngine on
+
+ErrorDocument 404 "404 / not found"
+
+RewriteRule ^feeds/(.*)/$ feeds/get_feed.php?external_id=$1 [L,QSA]
+
+RewriteRule ^posts_for_(.*)\.php$ posts_for_types.php?post_type_external_id=$1 [L,QSA]
+
+RewriteRule ^api/a68a2d967c5bfb13e9094bf5dad58387\.php$ api/kvs_api.php [L,QSA]
+RewriteRule ^billings/([^/]*)/a68a2d967c5bfb13e9094bf5dad58387\.php$ billings/$1/$1.php [L,QSA]
+
+# If you want to disable access via /admin URL, uncomment the following fragment
+# WARNING! We will not provide any support if our staff is not able to access your admin panel via /admin URL, so KVS
+# support IP (88.85.69.*) is excluded from blocking
+# See more info here:
+# https://www.kernel-video-sharing.com/forum/forum/educational-support/educational-series/804-how-to-hide-access-to-admin-panel
+
+#RewriteCond %{ENV:REDIRECT_STATUS} !200
+#RewriteCond %{REQUEST_URI} ^/admin
+#RewriteCond %{REMOTE_ADDR} !^88.85.69
+#RewriteCond %{HTTP:X-REAL-IP} !^88.85.69
+#RewriteRule ^.*$ - [R=404,L]
+
+# In order enable IP based protection for admin panel please uncomment the following and fill your IPs
+# You should allow KVS team IP (88.85.69.*) and your IPs
+
+#<Files ~ "^(index|log_in)\.php$">
+#Deny from all
+#Allow from 0.0.0.0 # Your IP
+#Allow from 88.85.69 # KVS team IP
+#</Files>

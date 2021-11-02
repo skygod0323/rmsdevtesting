@@ -1,0 +1,8 @@
+Hello! Your friend wants to share a cool website which (s)he found. (S)he wrote a message to you:
+
+{{$message}}
+
+Please visit {{$project_name}} at http://{{$project_licence_domain}}
+
+Thank you,
+{{$project_name}}

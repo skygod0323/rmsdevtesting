@@ -1,0 +1,8 @@
+<block>
+	<block_name>Post View Information</block_name>
+	<author>Kernel Team</author>
+	<version>5.1.0</version>
+	<package>premium</package>
+	<types>context</types>
+	<functionalities>posts</functionalities>
+</block>

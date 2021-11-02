@@ -1,0 +1,7 @@
+<block>
+	<block_name>Custom Videos List</block_name>
+	<author>Developer</author>
+	<version>5.2.0</version>
+	<types>list</types>
+	<functionalities>videos</functionalities>
+</block>

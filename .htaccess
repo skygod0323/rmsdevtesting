@@ -1,0 +1,174 @@
+php_flag display_errors Off
+php_value upload_max_filesize 10000M
+php_value post_max_size 10000M
+
+ErrorDocument 404 /404.php
+php_value date.timezone "America/New_York"
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} !^www\.(.*)$
+RewriteCond %{REQUEST_URI} !^/admin
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# seo redirect rules ---------------------------------------------------------------------------------------------------
+
+# redirect all index.php to the folder root
+
+RewriteCond %{THE_REQUEST} ^.*/index\.php
+RewriteRule ^(.*)index.php$ /$1 [R=301,L]
+
+# redirect all script.php/blabla to website root
+
+RewriteRule ^.+\.php/ / [R=301,L]
+
+# automatically add slash at the end
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !\..+$
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} !^/embed/
+RewriteRule (.*) /$1/ [R=301,L]
+
+# global ---------------------------------------------------------------------------------------------------------------
+
+RewriteRule ^terms/$                            terms.php [L,QSA]
+RewriteRule ^dmca/$                             dmca.php [L,QSA]
+RewriteRule ^2257/$                             2257.php [L,QSA]
+RewriteRule ^privacy/$                          privacy.php [L,QSA]
+RewriteRule ^signup-info/$                      signup_info.php [L,QSA]
+
+
+RewriteRule ^random_video(/)?$                  redirect_random_video.php [L,QSA]
+RewriteRule ^random_album(/)?$                  redirect_random_album.php [L,QSA]
+
+RewriteRule ^rss/videos/$                       rss_videos.php [L,QSA]
+RewriteRule ^rss/albums/$                       rss_albums.php [L,QSA]
+RewriteRule ^rss/tags/([^/]+)/videos/$          rss_videos.php?tag=$1 [L,QSA]
+RewriteRule ^rss/tags/([^/]+)/albums/$          rss_albums.php?tag=$1 [L,QSA]
+RewriteRule ^rss/categories/([^/]+)/videos/$    rss_videos.php?category=$1 [L,QSA]
+RewriteRule ^rss/categories/([^/]+)/albums/$    rss_albums.php?category=$1 [L,QSA]
+RewriteRule ^rss/models/([^/]+)/videos/$        rss_videos.php?model=$1 [L,QSA]
+RewriteRule ^rss/models/([^/]+)/albums/$        rss_albums.php?model=$1 [L,QSA]
+
+# search ---------------------------------------------------------------------------------------------------------------
+
+RewriteRule ^search/([^/]+)/albums/([0-9]+)/$   albums_list.php?q=$1&from=$2 [L,QSA]
+RewriteRule ^search/([^/]+)/albums/$            albums_list.php?q=$1 [L,QSA]
+RewriteRule ^search/([^/]+)/models/([0-9]+)/$   models_list.php?q=$1&from=$2 [L,QSA]
+RewriteRule ^search/([^/]+)/models/$            models_list.php?q=$1 [L,QSA]
+RewriteRule ^search/([^/]+)/([0-9]+)/$          videos_list.php?q=$1&from=$2 [L,QSA]
+RewriteRule ^search/([^/]+)/$                   videos_list.php?q=$1 [L,QSA]
+RewriteRule ^search/$                           videos_list.php [L,QSA]
+
+# videos ---------------------------------------------------------------------------------------------------------------
+
+RewriteRule ^videos/([0-9]+)/$          videos_list.php?from=$1 [L,QSA]
+RewriteRule ^videos/$                   videos_list.php [L,QSA]
+
+RewriteRule ^videos/([0-9]+)/([^/]+)/$  view_video.php?id=$1&dir=$2 [L,QSA]
+RewriteRule ^videos/([^/]+)/$           view_video.php?dir=$1 [L,QSA]
+
+
+RewriteRule ^channels/([^/]+)/([0-9]+)/$    content_list.php?dvd=$1&from=$2 [L,QSA]
+RewriteRule ^channels/([^/]+)/$             content_list.php?dvd=$1 [L,QSA]
+
+# albums ---------------------------------------------------------------------------------------------------------------
+
+RewriteRule ^albums/([0-9]+)/$          albums_list.php?from=$1 [L,QSA]
+RewriteRule ^albums/$                   albums_list.php [L,QSA]
+
+RewriteRule ^albums/([0-9]+)/([^/]+)/$  view_album.php?id=$1&dir=$2 [L,QSA]
+RewriteRule ^albums/([^/]+)/$           view_album.php?dir=$1 [L,QSA]
+
+# playlists ------------------------------------------------------------------------------------------------------------
+
+RewriteRule ^playlists/([0-9]+)/([^/]+)/$   view_playlist.php?id=$1&type=fav_videos&ipp=30&playlist_id=$1 [L,QSA]
+
+# tags ---------------------------------------------------------------------------------------------------------------
+
+RewriteRule ^tags/([^/]+)/([0-9]+)/$        content_list.php?tag=$1&from=$2 [L,QSA]
+RewriteRule ^tags/([^/]+)/$                 content_list.php?tag=$1 [L,QSA]
+RewriteRule ^tags/([^/]+)/videos/([0-9]+)/$ videos_list.php?tag=$1&from=$2 [L,QSA]
+RewriteRule ^tags/([^/]+)/videos/$          videos_list.php?tag=$1 [L,QSA]
+RewriteRule ^tags/([^/]+)/albums/([0-9]+)/$ albums_list.php?tag=$1&from=$2 [L,QSA]
+RewriteRule ^tags/([^/]+)/albums/$          albums_list.php?tag=$1 [L,QSA]
+
+# categories  ----------------------------------------------------------------------------------------------------------
+
+RewriteRule ^categories/([0-9]+)/$                  categories_list.php?from=$1 [L,QSA]
+RewriteRule ^categories/$                           categories_list.php [L,QSA]
+
+RewriteRule ^categories/([^/]+)/([0-9]+)/$          content_list.php?category=$1&from=$2 [L,QSA]
+RewriteRule ^categories/([^/]+)/$                   content_list.php?category=$1 [L,QSA]
+RewriteRule ^categories/([^/]+)/videos/([0-9]+)/$   videos_list.php?category=$1&from=$2 [L,QSA]
+RewriteRule ^categories/([^/]+)/videos/$            videos_list.php?category=$1 [L,QSA]
+RewriteRule ^categories/([^/]+)/albums/([0-9]+)/$   albums_list.php?category=$1&from=$2 [L,QSA]
+RewriteRule ^categories/([^/]+)/albums/$            albums_list.php?category=$1 [L,QSA]
+
+# models  --------------------------------------------------------------------------------------------------------------
+
+RewriteRule ^models/([0-9]+)/$                  models_list.php?from=$1 [L,QSA]
+RewriteRule ^models/$                           models_list.php [L,QSA]
+RewriteRule ^models/([^/])/([0-9]+)/$           models_list.php?section=$1&from=$2 [L,QSA]
+RewriteRule ^models/([^/])/$                    models_list.php?section=$1 [L,QSA]
+
+RewriteRule ^models/([^/]+)/([0-9]+)/$          content_list.php?model=$1&from=$2 [L,QSA]
+RewriteRule ^models/([^/]+)/$                   content_list.php?model=$1 [L,QSA]
+RewriteRule ^models/([^/]+)/videos/([0-9]+)/$   videos_list.php?model=$1&from=$2 [L,QSA]
+RewriteRule ^models/([^/]+)/videos/$            videos_list.php?model=$1 [L,QSA]
+RewriteRule ^models/([^/]+)/albums/([0-9]+)/$   albums_list.php?model=$1&from=$2 [L,QSA]
+RewriteRule ^models/([^/]+)/albums/$            albums_list.php?model=$1 [L,QSA]
+
+# memberzone -----------------------------------------------------------------------------------------------------------
+
+RewriteRule ^my/$                                   member_profile_view.php [L,QSA]
+RewriteRule ^my/favourites/videos/([0-9]+)/$        member_profile_view.php?type=fav_videos&from_my_fav_videos=$1 [L,QSA]
+RewriteRule ^my/favourites/videos/$                 member_profile_view.php?type=fav_videos [L,QSA]
+RewriteRule ^my/favourites/albums/([0-9]+)/$        member_profile_view.php?type=fav_albums&from_my_fav_albums=$1 [L,QSA]
+RewriteRule ^my/favourites/albums/$                 member_profile_view.php?type=fav_albums [L,QSA]
+RewriteRule ^my/favourites/models/([0-9]+)/$        member_profile_view.php?type=fav_models&from_my_fav_models=$1 [L,QSA]
+RewriteRule ^my/favourites/models/$                 member_profile_view.php?type=fav_models [L,QSA]
+RewriteRule ^my/playlist/([0-9]+)/([0-9]+)/$        member_profile_view.php?type=fav_videos&playlist_id=$1&from_my_fav_videos=$1 [L,QSA]
+RewriteRule ^my/playlist/([0-9]+)/$                 member_profile_view.php?type=fav_videos&playlist_id=$1 [L,QSA]
+RewriteRule ^my/playlists/([0-9]+)/$                member_profile_view.php?type=playlists&from_my_playlists=$1 [L,QSA]
+RewriteRule ^my/playlists/$                         member_profile_view.php?type=playlists [L,QSA]
+
+RewriteRule ^my/videos/([0-9]+)/$                   member_profile_view.php?type=videos&ipp=9&&from_my_videos=$1 [L,QSA]
+RewriteRule ^my/videos/$                            member_profile_view.php?type=videos&ipp=9 [L,QSA]
+RewriteRule ^upload-video/$                         member_profile_view.php?type=upload_video [L,QSA]
+RewriteRule ^upload-video/([^/]*)/$                 member_profile_view.php?type=upload_video&file=$1 [L,QSA]
+RewriteRule ^upload-video-preview/([^/]*)/$         member_profile_view.php?mode=async&action=video_preview&file=$1 [L,QSA]
+RewriteRule ^edit-video/([0-9]+)/$                  member_profile_view.php?type=upload_video&video_id=$1 [L,QSA]
+
+RewriteRule ^create-channel/$                       index.php?mode=async&function=get_block&block_id=dvd_edit_edit_channel_form&global=true [L,QSA]
+RewriteRule ^edit-channel/([0-9]+)/$                index.php?mode=async&function=get_block&block_id=dvd_edit_edit_channel_form&global=true&dvd_id=$1 [L,QSA]
+
+RewriteRule ^my/playlist/view/([0-9]+)/([0-9]+)/$   view_video.php?playlist=$1&id=$2 [L,QSA]
+
+RewriteRule ^my/playlists/new/$                     index.php?mode=async&function=get_block&block_id=playlist_edit_edit_playlist_form&global=true [L,QSA]
+RewriteRule ^my/playlists/select/$                  index.php?mode=async&function=get_block&block_id=list_playlists_playlists_selector&global=true [L,QSA]
+RewriteRule ^my/playlists/edit/([0-9]+)/$           index.php?mode=async&function=get_block&block_id=playlist_edit_edit_playlist_form&global=true&playlist_id=$1 [L,QSA]
+
+RewriteRule ^logout/$                               logout.php [L,QSA]
+RewriteRule ^email/$                                email_links.php [L,QSA]
+RewriteRule ^payments/$                             payment_links.php [L,QSA]
+
+RewriteRule ^login/$                                index.php?mode=async&function=get_block&block_id=logon_logon_form&global=true [L,QSA]
+RewriteRule ^login-required/$                       index.php?mode=async&function=get_block&block_id=signup_signup_form_premium&global=true&error=only_for_members [L,QSA]
+RewriteRule ^signup/$                               index.php?mode=async&function=get_block&block_id=signup_signup_form_premium&global=true [L,QSA]
+RewriteRule ^signup-guests/$                        index.php?mode=async&function=get_block&block_id=signup_signup_form_guests&global=true [L,QSA]
+RewriteRule ^upgrade/$                              index.php?mode=async&function=get_block&block_id=upgrade_upgrade_access&global=true [L,QSA]
+RewriteRule ^upgrade-required/$                     index.php?mode=async&function=get_block&block_id=upgrade_upgrade_access&global=true&error=only_for_members [L,QSA]
+RewriteRule ^reset-password/$                       index.php?mode=async&function=get_block&block_id=signup_reset_password_form&global=true [L,QSA]
+RewriteRule ^feedback/$                             index.php?mode=async&function=get_block&block_id=feedback_feedback_form&global=true [L,QSA]
+RewriteRule ^captcha/([^/]*)/$                      index.php?mode=async&function=show_security_code&captcha_id=$1 [L,QSA]
+
+# SYSTEM / DO NOT CHANGE -----------------------------------------------------------------------------------------------
+RewriteRule ^sitemap/$ sitemap.php [L,QSA]
+RewriteRule ^sitemap\.xml$ sitemap.php [L,QSA]
+RewriteRule ^embed/(.+)$ player/iframe_embed.php?video_id=$1 [L,QSA]
+RewriteRule ^related_videos_html/([0-9]+)/?$ related_videos_html.php?video_id=$1 [L,QSA]
+RewriteRule ^get_file/([0-9]+)/([^/]*)/(.*)$ get_file.php?sg_id=$1&hash=$2&file=$3 [L,QSA]
+RewriteRule ^get_image/([0-9]+)/([^/]*)/(.*)/$ get_image.php?sg_id=$1&hash=$2&file=$3 [L,QSA]
+# END SYSTEM -----------------------------------------------------------------------------------------------------------

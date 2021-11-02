@@ -1,0 +1,10 @@
+Hello, {{$username}}!
+
+You have requested the changing of your email on {{$project_name}}.
+
+In order your new email to be valid, please confirm your email change using the following link:
+
+{{$link}}
+
+Thank you,
+{{$project_name}}

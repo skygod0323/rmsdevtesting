@@ -1,0 +1,8 @@
+<block>
+	<block_name>Posts List</block_name>
+	<author>Kernel Team</author>
+	<version>5.1.0</version>
+	<package>premium</package>
+	<types>list</types>
+	<functionalities>posts</functionalities>
+</block>

@@ -1,0 +1,7 @@
+<plugin>
+	<plugin_name>Upload Folder</plugin_name>
+	<author>Kernel Team</author>
+	<version>1.16</version>
+	<kvs_version>5.2.0</kvs_version>
+	<plugin_types>manual</plugin_types>
+</plugin>

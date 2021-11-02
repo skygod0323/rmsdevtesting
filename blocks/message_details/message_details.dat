@@ -1,0 +1,8 @@
+<block>
+	<block_name>Messages Details</block_name>
+	<author>Kernel Team</author>
+	<version>5.2.0</version>
+	<package>ultimate</package>
+	<types>context</types>
+	<functionalities>community</functionalities>
+</block>

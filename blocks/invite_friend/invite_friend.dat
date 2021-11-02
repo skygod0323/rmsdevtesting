@@ -1,0 +1,8 @@
+<block>
+	<block_name>Invite a Friend</block_name>
+	<author>Kernel Team</author>
+	<version>5.2.0</version>
+	<types>form</types>
+	<functionalities>community</functionalities>
+	<deprecated>yes</deprecated>
+</block>

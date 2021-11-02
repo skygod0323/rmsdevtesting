@@ -1,0 +1,724 @@
+# syntax rules:
+# #comment
+# key = value
+# key = array(value1, value2, ..., valueN)
+
+# ======================================================================================================================
+# common & global
+# ======================================================================================================================
+
+php.default_lang = ja_JP.UTF8
+header.default_lang = ja
+
+header.primary_menu_updates = ホームページ
+header.primary_menu_videos = ビデオ
+header.primary_menu_albums = アルバム
+header.primary_menu_models = モデル
+header.primary_menu_categories = ジャンル
+header.primary_menu_playlists = プレイリスト
+header.primary_menu_network = サイト
+header.primary_menu_get_premium = Premium
+header.primary_menu_login = ログイン
+header.primary_menu_logout = ログアウト
+
+header.member_menu_profile = プロフィール
+header.member_menu_playlists = プレイリスト
+header.member_menu_fav_videos = 件のお気に入りビデオ
+header.member_menu_fav_albums = 件のお気に入りアルバム
+header.member_menu_fav_models = 件のお気に入りモデル
+
+search_box.search_hint = 検索
+search_box.search_action = 検索
+
+footer.primary_menu_updates = ホームページ
+footer.primary_menu_videos = ビデオ
+footer.primary_menu_albums = アルバム
+footer.primary_menu_models = モデル
+footer.primary_menu_categories = ジャンル
+footer.primary_menu_get_premium = Premium
+footer.primary_menu_logout = ログアウト
+footer.primary_menu_login = ログイン
+footer.primary_menu_terms = 条件
+footer.primary_menu_dmca = DMCA
+footer.primary_menu_2257 = 18 U.S.C. 2257
+footer.primary_menu_privacy = 個人情報保護方針
+
+footer.copyright_year = 2017
+footer.copyright_text = All rights reserved.
+footer.site_text = All models were at least 18 years of age when photographed.
+
+common_list.link_more_items = もっと見る (%1%)
+common_list.no_data = このリスト内のデータがありません。
+common_list.paginated_postfix = 、ページ%1%
+common_list.load_more = もっと読み込む
+
+common_list.get_access = Premium
+
+common_forms.file_upload_btn_browse = 選択...
+common_forms.file_upload_btn_change = 変更...
+common_forms.field_select_day = 日付...
+common_forms.field_select_month = 月...
+common_forms.field_select_month_values.1 = 1月
+common_forms.field_select_month_values.2 = 2月
+common_forms.field_select_month_values.3 = 3月
+common_forms.field_select_month_values.4 = 4月
+common_forms.field_select_month_values.5 = 5月
+common_forms.field_select_month_values.6 = 6月
+common_forms.field_select_month_values.7 = 7月
+common_forms.field_select_month_values.8 = 8月
+common_forms.field_select_month_values.9 = 9月
+common_forms.field_select_month_values.10 = 10月
+common_forms.field_select_month_values.11 = 11月
+common_forms.field_select_month_values.12 = 12月
+common_forms.field_select_year = 年...
+common_forms.field_select_default = 選択...
+common_forms.field_captcha = ロック・コード
+common_forms.field_captcha_image = キャプチャ画像
+common_forms.field_captcha_hint = あなたが人間であることを確認する必要があります。
+common_forms.field_filter_hint = リストを減らすために入力を開始してください
+
+date_format.right_now = 今のところ
+date_format.unknown = 不明
+
+date_format.long.seconds = %1%秒前
+date_format.long.minutes = %1%分前
+date_format.long.hours = %1%時間前
+date_format.long.days = %1%日前
+date_format.long.weeks = %1%週間前
+date_format.long.months = %1%ヶ月前
+date_format.long.years = %1%年前
+
+date_format.short.seconds = %1%秒
+date_format.short.minutes = %1%分
+date_format.short.hours = %1%時間
+date_format.short.days = %1%日
+date_format.short.weeks = %1%週間
+date_format.short.months = %1%ヶ月
+date_format.short.years = %1%年
+
+error_404.title = 404 / 未検出
+
+# ======================================================================================================================
+# HTML page titles, descs and keywords, SE optimization
+# ======================================================================================================================
+
+html.default_title = 既定のサイト名
+html.default_description = 既定のサイト説明。
+html.default_keywords = 既定のサイトのキーワード
+
+# %1% - original page title, %2% - page number
+html.default_paginated_title = %1%、ページ%2%
+html.default_paginated_description = %1%ページ%2%.
+
+html.index_title = ホームページ
+html.index_description =
+html.index_keywords =
+
+html.error_404_title = 未検出
+html.error_404_description =
+html.error_404_keywords =
+
+html.email_links_title = メールの確認
+html.email_links_description =
+html.email_links_keywords =
+
+html.payment_links_title = 支払い処理
+html.payment_links_description =
+html.payment_links_keywords =
+
+# %search_keyword%
+html.search_videos_title = %search_keyword% - ビデオ - %sort_by%
+html.search_videos_description =
+html.search_videos_keywords =
+
+# %search_keyword%
+html.search_albums_title = %search_keyword% - アルバム - %sort_by%
+html.search_albums_description =
+html.search_albums_keywords =
+
+# %search_keyword%
+html.search_models_title = %search_keyword% - モデル - %sort_by%
+html.search_models_description =
+html.search_models_keywords =
+
+html.content_title = ビデオ & アルバム
+html.content_description =
+html.content_keywords =
+
+# %tag%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%
+# %first_object_title%, %first_object_description%
+html.content_by_tag_title = %tag% - ビデオ & アルバム
+html.content_by_tag_description =
+html.content_by_tag_keywords =
+
+# %title%, %description%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.content_by_category_title = %title% - ビデオ & アルバム
+html.content_by_category_description = %description%
+html.content_by_category_keywords =
+
+# %title%, %description%, %alias%, %country%, %city%, %height%, %weight%, %birth_date%, %age%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.content_by_model_title = %title% - ビデオ & アルバム
+html.content_by_model_description = %description%
+html.content_by_model_keywords = %categories_as_string%, %tags_as_string%
+
+html.videos_title = ビデオ - %sort_by%
+html.videos_description =
+html.videos_keywords =
+
+# %tag%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%
+# %first_object_title%, %first_object_description%
+html.videos_by_tag_title = %tag% - ビデオ - %sort_by%
+html.videos_by_tag_description =
+html.videos_by_tag_keywords =
+
+# %title%, %description%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.videos_by_category_title = %title% - ビデオ - %sort_by%
+html.videos_by_category_description = %description%
+html.videos_by_category_keywords =
+
+# %title%, %description%, %alias%, %country%, %city%, %height%, %weight%, %birth_date%, %age%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.videos_by_model_title = %title% - ビデオ - %sort_by%
+html.videos_by_model_description = %description%
+html.videos_by_model_keywords = %categories_as_string%, %tags_as_string%
+
+# %title%, %description%, %duration%, %rating%, %rating_amount%, %video_viewed%, %post_date%, %username%, %release_year%, %custom1% - %custom3%
+# %tags_as_string%, %categories_as_string%, %models_as_string%, %content_source_as_string%, %dvd_as_string%
+html.video_details_title = %title%
+html.video_details_description = %description%
+html.video_details_keywords = %categories_as_string%, %tags_as_string%, %models_as_string%
+
+html.albums_title = アルバム - %sort_by%
+html.albums_description =
+html.albums_keywords =
+
+# %tag%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%
+# %first_object_title%, %first_object_description%
+html.albums_by_tag_title = %tag% - アルバム - %sort_by%
+html.albums_by_tag_description =
+html.albums_by_tag_keywords =
+
+# %title%, %description%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.albums_by_category_title = %title% - アルバム - %sort_by%
+html.albums_by_category_description = %description%
+html.albums_by_category_keywords =
+
+# %title%, %description%, %alias%, %country%, %city%, %height%, %weight%, %birth_date%, %age%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.albums_by_model_title = %title% - アルバム - %sort_by%
+html.albums_by_model_description = %description%
+html.albums_by_model_keywords = %categories_as_string%, %tags_as_string%
+
+# %title%, %description%, %photos_amount%, %rating%, %rating_amount%, %album_viewed%, %post_date%, %username%, %custom1% - %custom3%
+# %tags_as_string%, %categories_as_string%, %models_as_string%, %content_source_as_string%
+html.album_details_title = %title%
+html.album_details_description = %description%
+html.album_details_keywords = %categories_as_string%, %tags_as_string%, %models_as_string%
+
+html.categories_title = ジャンル - %sort_by%
+html.categories_description =
+html.categories_keywords =
+
+html.models_title = モデル - %sort_by%
+html.models_description =
+html.models_keywords =
+
+# %title%, %description%, %total_videos%, %rating%, %rating_amount%, %playlist_viewed%, %added_date%, %username%
+# %tags_as_string%, %categories_as_string%
+html.playlist_details_title = %title%
+html.playlist_details_description = %description%
+html.playlist_details_keywords = %categories_as_string%, %tags_as_string%
+
+html.memberzone_my_profile_title = 私のプロフィール
+html.memberzone_my_profile_description =
+html.memberzone_my_profile_keywords =
+
+html.memberzone_my_fav_videos_title = 私のお気に入りビデオ
+html.memberzone_my_fav_videos_description =
+html.memberzone_my_fav_videos_keywords =
+
+# %title%, %description%, %total_videos%, %categories_as_string%
+html.memberzone_my_fav_videos_playlist_title = 私のプレイリスト　%title%
+html.memberzone_my_fav_videos_playlist_description =
+html.memberzone_my_fav_videos_playlist_keywords =
+
+html.memberzone_my_fav_albums_title = 私のお気に入りアルバム
+html.memberzone_my_fav_albums_description =
+html.memberzone_my_fav_albums_keywords =
+
+html.memberzone_my_fav_models_title = 私のお気に入りモデル
+html.memberzone_my_fav_models_description =
+html.memberzone_my_fav_models_keywords =
+
+html.memberzone_my_playlists_title = 私のプレイリスト
+html.memberzone_my_playlists_description =
+html.memberzone_my_playlists_keywords =
+
+html.static_html_title.terms = 条件
+html.static_html_description.terms =
+html.static_html_keywords.terms =
+
+html.static_html_title.dmca = DMCA Notice of Copyright Infringement
+html.static_html_description.dmca =
+html.static_html_keywords.dmca =
+
+html.static_html_title.2257 = 18 USC 2257 Statement
+html.static_html_description.2257 =
+html.static_html_keywords.2257 =
+
+html.static_html_title.privacy = 個人情報保護方針
+html.static_html_description.privacy =
+html.static_html_keywords.privacy =
+
+# ======================================================================================================================
+# Pagination
+# ======================================================================================================================
+
+pagination.first_page = 最初の
+pagination.last_page = 最後の
+pagination.prev_page = 前へ
+pagination.next_page = 次へ
+pagination.jump_left = ...
+pagination.jump_right = ...
+
+# ======================================================================================================================
+# Videos
+# ======================================================================================================================
+
+videos.list_title_by_sorting = ビデオ - %1%
+videos.list_title_by_tag = %1% - ビデオ - %2%
+videos.list_title_by_category = %1% - ビデオ - %2%
+videos.list_title_by_model = %1% - ビデオ - %2%
+videos.list_title_by_search = %1% - ビデオ - %2%
+
+videos.list_sorting.post_date = 新着の
+videos.list_sorting.rating = トップの
+videos.list_sorting.rating_today = 今日の一日トップの
+videos.list_sorting.rating_week = 1週間のトップの
+videos.list_sorting.rating_month = 1ヶ月のトップの
+videos.list_sorting.video_viewed = 人気の
+videos.list_sorting.video_viewed_today = 今日の一日人気の
+videos.list_sorting.video_viewed_week = 1週間の人気の
+videos.list_sorting.video_viewed_month = 1ヶ月の人気の
+videos.list_sorting.duration = 長尺の
+videos.list_sorting.most_commented = コメント数が多い
+videos.list_sorting.most_favourited = お気に入り
+videos.list_sorting.relevance = 一番関連性があるの
+
+videos.list_sorting_period.rating = すべての時間で
+videos.list_sorting_period.rating_month = 1ヶ月で
+videos.list_sorting_period.rating_week = 1週間で
+videos.list_sorting_period.rating_today = 今日の一日でｋ
+videos.list_sorting_period.video_viewed = すべての時間で
+videos.list_sorting_period.video_viewed_month = 1ヶ月で
+videos.list_sorting_period.video_viewed_week = 1週間で
+videos.list_sorting_period.video_viewed_today = 今日の一日で
+
+videos.list_label_views = %1%視聴回数
+videos.list_label_playing = ビデオは今再生されています
+
+videos.list_action_delete = 削除する
+videos.list_action_delete_confirm_favourites = お気に入りカテゴリから　%1%　ビデオを削除する確認してください。
+videos.list_action_select_all = すべてを選択
+videos.list_action_delete_selected = 選択を削除する
+videos.list_action_delete_selected_confirm_favourites = お気に入りカテゴリから　%1%件のビデオ　を削除する確認してください。
+videos.list_action_move_to_playlist = プレイリストに移動...
+videos.list_action_edit_playlist = プレイリストを編集...
+videos.list_action_delete_playlist = プレイリストを削除
+videos.list_action_delete_playlist_confirm = %1%　プレイリストを削除する確認してください。
+
+videos.list_switch_favourites.0 = お気に入り
+videos.list_switch_favourites.1 = 後で見る
+
+videos.video_details_rate_like = いいね
+videos.video_details_rate_dislike = このビデオを好きではありません
+videos.video_details_rate_not_allowed = このビデオを評価することが出来ません
+videos.video_details_rating_votes = (%1%件の投票数)
+videos.video_details_rating_message_success = 有難うございます！
+videos.video_details_rating_message_error = このIPはすでに投票しました
+videos.video_details_action_add_to_favourites.0 = お気に入りに追加
+videos.video_details_action_add_to_favourites.1 = 後で見る
+videos.video_details_action_add_to_playlist = <em class="mark-color">%1%</em>　に追加
+videos.video_details_action_add_to_new_playlist = 新しいプレイリストに追加...
+videos.video_details_action_delete_from_favourites = [x]
+videos.video_details_label_description = 解説
+videos.video_details_label_duration = 時間
+videos.video_details_label_views = 視聴回数
+videos.video_details_label_added_date = 公開
+videos.video_details_label_categories = ジャンル
+videos.video_details_label_tags = タグ
+videos.video_details_label_download = ダウンロード
+videos.video_details_label_screenshots = スクリーンショット
+
+videos.related_videos_title_default = 関連ビデオ
+
+# ======================================================================================================================
+# Albums
+# ======================================================================================================================
+
+albums.list_title_by_sorting = アルバム - %1%
+albums.list_title_by_tag = %1% - アルバム - %2%
+albums.list_title_by_category = %1% - アルバム - %2%
+albums.list_title_by_model = %1% - アルバム - %2%
+albums.list_title_by_search = %1% - アルバム - %2%
+
+albums.list_sorting.post_date = 新着の
+albums.list_sorting.rating = トップの
+albums.list_sorting.rating_today = 今日の一日トップの
+albums.list_sorting.rating_week = 1週間のトップの
+albums.list_sorting.rating_month = 1ヶ月のトップの
+albums.list_sorting.album_viewed = 人気の
+albums.list_sorting.album_viewed_today = 今日の一日人気の
+albums.list_sorting.album_viewed_week = 1週間の人気の
+albums.list_sorting.album_viewed_month = 1ヶ月の人気の
+albums.list_sorting.most_commented = コメント数が多い
+albums.list_sorting.most_favourited = お気に入り
+albums.list_sorting.relevance = 一番関連性があるの
+
+albums.list_sorting_period.rating = すべての時間で
+albums.list_sorting_period.rating_month = 1ヶ月で
+albums.list_sorting_period.rating_week = 1週間で
+albums.list_sorting_period.rating_today = 今日の一日で
+albums.list_sorting_period.album_viewed = すべての時間で
+albums.list_sorting_period.album_viewed_month = 1ヶ月で
+albums.list_sorting_period.album_viewed_week = 1週間で
+albums.list_sorting_period.album_viewed_today = 今日の一日で
+
+albums.list_label_photos = %1%
+albums.list_label_views = %1%視聴回数
+
+albums.list_action_select_all = すべてを選択
+albums.list_action_delete_selected = 選択を削除する
+albums.list_action_delete_selected_confirm_favourites = お気に入りカテゴリから　%1%冊のアルバム　を削除する確認してください。
+
+albums.list_switch_favourites.0 = お気に入り
+albums.list_switch_favourites.1 = 後で見る
+
+albums.album_details_rate_like = いいね
+albums.album_details_rate_dislike = このアルバムを好きではありません
+albums.album_details_rate_not_allowed = このアルバムを評価することが出来ません
+albums.album_details_rating_votes = (%1%件の投票数)
+albums.album_details_rating_message_success = 有難うございます！
+albums.album_details_rating_message_error = このIPはすでに投票しました
+albums.album_details_action_add_to_favourites.0 = お気に入りに追加
+albums.album_details_action_add_to_favourites.1 = 後で見る
+albums.album_details_action_delete_from_favourites = [x]
+albums.album_details_label_description = 解説
+albums.album_details_label_images = 写真
+albums.album_details_label_views = 視聴回数
+albums.album_details_label_added_date = 公開
+albums.album_details_label_categories = ジャンル
+albums.album_details_label_tags = タグ
+albums.album_details_label_models = モデル
+albums.album_details_label_download = ダウンロード
+
+albums.related_albums_title_default = 関連アルバム
+
+# ======================================================================================================================
+# Categories
+# ======================================================================================================================
+
+categories.list_title_by_sorting = ジャンル - %1%
+
+categories.list_sorting.title = アルファべト順
+categories.list_sorting.avg_videos_popularity = 人気順
+categories.list_sorting.avg_videos_rating = トップ順
+
+categories.list_label_no_image = アイコンなし
+categories.list_label_views = %1%視聴回数
+
+# ======================================================================================================================
+# Models
+# ======================================================================================================================
+
+models.list_title_by_sorting = モデル - %1%
+models.list_title_by_section_sorting = モデル - %2% - %1%
+models.list_title_by_search = %1% - モデル - %2%
+
+models.list_sorting.title = アルファべト順
+models.list_sorting.model_viewed = 人気順
+models.list_sorting.rating = トップ順
+models.list_sorting.comments_count = コメント数が多い
+models.list_sorting.subscribers_count = お気に入り
+
+models.list_label_no_image = アイコンなし
+models.list_label_views = %1%視聴回数
+
+models.list_action_select_all = すべてを選択
+models.list_action_delete_selected = 選択を削除する
+models.list_action_delete_selected_confirm_subscriptions = %1%対象数　から退会する確認してください。
+
+models.alphabet_title = アルファべト順でモデル
+models.alphabet_all = すべて
+models.alphabet_letters = array(A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z)
+
+models.info_title = %1%
+models.info_birthday = 誕生日
+models.info_birthday_age = %1%年前
+models.info_age = 年齢
+models.info_country = 国
+models.info_city = 都市
+models.info_profession = 職業
+models.info_ethnicity = 人種
+models.info_hair = 髪
+models.info_hair_values.1 = 黒
+models.info_hair_values.2 = ダーク
+models.info_hair_values.3 = 赤
+models.info_hair_values.4 = 褐色
+models.info_hair_values.5 = ブロンド
+models.info_hair_values.6 = グレー
+models.info_hair_values.7 = 禿げ
+models.info_hair_values.8 = かつら
+models.info_eyes = 目
+models.info_eyes_values.1 = 青
+models.info_eyes_values.2 = グレー
+models.info_eyes_values.3 = 緑
+models.info_eyes_values.4 = アンバー
+models.info_eyes_values.5 = 褐色
+models.info_eyes_values.6 = ヘーゼル
+models.info_eyes_values.7 = 黒
+models.info_height = 身長
+models.info_weight = 重量
+models.info_measurements = 人体
+models.info_categories = ジャンル
+models.info_tags = タグ
+models.info_description = 解説
+models.info_no_description = 解説なし
+models.info_no_image = アイコンなし
+models.info_na = 情報無し
+models.info_albums = アルバム
+models.info_videos = ビデオ
+models.info_action_subscribe = フォロー
+models.info_action_unsubscribe = 退会
+models.info_action_rate_like = いいね
+models.info_action_rate_dislike = このアルバムを好きではありません
+models.info_rating_message_success = 有難うございます！
+models.info_rating_message_error = このIPはすでに投票しました
+
+models.btn_profile = プロフィール
+
+# ======================================================================================================================
+# Comments
+# ======================================================================================================================
+
+comments.label_anonymous_user = アノニム
+comments.label_comment_deleted = このコメントが削除されました。
+
+comments.btn_add_comment = コメントを追加
+comments.btn_send = 通信
+comments.field_anonymous_name = あなたの名前
+comments.field_comment = コメント
+comments.field_comments = コメント
+comments.field_comments_empty = コメントを追加
+comments.success_message = 有難うございます！コメントはテック中です。
+
+# ======================================================================================================================
+# Playlists
+# ======================================================================================================================
+
+playlists.list_label_no_videos = ビデオがない
+playlists.list_label_views = %1%視聴回数
+
+playlists.list_action_select_all = すべてを選択
+playlists.list_action_delete_selected = 選択を削除する
+playlists.list_action_delete_selected_confirm = 我々のサイトから　%1%プレイリスト数　を削除する確認してください。
+playlists.list_action_create_playlist = 新しいプレイリスト...
+
+# ======================================================================================================================
+# Memberzone
+# ======================================================================================================================
+
+memberzone.profile_my_fav_videos.0 = 私のお気に入りビデオ
+memberzone.profile_my_fav_videos.1 = 私の後で見るビデオ
+memberzone.profile_my_fav_videos_playlists = プレイリスト
+memberzone.profile_my_fav_videos_playlists_create = 新しいプレイリスト...
+memberzone.profile_my_playlist_videos = 私のプレイリスト：%1%
+memberzone.profile_my_fav_albums.0 = 私のお気に入りアルバム
+memberzone.profile_my_fav_albums.1 = 私の後で見るアルバム
+memberzone.profile_my_fav_models = 私のお気に入りモデル
+memberzone.profile_my_playlists = 私のプレイリスト
+
+# ======================================================================================================================
+# Forms
+# ======================================================================================================================
+
+signup.title = 新規登録
+signup.field_username = ユーザー名
+signup.field_username_hint = ログイン名、ここにメールを使用することができます
+signup.field_password = パスワード
+signup.field_password_hint = 少なくとも5文字下さい
+signup.field_password2 = パスワード確認
+signup.field_password2_hint = パスワードを再入力
+signup.field_email = メール
+signup.field_email_hint = 必要に応じてパスワードを復元するために使用されます
+signup.btn_continue = 持続する
+signup.success_message_active_member = ありがとう！これで、%1%　コミュニティの活発なユーザです。
+signup.success_message_premium_member = ありがとう！これで、我々のサイトのプレミアムユーザです。
+signup.success_message_not_confirmed_member = ありがとう！あなたは我々のサイトの活発なメンバーであるために約一歩です。確認リンクを含むメッセージは、メールアドレスに送信されました。アカウントを有効にするために登録を確認してください。メッセージが届いていない場合、連絡してください。
+
+login.title = ログイン
+login.field_username = ユーザー名
+login.field_password = パスワード
+login.field_remember_me = 私を覚えてください
+login.btn_log_in = ログイン
+login.link_reset_password = パスワードをお忘れですか？
+login.link_help = お問合せ
+login.not_member = まだメンバーじゃありませんの？
+login.error_message_only_for_members = このアクションがユーザのみ使用可能ですので、ログインするか、アカウントを作成してください。
+
+reset_password.title = パスワードを再設定する
+reset_password.field_email = メール
+reset_password.field_email_hint = アカウントの設定で使用されるメールアドレスを入力してください
+reset_password.btn_reset_password = リセット
+reset_password.success_message = ありがとう！新しい生成されたパスワードは、お使いのメールアドレスに送信されました。メッセージ内容指導通りして下さい。メッセージが届いていない場合、連絡してください。
+
+upgrade.title = プレミアムアクセスパッケージを選択
+upgrade.success_message_active_member = ありがとう！お支払いは正常に処理されています。
+upgrade.success_message_premium_member = ありがとう！お支払いは、正常に処理されています。これで、我々のサイトのプレミアムメンバーです。
+upgrade.btn_continue = 持続する
+
+feedback.title = 連絡先情報
+feedback.field_message = あなたのメッセージ
+feedback.field_message_hint = 私たちのウェブサイトについての感想、バグ報告、新しい機能を提案してください
+feedback.field_email = メール
+feedback.field_email_hint_optional = 我々から返事希望場合、メールを入力して下さい
+feedback.field_email_hint_required = メールを入力して下さい
+feedback.field_custom1 = 追フィールド 1
+feedback.field_custom1_hint = ヒント
+feedback.field_custom2 = 追フィールド 2
+feedback.field_custom2_hint = ヒント
+feedback.field_custom3 = 追フィールド 3
+feedback.field_custom3_hint = ヒント
+feedback.field_custom4 = 追フィールド 4
+feedback.field_custom4_hint = ヒント
+feedback.field_custom5 = 追フィールド 5
+feedback.field_custom5_hint = ヒント
+feedback.btn_send = 通信
+feedback.success_message = ありがとう！私たちはあなたのフィードバックを感謝し、すぐに対応させていただきます。
+
+edit_playlist.title_create_playlist = 新しいプレイリスト
+edit_playlist.title_edit_playlist = プレイリスト編集
+edit_playlist.field_title = 名前
+edit_playlist.btn_create_playlist = 作り出し
+edit_playlist.btn_edit_playlist = セーブ
+edit_playlist.success_message = %1%　プレイリストが編集されました。
+edit_playlist.success_message_create = %1%　プレイリストが作り出しました。
+
+select_playlist.title = プレイリストを選択
+select_playlist.label_videos = %1%件のビデオ
+select_playlist.btn_select = 選択
+select_playlist.btn_new = 新しい...
+
+edit_profile.title = 私のプロフィール
+edit_profile.title_edit_profile = プロファイル編集
+edit_profile.title_edit_password = パスワード変更
+edit_profile.title_edit_email = メール変更
+edit_profile.field_old_password = 現在のパスワード
+edit_profile.field_old_email = 現在のメール
+edit_profile.field_email = 新しいメール
+edit_profile.field_password = 新しいパスワード
+edit_profile.field_password_hint = 少なくとも5文字下さい
+edit_profile.field_password2 = 新しいパスワードの確認
+edit_profile.field_password2_hint = パスワードを再入力
+edit_profile.field_display_name = ニックネーム
+edit_profile.field_display_name_hint = 他の人が自分の名前が表示されます
+edit_profile.field_avatar = 写真
+edit_profile.field_avatar_hint = 最小　%1%
+edit_profile.btn_change = 変更
+edit_profile.success_message_changed_profile = あなたの個人情報が変更されました。
+edit_profile.success_message_changed_password = あなたのパスワードは変更されました。
+edit_profile.success_message_changed_email = あなたのメールアドレスが変更されました。
+edit_profile.success_message_changed_email_confirm = 確認リンクを含むメッセージは、メールアドレスに送信されました。メールの変更を確認してください。メッセージが届いていない場合、連絡してください。
+
+email_links.title_confirm_signup = アカウント確認
+email_links.title_confirm_reset_password = パスワードリセットの確認
+email_links.title_confirm_unblock = アカウントのブロックを解除アカウント
+email_links.title_confirm_change_email = メール変更の確認
+email_links.message_confirm_signup_successful = ありがとう！これで、我々のサイトの活発ユーザです。
+email_links.message_confirm_reset_password_successful = ありがとう！あなたのパスワード変更が出来ました。これで新しいパスワード使用が出来ます。
+email_links.message_confirm_unblock_successful = ありがとう！あなたのアカウントがブロック解除されました。
+email_links.message_confirm_email_change_successful = ありがとう！あなたのメールアドレスが変更されました。
+email_links.message_confirm_error = あなたが使用しているリンクが無効であるように見えます。サポートに連絡してください。
+
+billing_links.title_payment_successful = 支払い完了
+billing_links.title_payment_failed = 支払い出来なかった
+billing_links.message_payment_successful = ありがとう！お支払いは正常に処理されています。
+billing_links.message_payment_failed = 残念ながら、我々の支払プロセッサは、お支払いを受け入れることができませんでした。サポートに連絡してください。
+
+# ======================================================================================================================
+# Error messages
+# ======================================================================================================================
+
+validation.common.not_logged_in = このアクションがユーザのみ使用可能ですので、ログインするか、アカウントを作成してください。
+validation.common.invalid_params = 予期しないエラーが発生しました。サポートに連絡してください。
+validation.common.unknown_error = 予期しないエラー　(%1%)　が発生しました。サポートに連絡してください。
+validation.common.required = フィールドは必須項目です
+validation.common.email_invalid = 入力されたメールは有効ではありません
+validation.common.code_invalid = 入力されたコードが有効でない、もう一度試してください
+validation.common.comment_minimum = コメントは、少なくとも　%1%　の文字でなければなりません
+validation.common.playlist_locked = このプレイリストは、サイトの管理によって編集からロックされています。
+validation.common.video_locked = このビデオはサイトの管理によって編集からロックされています。
+validation.common.video_screenshots_locked = このビデオのスクリーンショットはサイトの管理による編集がロックされています。
+validation.common.album_locked = このアルバムはサイトの管理によって編集からロックされています。
+validation.common.album_images_locked = このアルバムの写真はサイト管理によって編集からロックされています。
+validation.common.title_minimum = タイトルは、少なくとも　%1%　の文字が含む必要があります
+validation.common.category_ids_maximum = あなたは最大　%1%　のジャンルを選択することができます
+validation.common.tokens_required_integer = 整数を入力する必要があります
+validation.common.flagging_not_enough_tokens = あなたはこのフラグに投票するため十分なトーケン･コインを持っていません。
+validation.common.message_not_enough_tokens = あなたは内部メッセージを送信するため十分なトーケン･コインを持っていません。
+
+validation.signup.username_minimum = ユーザー名は少なくとも　%1%　の文字が含む必要があります
+validation.signup.username_characters = 以下のシンボルが使用可能：0-9、A-Z、a-z、'_'、'-'、'@'　と　'.'
+validation.signup.username_exists = このようなユーザ名がすでに登録されている
+validation.signup.pass_minimum = パスワードは少なくとも　%1%　の文字が含む必要があります
+validation.signup.pass2_invalid = パスワードが一致していません
+validation.signup.email_exists = このような電子メールはすでに登録されている
+validation.signup.email_blocked = 申し訳ありませんが、電子メールがブロックされています
+validation.signup.email_doesnt_exist = このような電子メールとはユーザーのデータベースに存在しない、再試行するか、サポートまでご連絡ください
+validation.signup.email_already_confirmed = このアカウントはすでに確認されています
+validation.signup.display_name_minimum = ニックネームは少なくとも　%1%　の文字が含まれている必要があります
+validation.signup.display_name_exists = このようなニックネームがすでに登録されている
+validation.signup.birth_date_invalid = すべてのフィールドを選択する必要があります
+validation.signup.avatar_invalid_format = 画像ファイルのみが使用ができます
+validation.signup.avatar_invalid_size = 画像サイズは　%1%　以上でなければなりません
+validation.signup.cover_invalid_format = 画像ファイルのみが使用ができます
+validation.signup.cover_invalid_size = 画像サイズは　%1%　以上でなければなりません
+validation.signup.payment_option_required = あなたは、メンバーシップのタイプを選択する必要があります
+validation.signup.sms_passcode_invalid = 入力されたコードが有効でない、もう一度試してください
+validation.signup.ip_blocked = 申し訳ありませんが、あなたのIPがブロックされています
+
+validation.logon.please_wait = 再試行する前に数分間お待ちください。
+validation.logon.not_confirmed = あなたのアカウントはまだ活性化されていません。確認リンクを含むメッセージは、メールアドレスに送信されました。アカウントを有効にするために、あなたの登録を確認してください。あなたは電子メールメッセージを受信に問題がある場合は、サポートにお問い合わせください。
+validation.logon.invalid_login = ユーザー名かパスワードが無効。ユーザー名とパスワードは大文字と小文字が区別されます。
+validation.logon.disabled_login = あなたのアカウントが無効になっています。この問題を解決するために、サポートにご連絡ください。
+validation.logon.tempbanned_login = アカウントが異なる人で使用して、疑いで禁止されています。確認リンクを含むメッセージは、お使いのメールアドレスに送信されました。アカウントまたは連絡先のサポートのブロックを解除するための確認のリンクをご利用ください。
+validation.logon.banned_login = アカウントが異なる人で使用し、疑いで禁止されています。この問題を解決するために、サポートにご連絡ください。
+
+validation.video_view.ip_already_voted = あなたは既にこのビデオに投票しています。
+validation.video_view.not_enough_tokens = あなたはこのビデオを購入するのに十分なトーケン･コインを持っていません。
+validation.album_view.ip_already_voted = あなたは既にこのアルバムのために投票しました。
+validation.album_view.not_enough_tokens = あなたはこのアルバムを購入するのに十分なトーケン･コインを持っていません。
+
+validation.member_profile_edit.old_pass_invalid = パスワードが有効ではありません
+validation.member_profile_edit.pass_minimum = パスワードは少なくとも　%1%　の文字が含まれている必要があります
+validation.member_profile_edit.pass_blocked = このパスワードはブロックされ、別のパスワードを選択してください
+validation.member_profile_edit.pass2_invalid = パスワードが一致していません
+validation.member_profile_edit.email_exists = このような電子メールはすでに登録されている
+validation.member_profile_edit.email_not_changed = あなたが現在使用されているのと同じ電子メールを入力が出来ません
+validation.member_profile_edit.display_name_minimum = ニックネームは、少なくとも　%1%　の文字が含まれている必要があります
+validation.member_profile_edit.display_name_exists = このようなニックネームがすでに登録されている
+validation.member_profile_edit.birth_date_invalid = すべてのフィールドを選択する必要があります
+validation.member_profile_edit.avatar_invalid_format = 画像ファイルのみが使用ができます
+validation.member_profile_edit.avatar_invalid_size = 画像サイズは　%1%　以上でなければなりません
+validation.member_profile_edit.cover_invalid_format = 画像ファイルのみが使用ができます
+validation.member_profile_edit.cover_invalid_size = 画像サイズは　%1%　以上でなければなりません
+
+validation.playlist_edit.title_exists = あなたはすでに同じタイトルのプレイリストを持っています
+
+# ======================================================================================================================
+# Custom texts added by user
+# ======================================================================================================================

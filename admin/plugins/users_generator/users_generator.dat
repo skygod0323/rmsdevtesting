@@ -1,0 +1,7 @@
+<plugin>
+	<plugin_name>Users Generator</plugin_name>
+	<author>Kernel Team</author>
+	<version>1.3</version>
+	<kvs_version>5.0.0</kvs_version>
+	<plugin_types>manual</plugin_types>
+</plugin>

@@ -1,0 +1,7 @@
+<block>
+	<block_name>Tag Cloud v2</block_name>
+	<author>Kernel Team</author>
+	<version>5.0.0</version>
+	<types>list</types>
+	<functionalities>categorization</functionalities>
+</block>

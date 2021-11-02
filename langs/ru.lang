@@ -1,0 +1,724 @@
+# syntax rules:
+# #comment
+# key = value
+# key = array(value1, value2, ..., valueN)
+
+# ======================================================================================================================
+# common & global
+# ======================================================================================================================
+
+php.default_lang = ru_RU.UTF8
+header.default_lang = ru
+
+header.primary_menu_updates = Главная
+header.primary_menu_videos = Видео
+header.primary_menu_albums = Альбомы
+header.primary_menu_models = Модели
+header.primary_menu_categories = Категории
+header.primary_menu_playlists = Плэйлисты
+header.primary_menu_network = Наши сайты
+header.primary_menu_get_premium = Премиум доступ
+header.primary_menu_login = Вход
+header.primary_menu_logout = Выйти
+
+header.member_menu_profile = Профиль
+header.member_menu_playlists = Плэйлисты
+header.member_menu_fav_videos = Избранные видео
+header.member_menu_fav_albums = Избранные альбомы
+header.member_menu_fav_models = Избранные модели
+
+search_box.search_hint = Поиск
+search_box.search_action = Искать
+
+footer.primary_menu_updates = Главная
+footer.primary_menu_videos = Видео
+footer.primary_menu_albums = Альбомы
+footer.primary_menu_models = Модели
+footer.primary_menu_categories = Категории
+footer.primary_menu_get_premium = Премиум доступ
+footer.primary_menu_logout = Выйти
+footer.primary_menu_login = Вход
+footer.primary_menu_terms = Правила
+footer.primary_menu_dmca = DMCA
+footer.primary_menu_2257 = 18 U.S.C. 2257
+footer.primary_menu_privacy = Политика конфиденциальности
+
+footer.copyright_year = 2017
+footer.copyright_text = All rights reserved.
+footer.site_text = All models were at least 18 years of age when photographed.
+
+common_list.link_more_items = Больше (%1%)
+common_list.no_data = Данный список пуст.
+common_list.paginated_postfix = , стр. %1%
+common_list.load_more = Показать еще
+
+common_list.get_access = Премиум доступ
+
+common_forms.file_upload_btn_browse = Выбрать...
+common_forms.file_upload_btn_change = Изменить...
+common_forms.field_select_day = день...
+common_forms.field_select_month = месяц...
+common_forms.field_select_month_values.1 = Январь
+common_forms.field_select_month_values.2 = Февраль
+common_forms.field_select_month_values.3 = Март
+common_forms.field_select_month_values.4 = Апрель
+common_forms.field_select_month_values.5 = Май
+common_forms.field_select_month_values.6 = Июнь
+common_forms.field_select_month_values.7 = Июль
+common_forms.field_select_month_values.8 = Август
+common_forms.field_select_month_values.9 = Сентябрь
+common_forms.field_select_month_values.10 = Октябрь
+common_forms.field_select_month_values.11 = Ноябрь
+common_forms.field_select_month_values.12 = Декабрь
+common_forms.field_select_year = год...
+common_forms.field_select_default = выбрать...
+common_forms.field_captcha = Код защиты
+common_forms.field_captcha_image = Картинка защиты
+common_forms.field_captcha_hint = Пожалуйста, подтвердите, что вы не являетесь автоматической программой.
+common_forms.field_filter_hint = Напишите название, чтобы сократить список
+
+date_format.right_now = сейчас
+date_format.unknown = неизвестно
+
+date_format.long.seconds = [count]%1% секунд || //11,//12,//13,//14: %1% секунд || /1: %1% секунду || /2,/3,/4: %1% секунды[/count] назад
+date_format.long.minutes = [count]%1% минут || //11,//12,//13,//14: %1% минут || /1: %1% минуту || /2,/3,/4: %1% минуты[/count] назад
+date_format.long.hours = [count]%1% часов || //11,//12,//13,//14: %1% часов || /1: %1% час || /2,/3,/4: %1% часа[/count] назад
+date_format.long.days = [count]%1% дней || //11,//12,//13,//14: %1% дней || /1: %1% день || /2,/3,/4: %1% дня[/count] назад
+date_format.long.weeks = [count]%1% недель || //11,//12,//13,//14: %1% недель || /1: %1% неделю || /2,/3,/4: %1% недели[/count] назад
+date_format.long.months = [count]%1% месяцев || //11,//12,//13,//14: %1% месяцев || /1: %1% месяц || /2,/3,/4: %1% месяца[/count] назад
+date_format.long.years = [count]%1% лет || //11,//12,//13,//14: %1% лет || /1: %1% год || /2,/3,/4: %1% года[/count] назад
+
+date_format.short.seconds = [count]%1% секунд || //11,//12,//13,//14: %1% секунд || /1: %1% секунду || /2,/3,/4: %1% секунды[/count]
+date_format.short.minutes = [count]%1% минут || //11,//12,//13,//14: %1% минут || /1: %1% минуту || /2,/3,/4: %1% минуты[/count]
+date_format.short.hours = [count]%1% часов || //11,//12,//13,//14: %1% часов || /1: %1% час || /2,/3,/4: %1% часа[/count]
+date_format.short.days = [count]%1% дней || //11,//12,//13,//14: %1% дней || /1: %1% день || /2,/3,/4: %1% дня[/count]
+date_format.short.weeks = [count]%1% недель || //11,//12,//13,//14: %1% недель || /1: %1% неделю || /2,/3,/4: %1% недели[/count]
+date_format.short.months = [count]%1% месяцев || //11,//12,//13,//14: %1% месяцев || /1: %1% месяц || /2,/3,/4: %1% месяца[/count]
+date_format.short.years = [count]%1% лет || //11,//12,//13,//14: %1% лет || /1: %1% год || /2,/3,/4: %1% года[/count]
+
+error_404.title = 404 / Страница не найдена
+
+# ======================================================================================================================
+# HTML page titles, descs and keywords, SE optimization
+# ======================================================================================================================
+
+html.default_title = Название сайта по умолчанию
+html.default_description = Описание сайта по умолчанию.
+html.default_keywords = ключевые слова по умолчанию
+
+# %1% - original page title, %2% - page number
+html.default_paginated_title = %1%, страница %2%
+html.default_paginated_description = %1% страница %2%.
+
+html.index_title = Домашняя страница
+html.index_description =
+html.index_keywords =
+
+html.error_404_title = Страница не найдена
+html.error_404_description =
+html.error_404_keywords =
+
+html.email_links_title = Подтверждение по email
+html.email_links_description =
+html.email_links_keywords =
+
+html.payment_links_title = Обработка платежей
+html.payment_links_description =
+html.payment_links_keywords =
+
+# %search_keyword%
+html.search_videos_title = %search_keyword% - Видео - %sort_by%
+html.search_videos_description =
+html.search_videos_keywords =
+
+# %search_keyword%
+html.search_albums_title = %search_keyword% - Альбомы - %sort_by%
+html.search_albums_description =
+html.search_albums_keywords =
+
+# %search_keyword%
+html.search_models_title = %search_keyword% - Модели - %sort_by%
+html.search_models_description =
+html.search_models_keywords =
+
+html.content_title = Видео & Альбомы
+html.content_description =
+html.content_keywords =
+
+# %tag%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%
+# %first_object_title%, %first_object_description%
+html.content_by_tag_title = %tag% - Видео & Альбомы
+html.content_by_tag_description =
+html.content_by_tag_keywords =
+
+# %title%, %description%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.content_by_category_title = %title% - Видео & Альбомы
+html.content_by_category_description = %description%
+html.content_by_category_keywords =
+
+# %title%, %description%, %alias%, %country%, %city%, %height%, %weight%, %birth_date%, %age%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.content_by_model_title = %title% - Видео & Альбомы
+html.content_by_model_description = %description%
+html.content_by_model_keywords = %categories_as_string%, %tags_as_string%
+
+html.videos_title = Видео - %sort_by%
+html.videos_description =
+html.videos_keywords =
+
+# %tag%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%
+# %first_object_title%, %first_object_description%
+html.videos_by_tag_title = %tag% - Видео - %sort_by%
+html.videos_by_tag_description =
+html.videos_by_tag_keywords =
+
+# %title%, %description%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.videos_by_category_title = %title% - Видео - %sort_by%
+html.videos_by_category_description = %description%
+html.videos_by_category_keywords =
+
+# %title%, %description%, %alias%, %country%, %city%, %height%, %weight%, %birth_date%, %age%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.videos_by_model_title = %title% - Видео - %sort_by%
+html.videos_by_model_description = %description%
+html.videos_by_model_keywords = %categories_as_string%, %tags_as_string%
+
+# %title%, %description%, %duration%, %rating%, %rating_amount%, %video_viewed%, %post_date%, %username%, %release_year%, %custom1% - %custom3%
+# %tags_as_string%, %categories_as_string%, %models_as_string%, %content_source_as_string%, %dvd_as_string%
+html.video_details_title = %title%
+html.video_details_description = %description%
+html.video_details_keywords = %categories_as_string%, %tags_as_string%, %models_as_string%
+
+html.albums_title = Альбомы - %sort_by%
+html.albums_description =
+html.albums_keywords =
+
+# %tag%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%
+# %first_object_title%, %first_object_description%
+html.albums_by_tag_title = %tag% - Альбомы - %sort_by%
+html.albums_by_tag_description =
+html.albums_by_tag_keywords =
+
+# %title%, %description%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.albums_by_category_title = %title% - Альбомы - %sort_by%
+html.albums_by_category_description = %description%
+html.albums_by_category_keywords =
+
+# %title%, %description%, %alias%, %country%, %city%, %height%, %weight%, %birth_date%, %age%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.albums_by_model_title = %title% - Альбомы - %sort_by%
+html.albums_by_model_description = %description%
+html.albums_by_model_keywords = %categories_as_string%, %tags_as_string%
+
+# %title%, %description%, %photos_amount%, %rating%, %rating_amount%, %album_viewed%, %post_date%, %username%, %custom1% - %custom3%
+# %tags_as_string%, %categories_as_string%, %models_as_string%, %content_source_as_string%
+html.album_details_title = %title%
+html.album_details_description = %description%
+html.album_details_keywords = %categories_as_string%, %tags_as_string%, %models_as_string%
+
+html.categories_title = Категории - %sort_by%
+html.categories_description =
+html.categories_keywords =
+
+html.models_title = Модели - %sort_by%
+html.models_description =
+html.models_keywords =
+
+# %title%, %description%, %total_videos%, %rating%, %rating_amount%, %playlist_viewed%, %added_date%, %username%
+# %tags_as_string%, %categories_as_string%
+html.playlist_details_title = %title%
+html.playlist_details_description = %description%
+html.playlist_details_keywords = %categories_as_string%, %tags_as_string%
+
+html.memberzone_my_profile_title = Мой профиль
+html.memberzone_my_profile_description =
+html.memberzone_my_profile_keywords =
+
+html.memberzone_my_fav_videos_title = Мои избранные видео
+html.memberzone_my_fav_videos_description =
+html.memberzone_my_fav_videos_keywords =
+
+# %title%, %description%, %total_videos%, %categories_as_string%
+html.memberzone_my_fav_videos_playlist_title = Мой плэйлист: %title%
+html.memberzone_my_fav_videos_playlist_description =
+html.memberzone_my_fav_videos_playlist_keywords =
+
+html.memberzone_my_fav_albums_title = Мои избранные альбомы
+html.memberzone_my_fav_albums_description =
+html.memberzone_my_fav_albums_keywords =
+
+html.memberzone_my_fav_models_title = Мои избранные модели
+html.memberzone_my_fav_models_description =
+html.memberzone_my_fav_models_keywords =
+
+html.memberzone_my_playlists_title = Мои плэйлисты
+html.memberzone_my_playlists_description =
+html.memberzone_my_playlists_keywords =
+
+html.static_html_title.terms = Правила
+html.static_html_description.terms =
+html.static_html_keywords.terms =
+
+html.static_html_title.dmca = DMCA Notice of Copyright Infringement
+html.static_html_description.dmca =
+html.static_html_keywords.dmca =
+
+html.static_html_title.2257 = 18 USC 2257 Statement
+html.static_html_description.2257 =
+html.static_html_keywords.2257 =
+
+html.static_html_title.privacy = Политика конфиденциальности
+html.static_html_description.privacy =
+html.static_html_keywords.privacy =
+
+# ======================================================================================================================
+# Pagination
+# ======================================================================================================================
+
+pagination.first_page = Первая
+pagination.last_page = Последняя
+pagination.prev_page = Назад
+pagination.next_page = Вперед
+pagination.jump_left = ...
+pagination.jump_right = ...
+
+# ======================================================================================================================
+# Videos
+# ======================================================================================================================
+
+videos.list_title_by_sorting = Видео - %1%
+videos.list_title_by_tag = %1% - Видео - %2%
+videos.list_title_by_category = %1% - Видео - %2%
+videos.list_title_by_model = %1% - Видео - %2%
+videos.list_title_by_search = %1% - Видео - %2%
+
+videos.list_sorting.post_date = Новые
+videos.list_sorting.rating = Топовые
+videos.list_sorting.rating_today = Топовые сегодня
+videos.list_sorting.rating_week = Топовые за неделю
+videos.list_sorting.rating_month = Топовые за месяц
+videos.list_sorting.video_viewed = Популярные
+videos.list_sorting.video_viewed_today = Популярные сегодня
+videos.list_sorting.video_viewed_week = Популярные за неделю
+videos.list_sorting.video_viewed_month = Популярные за месяц
+videos.list_sorting.duration = Длительные
+videos.list_sorting.most_commented = Комментируемые
+videos.list_sorting.most_favourited = Избранные
+videos.list_sorting.relevance = Релевантные
+
+videos.list_sorting_period.rating = За все время
+videos.list_sorting_period.rating_month = За месяц
+videos.list_sorting_period.rating_week = За неделю
+videos.list_sorting_period.rating_today = За сегодня
+videos.list_sorting_period.video_viewed = За все время
+videos.list_sorting_period.video_viewed_month = За месяц
+videos.list_sorting_period.video_viewed_week = За неделю
+videos.list_sorting_period.video_viewed_today = За сегодня
+
+videos.list_label_views = %1% просмотров
+videos.list_label_playing = Играет сейчас
+
+videos.list_action_delete = Удалить
+videos.list_action_delete_confirm_favourites = Пожалуйста, подтвердите удаление видео "%1%" из ваших закладок.
+videos.list_action_select_all = Выбрать все
+videos.list_action_delete_selected = Удалить выбранные
+videos.list_action_delete_selected_confirm_favourites = Пожалуйста, подтвердите удаление [count]%1% видео[/count] из ваших закладок.
+videos.list_action_move_to_playlist = Переместить в плэйлист...
+videos.list_action_edit_playlist = Изменить плэйлист...
+videos.list_action_delete_playlist = Удалить плэйлист
+videos.list_action_delete_playlist_confirm = Пожалуйста, подтвердите удаление плэйлиста "%1%".
+
+videos.list_switch_favourites.0 = Избранные
+videos.list_switch_favourites.1 = Смотреть позже
+
+videos.video_details_rate_like = Мне нравится
+videos.video_details_rate_dislike = Мне не нравится
+videos.video_details_rate_not_allowed = Вы не можете голосовать за это видео
+videos.video_details_rating_votes = ([count]%1% голосов || //11,//12,//13,//14: %1% голосов || /1: %1% голос || /2,/3,/4: %1% голоса[/count])
+videos.video_details_rating_message_success = Спасибо!
+videos.video_details_rating_message_error = IP уже голосовал
+videos.video_details_action_add_to_favourites.0 = В избранные
+videos.video_details_action_add_to_favourites.1 = Смотреть позже
+videos.video_details_action_add_to_playlist = Добавить в <em class="mark-color">%1%</em>
+videos.video_details_action_add_to_new_playlist = Добавить в новый плэйлист...
+videos.video_details_action_delete_from_favourites = [x]
+videos.video_details_label_description = Описание
+videos.video_details_label_duration = Длительность
+videos.video_details_label_views = Просмотров
+videos.video_details_label_added_date = Добавлено
+videos.video_details_label_categories = Категории
+videos.video_details_label_tags = Тэги
+videos.video_details_label_download = Скачать
+videos.video_details_label_screenshots = Скриншоты
+
+videos.related_videos_title_default = Похожие видео
+
+# ======================================================================================================================
+# Albums
+# ======================================================================================================================
+
+albums.list_title_by_sorting = Альбомы - %1%
+albums.list_title_by_tag = %1% - Альбомы - %2%
+albums.list_title_by_category = %1% - Альбомы - %2%
+albums.list_title_by_model = %1% - Альбомы - %2%
+albums.list_title_by_search = %1% - Альбомы - %2%
+
+albums.list_sorting.post_date = Новые
+albums.list_sorting.rating = Топовые
+albums.list_sorting.rating_today = Топовые сегодня
+albums.list_sorting.rating_week = Топовые за неделю
+albums.list_sorting.rating_month = Топовые за месяц
+albums.list_sorting.album_viewed = Популярные
+albums.list_sorting.album_viewed_today = Популярные сегодня
+albums.list_sorting.album_viewed_week = Популярные за неделю
+albums.list_sorting.album_viewed_month = Популярные за месяц
+albums.list_sorting.most_commented = Комментируемые
+albums.list_sorting.most_favourited = Избранные
+albums.list_sorting.relevance = Релевантные
+
+albums.list_sorting_period.rating = За все время
+albums.list_sorting_period.rating_month = За месяц
+albums.list_sorting_period.rating_week = За неделю
+albums.list_sorting_period.rating_today = За сегодня
+albums.list_sorting_period.album_viewed = За все время
+albums.list_sorting_period.album_viewed_month = За месяц
+albums.list_sorting_period.album_viewed_week = За неделю
+albums.list_sorting_period.album_viewed_today = За сегодня
+
+albums.list_label_photos = %1%
+albums.list_label_views = %1% просмотров
+
+albums.list_action_select_all = Выбрать все
+albums.list_action_delete_selected = Удалить выбранные
+albums.list_action_delete_selected_confirm_favourites = Пожалуйста, подтвердите удаление [count]%1% альбомов || //11: %1% альбомов || /1: %1% альбома[/count] из ваших закладок.
+
+albums.list_switch_favourites.0 = Избранные
+albums.list_switch_favourites.1 = Смотреть позже
+
+albums.album_details_rate_like = Мне нравится
+albums.album_details_rate_dislike = Мне не нравится
+albums.album_details_rate_not_allowed = Вы не можете голосовать за этот альбом
+albums.album_details_rating_votes = ([count]%1% голосов || //11,//12,//13,//14: %1% голосов || /1: %1% голос || /2,/3,/4: %1% голоса[/count])
+albums.album_details_rating_message_success = Спасибо!
+albums.album_details_rating_message_error = IP уже голосовал
+albums.album_details_action_add_to_favourites.0 = В избранные
+albums.album_details_action_add_to_favourites.1 = Смотреть позже
+albums.album_details_action_delete_from_favourites = [x]
+albums.album_details_label_description = Описание
+albums.album_details_label_images = Фотографий
+albums.album_details_label_views = Просмотров
+albums.album_details_label_added_date = Добавлен
+albums.album_details_label_categories = Категории
+albums.album_details_label_tags = Тэги
+albums.album_details_label_models = Модели
+albums.album_details_label_download = Скачать
+
+albums.related_albums_title_default = Похожие альбомы
+
+# ======================================================================================================================
+# Categories
+# ======================================================================================================================
+
+categories.list_title_by_sorting = Категории - %1%
+
+categories.list_sorting.title = По алфавиту
+categories.list_sorting.avg_videos_popularity = Популярные
+categories.list_sorting.avg_videos_rating = Топовые
+
+categories.list_label_no_image = нет аватара
+categories.list_label_views = %1% просмотров
+
+# ======================================================================================================================
+# Models
+# ======================================================================================================================
+
+models.list_title_by_sorting = Модели - %1%
+models.list_title_by_section_sorting = Модели - %2% - %1%
+models.list_title_by_search = %1% - Модели - %2%
+
+models.list_sorting.title = По алфавиту
+models.list_sorting.model_viewed = Популярные
+models.list_sorting.rating = Топовые
+models.list_sorting.comments_count = Комментируемые
+models.list_sorting.subscribers_count = Избранные
+
+models.list_label_no_image = нет аватара
+models.list_label_views = %1% просмотров
+
+models.list_action_select_all = Выбрать все
+models.list_action_delete_selected = Удалить выбранные
+models.list_action_delete_selected_confirm_subscriptions = Пожалуйста, подтвердите отказ от подписки на [count]%1% моделей || //11,//12,//13,//14: %1% моделей || /1: %1% модель || /2,/3,/4: %1% модели[/count].
+
+models.alphabet_title = Модели А-Я
+models.alphabet_all = Все
+models.alphabet_letters = array(А,Б,В,Г,Д,Е,Ё,Ж,З,И,Й,К,Л,М,Н,О,П,Р,С,Т,У,Ф,Х,Ц,Ч,Ш,Щ,Э,Ю,Я)
+
+models.info_title = %1%
+models.info_birthday = День рождения
+models.info_birthday_age = %1% лет
+models.info_age = Возраст
+models.info_country = Страна
+models.info_city = Город
+models.info_profession = Профессия
+models.info_ethnicity = Раса
+models.info_hair = Волосы
+models.info_hair_values.1 = Черные
+models.info_hair_values.2 = Темные
+models.info_hair_values.3 = Рыжие
+models.info_hair_values.4 = Коричневые
+models.info_hair_values.5 = Светлые
+models.info_hair_values.6 = Серые
+models.info_hair_values.7 = Нет волос
+models.info_hair_values.8 = Парик
+models.info_eyes = Глаза
+models.info_eyes_values.1 = Голубые
+models.info_eyes_values.2 = Серые
+models.info_eyes_values.3 = Зеленые
+models.info_eyes_values.4 = Янтарные
+models.info_eyes_values.5 = Коричневые
+models.info_eyes_values.6 = Карие
+models.info_eyes_values.7 = Черные
+models.info_height = Рост
+models.info_weight = Вес
+models.info_measurements = Тело
+models.info_categories = Категории
+models.info_tags = Тэги
+models.info_description = Описание
+models.info_no_description = Нет описания
+models.info_no_image = нет аватара
+models.info_na = нет данных
+models.info_albums = Альбомы
+models.info_videos = Видео
+models.info_action_subscribe = Подписаться
+models.info_action_unsubscribe = Отписаться
+models.info_action_rate_like = Мне нравится
+models.info_action_rate_dislike = Мне не нравится
+models.info_rating_message_success = Спасибо!
+models.info_rating_message_error = IP уже голосовал
+
+models.btn_profile = Профиль
+
+# ======================================================================================================================
+# Comments
+# ======================================================================================================================
+
+comments.label_anonymous_user = Аноним
+comments.label_comment_deleted = Этот комментарий был удален.
+
+comments.btn_add_comment = Добавить комментарий
+comments.btn_send = Отправить
+comments.field_anonymous_name = Ваше имя
+comments.field_comment = Комментарий
+comments.field_comments = Комментарии
+comments.field_comments_empty = Добавить комментарий
+comments.success_message = Спасибо! Ваш комментарий отправлен на проверку.
+
+# ======================================================================================================================
+# Playlists
+# ======================================================================================================================
+
+playlists.list_label_no_videos = Нет видео
+playlists.list_label_views = %1% просмотров
+
+playlists.list_action_select_all = Выбрать все
+playlists.list_action_delete_selected = Удалить выбранные
+playlists.list_action_delete_selected_confirm = Пожалуйста, подтвердите удаление [count]%1% плэйлистов || //11: %1% плэйлистов || /1: %1% плэйлиста[/count] из ваших закладок.
+playlists.list_action_create_playlist = Новый плэйлист...
+
+# ======================================================================================================================
+# Memberzone
+# ======================================================================================================================
+
+memberzone.profile_my_fav_videos.0 = Мои избранные видео
+memberzone.profile_my_fav_videos.1 = Мои видео для будущего просмотра
+memberzone.profile_my_fav_videos_playlists = Плэйлисты
+memberzone.profile_my_fav_videos_playlists_create = Новый плэйлист...
+memberzone.profile_my_playlist_videos = Мой плэйлист: %1%
+memberzone.profile_my_fav_albums.0 = Мои избранные альбомы
+memberzone.profile_my_fav_albums.1 = Мои альбомы для будущего просмотра
+memberzone.profile_my_fav_models = Мои избранные модели
+memberzone.profile_my_playlists = Мои плэйлисты
+
+# ======================================================================================================================
+# Forms
+# ======================================================================================================================
+
+signup.title = Регистрация
+signup.field_username = Имя пользователя
+signup.field_username_hint = ваш логин, вы можете использовать свой email здесь
+signup.field_password = Пароль
+signup.field_password_hint = не менее 5 символов
+signup.field_password2 = Подтверждение пароля
+signup.field_password2_hint = повторите ввод пароля
+signup.field_email = Email
+signup.field_email_hint = будет использоваться для восстановления доступа
+signup.btn_continue = Продолжить
+signup.success_message_active_member = Спасибо! Вы стали активным пользователем нашего сайта.
+signup.success_message_premium_member = Спасибо! Вы стали премиум пользователем нашего сайта.
+signup.success_message_not_confirmed_member = Спасибо! Вы находитесь всего в одном шаге от того, чтобы стать активным пользователем нашего сайта. Инструкции по активации вашего профиля высланы на ваш email. Пожалуйста, следуйте инструкциям, которые вы найдете в письме. Если письмо не пришло по каким-либо причинам, свяжитесь с нами.
+
+login.title = Вход
+login.field_username = Имя пользователя
+login.field_password = Пароль
+login.field_remember_me = запомнить меня
+login.btn_log_in = Войти
+login.link_reset_password = Забыли пароль?
+login.link_help = Поддержка
+login.not_member = Нет профиля?
+login.error_message_only_for_members = Эта возможность доступна только для зарегистрированных пользователей нашего сайта.
+
+reset_password.title = Сброс пароля
+reset_password.field_email = Email
+reset_password.field_email_hint = укажите email, который вы указали при регистрации
+reset_password.btn_reset_password = Сбросить
+reset_password.success_message = Спасибо! Новый пароль выслан на ваш email. Пожалуйста, следуйте инструкциям, которые вы найдете в письме. Если письмо не пришло по каким-либо причинам, свяжитесь с нами.
+
+upgrade.title = Пакет премиум доступа
+upgrade.success_message_active_member = Спасибо! Ваша транзакция успешно обработана.
+upgrade.success_message_premium_member = Спасибо! Ваша транзакция успешно обработана. Вы стали премиум пользователем нашего сайта.
+upgrade.btn_continue = Продолжить
+
+feedback.title = Обратная связь
+feedback.field_message = Ваше сообщение
+feedback.field_message_hint = вы можете высказать впечатления о нашем сайте, а также сообщить об ошибках
+feedback.field_email = Email
+feedback.field_email_hint_optional = укажите свой email, если ожидаете ответа от нас
+feedback.field_email_hint_required = укажите свой email
+feedback.field_custom1 = Дополнительное поле 1
+feedback.field_custom1_hint = подсказка
+feedback.field_custom2 = Дополнительное поле 2
+feedback.field_custom2_hint = подсказка
+feedback.field_custom3 = Дополнительное поле 3
+feedback.field_custom3_hint = подсказка
+feedback.field_custom4 = Дополнительное поле 4
+feedback.field_custom4_hint = подсказка
+feedback.field_custom5 = Дополнительное поле 5
+feedback.field_custom5_hint = подсказка
+feedback.btn_send = Отправить
+feedback.success_message = Спасибо! Мы ценим ваше мнение и ответим в ближайшее время.
+
+edit_playlist.title_create_playlist = Новый плэйлист
+edit_playlist.title_edit_playlist = Редактирование плэйлиста
+edit_playlist.field_title = Название
+edit_playlist.btn_create_playlist = Создать
+edit_playlist.btn_edit_playlist = Сохранить
+edit_playlist.success_message = Данные плэйлиста "%1%" изменены.
+edit_playlist.success_message_create = Плэйлист "%1%" создан.
+
+select_playlist.title = Выбор плэйлиста
+select_playlist.label_videos = [count]%1% видео[/count]
+select_playlist.btn_select = Выбрать
+select_playlist.btn_new = Новый...
+
+edit_profile.title = Мой профиль
+edit_profile.title_edit_profile = Редактирование профиля
+edit_profile.title_edit_password = Изменение пароля
+edit_profile.title_edit_email = Изменение email
+edit_profile.field_old_password = Текущий пароль
+edit_profile.field_old_email = Текущий email
+edit_profile.field_email = Новый email
+edit_profile.field_password = Новый пароль
+edit_profile.field_password_hint = не менее 5 символов
+edit_profile.field_password2 = Подтверждение нового пароля
+edit_profile.field_password2_hint = повторите ввод пароля
+edit_profile.field_display_name = Ник
+edit_profile.field_display_name_hint = как другие пользователи будут вас видеть
+edit_profile.field_avatar = Фото
+edit_profile.field_avatar_hint = минимальный размер: %1%
+edit_profile.btn_change = Изменить
+edit_profile.success_message_changed_profile = Данные вашего профиля изменены.
+edit_profile.success_message_changed_password = Ваш пароль изменен.
+edit_profile.success_message_changed_email = Ваш email изменен.
+edit_profile.success_message_changed_email_confirm = Инструкции по активации изменения email высланы на ваш новый email. Пожалуйста, следуйте инструкциям, которые вы найдете в письме. Если письмо не пришло по каким-либо причинам, свяжитесь с нами.
+
+email_links.title_confirm_signup = Активация профиля
+email_links.title_confirm_reset_password = Изменение пароля
+email_links.title_confirm_unblock = Разблокировка профиля
+email_links.title_confirm_change_email = Изменение email
+email_links.message_confirm_signup_successful = Спасибо! Ваш профиль активирован. Вы стали активным пользователем нашего сайта.
+email_links.message_confirm_reset_password_successful = Спасибо! Ваш пароль изменен. Теперь вы можете использовать новый пароль.
+email_links.message_confirm_unblock_successful = Спасибо! Ваш профиль разблокирован.
+email_links.message_confirm_email_change_successful = Спасибо! Ваш email изменен.
+email_links.message_confirm_error = Вы используете неправильную ссылку подтверждения. Возможно, вы пытаетесь использовать ее повторно? Пожалуйста, свяжитесь с нами.
+
+billing_links.title_payment_successful = Успешный платеж
+billing_links.title_payment_failed = Отклоненный платеж
+billing_links.message_payment_successful = Спасибо! Ваш платеж обработан.
+billing_links.message_payment_failed = К сожалению наш процессор оплаты не смог обработать вашу транзакцию. Пожалуйста, свяжитесь с нами.
+
+# ======================================================================================================================
+# Error messages
+# ======================================================================================================================
+
+validation.common.not_logged_in = Эта возможность доступна только для зарегистрированных пользователей нашего сайта.
+validation.common.invalid_params = Возникла непредвиденная ошибка. Пожалуйста, свяжитесь с нами.
+validation.common.unknown_error = Возникла непредвиденная ошибка (%1%). Пожалуйста, свяжитесь с нами.
+validation.common.required = Поле обязательно к заполнению
+validation.common.email_invalid = Указанный email не является корректным
+validation.common.code_invalid = Указанный код не является корректным, попробуйте еще раз
+validation.common.comment_minimum = Комментарий должен содержать минимум %1% символов
+validation.common.playlist_locked = Редактирование этого плэйлиста заблокировано администрацией.
+validation.common.video_locked = Редактирование этого видео заблокировано администрацией.
+validation.common.video_screenshots_locked = Редактирование скриншотов этого видео заблокировано администрацией.
+validation.common.album_locked = Редактирование этого альбома заблокировано администрацией.
+validation.common.album_images_locked = Редактирование фотографий этого альбома заблокировано администрацией.
+validation.common.title_minimum = Название должно содержать не менее %1% символов
+validation.common.category_ids_maximum = Вы можете выбрать не более %1% категорий
+validation.common.tokens_required_integer = Вы должны ввести целое число
+validation.common.flagging_not_enough_tokens = У вас не достаточно токенов для голосования за этот флаг.
+validation.common.message_not_enough_tokens = У вас не достаточно токенов для отправки сообщений другим пользователям.
+
+validation.signup.username_minimum = Имя пользователя должно содержать не менее %1% символов
+validation.signup.username_characters = Вы можете использовать только латинские символы: 0-9, A-Z, a-z, '_', '-', '@' и '.'
+validation.signup.username_exists = Такое имя пользователя уже используется
+validation.signup.pass_minimum = Пароль должен содержать не менее %1% символов
+validation.signup.pass2_invalid = Пароли не совпадают
+validation.signup.email_exists = Такой email уже используется
+validation.signup.email_blocked = Извините, ваш email заблокирован
+validation.signup.email_doesnt_exist = Профиля с таким email-ом не существует, проверьте правильность написания
+validation.signup.email_already_confirmed = Этот профиль уже активирован
+validation.signup.display_name_minimum = Ник должен содержать не менее %1% символов
+validation.signup.display_name_exists = Такой ник уже используется
+validation.signup.birth_date_invalid = Вы должны выбрать значения во всех полях
+validation.signup.avatar_invalid_format = Поддерживаются только файлы изображений
+validation.signup.avatar_invalid_size = Размер фото должен быть больше %1%
+validation.signup.cover_invalid_format = Поддерживаются только файлы изображений
+validation.signup.cover_invalid_size = Размер фото должен быть больше %1%
+validation.signup.payment_option_required = Вы должны выбрать тип доступа
+validation.signup.sms_passcode_invalid = Указанный код не является корректным, попробуйте еще раз
+validation.signup.ip_blocked = Извините, ваш IP заблокирован
+
+validation.logon.please_wait = Сработала защита. Пожалуйста, подождите несколько минут перед следующей попыткой.
+validation.logon.not_confirmed = Ваш профиль еще не активирован. Сообщение с информацией об активации профиля было отправлено на email, который вы указали при регистрации. Пожалуйста, следуйте инструкциям, которые вы найдете в письме. Если письмо не пришло по каким-либо причинам, свяжитесь с нами.
+validation.logon.invalid_login = Некорректное имя пользователя или пароль. Регистр букв (большие / маленькие) имеет значение.
+validation.logon.disabled_login = Ваш профиль был выключен администрацией сайта. Пожалуйста, свяжитесь с нами для снятия блокировки.
+validation.logon.tempbanned_login = Ваш профиль был заблокирован, поскольку у нас есть подозрения, что он используется разными людьми. Инструкции по снятию блокировки были высланы на ваш email. Пожалуйста, следуйте инструкциям, которые вы найдете в письме. Если письмо не пришло по каким-либо причинам, свяжитесь с нами.
+validation.logon.banned_login = Ваш профиль был заблокирован, поскольку у нас есть подозрения, что он используется разными людьми. Пожалуйста, свяжитесь с нами для снятия блокировки.
+
+validation.video_view.ip_already_voted = Вы уже голосовали за это видео.
+validation.video_view.not_enough_tokens = У вас не достаточно токенов для покупки доступа к этому видео.
+validation.album_view.ip_already_voted = Вы уже голосовали за этот альбом.
+validation.album_view.not_enough_tokens = У вас не достаточно токенов для покупки доступа к этому альбому.
+
+validation.member_profile_edit.old_pass_invalid = Пароль не верный
+validation.member_profile_edit.pass_minimum = Пароль должен содержать не менее %1% символов
+validation.member_profile_edit.pass_blocked = Этот пароль заблокирован, выберите другой пароль
+validation.member_profile_edit.pass2_invalid = Пароли не совпадают
+validation.member_profile_edit.email_exists = Такой email уже используется
+validation.member_profile_edit.email_not_changed = Вы не можете изменить email на точно такой же
+validation.member_profile_edit.display_name_minimum = Ник должен содержать не менее %1% символов
+validation.member_profile_edit.display_name_exists = Такой ник уже используется
+validation.member_profile_edit.birth_date_invalid = Вы должны выбрать значения во всех полях
+validation.member_profile_edit.avatar_invalid_format = Поддерживаются только файлы изображений
+validation.member_profile_edit.avatar_invalid_size = Размер фото должен быть больше %1%
+validation.member_profile_edit.cover_invalid_format = Поддерживаются только файлы изображений
+validation.member_profile_edit.cover_invalid_size = Размер фото должен быть больше %1%
+
+validation.playlist_edit.title_exists = У вас уже есть плэйлист с таким названием
+
+# ======================================================================================================================
+# Custom texts added by user
+# ======================================================================================================================

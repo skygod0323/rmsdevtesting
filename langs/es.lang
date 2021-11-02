@@ -1,0 +1,724 @@
+# syntax rules:
+# #comment
+# key = value
+# key = array(value1, value2, ..., valueN)
+
+# ======================================================================================================================
+# common & global
+# ======================================================================================================================
+
+php.default_lang = es_ES.UTF8
+header.default_lang = es
+
+header.primary_menu_updates = Principal
+header.primary_menu_videos = Videos
+header.primary_menu_albums = Albúmenes
+header.primary_menu_models = Modelos
+header.primary_menu_categories = Categorías
+header.primary_menu_playlists = Listas de reproducción
+header.primary_menu_network = Sitios
+header.primary_menu_get_premium = Acceso Premium
+header.primary_menu_login = Miembros
+header.primary_menu_logout = Salir
+
+header.member_menu_profile = Perfil
+header.member_menu_playlists = Listas de reproducción
+header.member_menu_fav_videos = Videos favoritos
+header.member_menu_fav_albums = Albúmenes favoritos
+header.member_menu_fav_models = Modelos favoritos
+
+search_box.search_hint = Búsqueda
+search_box.search_action = Buscar
+
+footer.primary_menu_updates = Principal
+footer.primary_menu_videos = Videos
+footer.primary_menu_albums = Albúmenes
+footer.primary_menu_models = Modelos
+footer.primary_menu_categories = Categorías
+footer.primary_menu_get_premium = Acceso Premium
+footer.primary_menu_logout = Salir
+footer.primary_menu_login = Miembros
+footer.primary_menu_terms = Términos
+footer.primary_menu_dmca = DMCA
+footer.primary_menu_2257 = 18 U.S.C. 2257
+footer.primary_menu_privacy = Política de privacidad
+
+footer.copyright_year = 2017
+footer.copyright_text = All rights reserved.
+footer.site_text = All models were at least 18 years of age when photographed.
+
+common_list.link_more_items = Más (%1%)
+common_list.no_data = Esta lista está vacía.
+common_list.paginated_postfix = , pág. %1%
+common_list.load_more = Mostrar más
+
+common_list.get_access = Acceso Premium
+
+common_forms.file_upload_btn_browse = Seleccionar...
+common_forms.file_upload_btn_change = Cambiar...
+common_forms.field_select_day = día...
+common_forms.field_select_month = mes...
+common_forms.field_select_month_values.1 = Enero
+common_forms.field_select_month_values.2 = Febrero
+common_forms.field_select_month_values.3 = Marzo
+common_forms.field_select_month_values.4 = Abril
+common_forms.field_select_month_values.5 = Mayo
+common_forms.field_select_month_values.6 = Junio
+common_forms.field_select_month_values.7 = Julio
+common_forms.field_select_month_values.8 = Agosto
+common_forms.field_select_month_values.9 = Septiembre
+common_forms.field_select_month_values.10 = Octubre
+common_forms.field_select_month_values.11 = Noviembre
+common_forms.field_select_month_values.12 = Diciembre
+common_forms.field_select_year = año...
+common_forms.field_select_default = seleccionar...
+common_forms.field_captcha = Código seguro
+common_forms.field_captcha_image = Imagen de protección
+common_forms.field_captcha_hint = Por favor, confirme que no es el programa automático.
+common_forms.field_filter_hint = Escriba el nombre para reducir la lista
+
+date_format.right_now = ahora
+date_format.unknown = se desconoce
+
+date_format.long.seconds = [count]%1% segundos || 1: 1 segundo[/count] atrás
+date_format.long.minutes = [count]%1% minutos || 1: 1 minuto[/count] atrás
+date_format.long.hours = [count]%1% horas || 1: 1 hora[/count] atrás
+date_format.long.days = [count]%1% días || 1: 1 día[/count] atrás
+date_format.long.weeks = [count]%1% semanas || 1: 1 semana[/count] atrás
+date_format.long.months = [count]%1% meses || 1: 1 mes[/count] atrás
+date_format.long.years = [count]%1% años || 1: 1 año[/count] atrás
+
+date_format.short.seconds = [count]%1% segundos || 1: 1 segundo[/count]
+date_format.short.minutes = [count]%1% minutos || 1: 1 minuto[/count]
+date_format.short.hours = [count]%1% horas || 1: 1 hora[/count]
+date_format.short.days = [count]%1% días || 1: 1 día[/count]
+date_format.short.weeks = [count]%1% semanas || 1: 1 semana[/count]
+date_format.short.months = [count]%1% meses || 1: 1 mes[/count]
+date_format.short.years = [count]%1% años || 1: 1 año[/count]
+
+error_404.title = 404 / La página no ha sido encontrada
+
+# ======================================================================================================================
+# HTML page titles, descs and keywords, SE optimization
+# ======================================================================================================================
+
+html.default_title = Nombre de sitio por omisión
+html.default_description = Descripción de sitio por omisión.
+html.default_keywords = palabras claves por omisión
+
+# %1% - original page title, %2% - page number
+html.default_paginated_title = %1%, página %2%
+html.default_paginated_description = %1% página %2%.
+
+html.index_title = Página principal
+html.index_description =
+html.index_keywords =
+
+html.error_404_title = La página no ha sido encontrada
+html.error_404_description =
+html.error_404_keywords =
+
+html.email_links_title = Confirmación por email
+html.email_links_description =
+html.email_links_keywords =
+
+html.payment_links_title = Procesamiento de pagos
+html.payment_links_description =
+html.payment_links_keywords =
+
+# %search_keyword%
+html.search_videos_title = %search_keyword% - Videos - %sort_by%
+html.search_videos_description =
+html.search_videos_keywords =
+
+# %search_keyword%
+html.search_albums_title = %search_keyword% - Albúmenes - %sort_by%
+html.search_albums_description =
+html.search_albums_keywords =
+
+# %search_keyword%
+html.search_models_title = %search_keyword% - Modelos - %sort_by%
+html.search_models_description =
+html.search_models_keywords =
+
+html.content_title = Videos & Albúmenes
+html.content_description =
+html.content_keywords =
+
+# %tag%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%
+# %first_object_title%, %first_object_description%
+html.content_by_tag_title = %tag% - Videos & Albúmenes
+html.content_by_tag_description =
+html.content_by_tag_keywords =
+
+# %title%, %description%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.content_by_category_title = %title% - Videos & Albúmenes
+html.content_by_category_description = %description%
+html.content_by_category_keywords =
+
+# %title%, %description%, %alias%, %country%, %city%, %height%, %weight%, %birth_date%, %age%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.content_by_model_title = %title% - Videos & Albúmenes
+html.content_by_model_description = %description%
+html.content_by_model_keywords = %categories_as_string%, %tags_as_string%
+
+html.videos_title = Videos - %sort_by%
+html.videos_description =
+html.videos_keywords =
+
+# %tag%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%
+# %first_object_title%, %first_object_description%
+html.videos_by_tag_title = %tag% - Videos - %sort_by%
+html.videos_by_tag_description =
+html.videos_by_tag_keywords =
+
+# %title%, %description%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.videos_by_category_title = %title% - Videos - %sort_by%
+html.videos_by_category_description = %description%
+html.videos_by_category_keywords =
+
+# %title%, %description%, %alias%, %country%, %city%, %height%, %weight%, %birth_date%, %age%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.videos_by_model_title = %title% - Videos - %sort_by%
+html.videos_by_model_description = %description%
+html.videos_by_model_keywords = %categories_as_string%, %tags_as_string%
+
+# %title%, %description%, %duration%, %rating%, %rating_amount%, %video_viewed%, %post_date%, %username%, %release_year%, %custom1% - %custom3%
+# %tags_as_string%, %categories_as_string%, %models_as_string%, %content_source_as_string%, %dvd_as_string%
+html.video_details_title = %title%
+html.video_details_description = %description%
+html.video_details_keywords = %categories_as_string%, %tags_as_string%, %models_as_string%
+
+html.albums_title = Albúmenes - %sort_by%
+html.albums_description =
+html.albums_keywords =
+
+# %tag%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%
+# %first_object_title%, %first_object_description%
+html.albums_by_tag_title = %tag% - Albúmenes - %sort_by%
+html.albums_by_tag_description =
+html.albums_by_tag_keywords =
+
+# %title%, %description%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.albums_by_category_title = %title% - Albúmenes - %sort_by%
+html.albums_by_category_description = %description%
+html.albums_by_category_keywords =
+
+# %title%, %description%, %alias%, %country%, %city%, %height%, %weight%, %birth_date%, %age%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.albums_by_model_title = %title% - Albúmenes - %sort_by%
+html.albums_by_model_description = %description%
+html.albums_by_model_keywords = %categories_as_string%, %tags_as_string%
+
+# %title%, %description%, %photos_amount%, %rating%, %rating_amount%, %album_viewed%, %post_date%, %username%, %custom1% - %custom3%
+# %tags_as_string%, %categories_as_string%, %models_as_string%, %content_source_as_string%
+html.album_details_title = %title%
+html.album_details_description = %description%
+html.album_details_keywords = %categories_as_string%, %tags_as_string%, %models_as_string%
+
+html.categories_title = Categorías - %sort_by%
+html.categories_description =
+html.categories_keywords =
+
+html.models_title = Modelos - %sort_by%
+html.models_description =
+html.models_keywords =
+
+# %title%, %description%, %total_videos%, %rating%, %rating_amount%, %playlist_viewed%, %added_date%, %username%
+# %tags_as_string%, %categories_as_string%
+html.playlist_details_title = %title%
+html.playlist_details_description = %description%
+html.playlist_details_keywords = %categories_as_string%, %tags_as_string%
+
+html.memberzone_my_profile_title = Mi perfil
+html.memberzone_my_profile_description =
+html.memberzone_my_profile_keywords =
+
+html.memberzone_my_fav_videos_title = Mis videos favoritos
+html.memberzone_my_fav_videos_description =
+html.memberzone_my_fav_videos_keywords =
+
+# %title%, %description%, %total_videos%, %categories_as_string%
+html.memberzone_my_fav_videos_playlist_title = Mi lista de reproducción: %title%
+html.memberzone_my_fav_videos_playlist_description =
+html.memberzone_my_fav_videos_playlist_keywords =
+
+html.memberzone_my_fav_albums_title = Mis albúmenes favoritos
+html.memberzone_my_fav_albums_description =
+html.memberzone_my_fav_albums_keywords =
+
+html.memberzone_my_fav_models_title = Mis modelos favoritos
+html.memberzone_my_fav_models_description =
+html.memberzone_my_fav_models_keywords =
+
+html.memberzone_my_playlists_title = Mis listas de reproduccion
+html.memberzone_my_playlists_description =
+html.memberzone_my_playlists_keywords =
+
+html.static_html_title.terms = Términos
+html.static_html_description.terms =
+html.static_html_keywords.terms =
+
+html.static_html_title.dmca = DMCA Notice of Copyright Infringement
+html.static_html_description.dmca =
+html.static_html_keywords.dmca =
+
+html.static_html_title.2257 = 18 USC 2257 Statement
+html.static_html_description.2257 =
+html.static_html_keywords.2257 =
+
+html.static_html_title.privacy = Política de privacidad
+html.static_html_description.privacy =
+html.static_html_keywords.privacy =
+
+# ======================================================================================================================
+# Pagination
+# ======================================================================================================================
+
+pagination.first_page = Primera
+pagination.last_page = Última
+pagination.prev_page = Atrás
+pagination.next_page = Adelante
+pagination.jump_left = ...
+pagination.jump_right = ...
+
+# ======================================================================================================================
+# Videos
+# ======================================================================================================================
+
+videos.list_title_by_sorting = Videos - %1%
+videos.list_title_by_tag = %1% - Videos - %2%
+videos.list_title_by_category = %1% - Videos - %2%
+videos.list_title_by_model = %1% - Videos - %2%
+videos.list_title_by_search = %1% - Videos - %2%
+
+videos.list_sorting.post_date = Nuevos
+videos.list_sorting.rating = Top
+videos.list_sorting.rating_today = Top hoy
+videos.list_sorting.rating_week = Top por semana
+videos.list_sorting.rating_month = Top por mes
+videos.list_sorting.video_viewed = Populares
+videos.list_sorting.video_viewed_today = Populares hoy
+videos.list_sorting.video_viewed_week = Populares por semana
+videos.list_sorting.video_viewed_month = Populares por mes
+videos.list_sorting.duration = Duraderos
+videos.list_sorting.most_commented = Comentados
+videos.list_sorting.most_favourited = Favoritos
+videos.list_sorting.relevance = Relevantes
+
+videos.list_sorting_period.rating = Por todo tiempo
+videos.list_sorting_period.rating_month = Por mes
+videos.list_sorting_period.rating_week = Por semana
+videos.list_sorting_period.rating_today = Hoy
+videos.list_sorting_period.video_viewed = Por todo tiempo
+videos.list_sorting_period.video_viewed_month = Por mes
+videos.list_sorting_period.video_viewed_week = Por semana
+videos.list_sorting_period.video_viewed_today = Hoy
+
+videos.list_label_views = %1% vistas
+videos.list_label_playing = Jugando ahora
+
+videos.list_action_delete = Eliminar
+videos.list_action_delete_confirm_favourites = Por favor, confirme la eliminación de video "%1%" de sus favoritos.
+videos.list_action_select_all = Seleccionar todo
+videos.list_action_delete_selected = Eliminar seleccionados
+videos.list_action_delete_selected_confirm_favourites = Por favor, confirme la eliminación de [count]%1% videos || 1: 1 video[/count] de sus favoritos.
+videos.list_action_move_to_playlist = Mover a la lista de reproducción...
+videos.list_action_edit_playlist = Editar la lista de reproducción...
+videos.list_action_delete_playlist = Eliminar la lista de reproducción
+videos.list_action_delete_playlist_confirm = Por favor, confirme la eliminación de lista de reproducción "%1%".
+
+videos.list_switch_favourites.0 = Favoritos
+videos.list_switch_favourites.1 = Ver más tarde
+
+videos.video_details_rate_like = Me gusta
+videos.video_details_rate_dislike = No me gusta
+videos.video_details_rate_not_allowed = No puede votar por este video
+videos.video_details_rating_votes = ([count]%1% votos || 1: 1 voto[/count])
+videos.video_details_rating_message_success = ¡Gracias!
+videos.video_details_rating_message_error = IP ha votado ya
+videos.video_details_action_add_to_favourites.0 = Agregar a favoritos
+videos.video_details_action_add_to_favourites.1 = Ver más tarde
+videos.video_details_action_add_to_playlist = Agregar a <em class="mark-color">%1%</em>
+videos.video_details_action_add_to_new_playlist = Agregar a nueva lista de reproducción...
+videos.video_details_action_delete_from_favourites = [x]
+videos.video_details_label_description = Descripción
+videos.video_details_label_duration = Duración
+videos.video_details_label_views = Vistas
+videos.video_details_label_added_date = Agregado
+videos.video_details_label_categories = Categorías
+videos.video_details_label_tags = Tags
+videos.video_details_label_download = Descargar
+videos.video_details_label_screenshots = Capturas de pantalla
+
+videos.related_videos_title_default = Videos similares
+
+# ======================================================================================================================
+# Albums
+# ======================================================================================================================
+
+albums.list_title_by_sorting = Albúmenes - %1%
+albums.list_title_by_tag = %1% - Albúmenes - %2%
+albums.list_title_by_category = %1% - Albúmenes - %2%
+albums.list_title_by_model = %1% - Albúmenes - %2%
+albums.list_title_by_search = %1% - Albúmenes - %2%
+
+albums.list_sorting.post_date = Nuevos
+albums.list_sorting.rating = Top
+albums.list_sorting.rating_today = Top hoy
+albums.list_sorting.rating_week = Top por semana
+albums.list_sorting.rating_month = Top por mes
+albums.list_sorting.album_viewed = Populares
+albums.list_sorting.album_viewed_today = Popular hoy
+albums.list_sorting.album_viewed_week = Populares por semana
+albums.list_sorting.album_viewed_month = Populares por mes
+albums.list_sorting.most_commented = Comentados
+albums.list_sorting.most_favourited = Favoritos
+albums.list_sorting.relevance = Relevantes
+
+albums.list_sorting_period.rating = Por todo tiempo
+albums.list_sorting_period.rating_month = Por mes
+albums.list_sorting_period.rating_week = Por semana
+albums.list_sorting_period.rating_today = Hoy
+albums.list_sorting_period.album_viewed = Por todo tiempo
+albums.list_sorting_period.album_viewed_month = Por mes
+albums.list_sorting_period.album_viewed_week = Por semana
+albums.list_sorting_period.album_viewed_today = Hoy
+
+albums.list_label_photos = %1%
+albums.list_label_views = %1% vistas
+
+albums.list_action_select_all = Seleccionar todo
+albums.list_action_delete_selected = Eliminar seleccionados
+albums.list_action_delete_selected_confirm_favourites = Por favor, confirme la eliminación de [count]%1% albúmenes || 1: 1 álbum[/count] de sus favoritos.
+
+albums.list_switch_favourites.0 = Favoritos
+albums.list_switch_favourites.1 = Ver más tarde
+
+albums.album_details_rate_like = Me gusta
+albums.album_details_rate_dislike = No me gusta
+albums.album_details_rate_not_allowed = No puede votar por este álbum
+albums.album_details_rating_votes = ([count]%1% votos || 1: 1 voto[/count])
+albums.album_details_rating_message_success = ¡Gracias!
+albums.album_details_rating_message_error = IP ha votado ya
+albums.album_details_action_add_to_favourites.0 = Agregar a favoritos
+albums.album_details_action_add_to_favourites.1 = Ver más tarde
+albums.album_details_action_delete_from_favourites = [x]
+albums.album_details_label_description = Descripción
+albums.album_details_label_images = Fotos
+albums.album_details_label_views = Vistas
+albums.album_details_label_added_date = Agregado
+albums.album_details_label_categories = Categorías
+albums.album_details_label_tags = Tags
+albums.album_details_label_models = Modelos
+albums.album_details_label_download = Descargar
+
+albums.related_albums_title_default = Albúmenes similares
+
+# ======================================================================================================================
+# Categories
+# ======================================================================================================================
+
+categories.list_title_by_sorting = Categorías - %1%
+
+categories.list_sorting.title = Por alfabeto
+categories.list_sorting.avg_videos_popularity = Populares
+categories.list_sorting.avg_videos_rating = Top
+
+categories.list_label_no_image = no hay imagen
+categories.list_label_views = %1% vistas
+
+# ======================================================================================================================
+# Models
+# ======================================================================================================================
+
+models.list_title_by_sorting = Modelos - %1%
+models.list_title_by_section_sorting = Modelos - %2% - %1%
+models.list_title_by_search = %1% - Modelos - %2%
+
+models.list_sorting.title = Por alfabeto
+models.list_sorting.model_viewed = Populares
+models.list_sorting.rating = Top
+models.list_sorting.comments_count = Comentados
+models.list_sorting.subscribers_count = Favoritos
+
+models.list_label_no_image = no hay imagen
+models.list_label_views = %1% vistas
+
+models.list_action_select_all = Seleccionar todo
+models.list_action_delete_selected = Eliminar seleccionados
+models.list_action_delete_selected_confirm_subscriptions = Por favor, confirme la renuncia de suscripción de [count]%1% modelos || 1: 1 modelo[/count].
+
+models.alphabet_title = Modelos A-Z
+models.alphabet_all = Todos
+models.alphabet_letters = array(A,B,C,D,E,F,G,H,I,J,K,L,M,N,Ñ,O,P,Q,R,S,T,U,V,W,X,Y,Z)
+
+models.info_title = %1%
+models.info_birthday = Fecha de nacimiento
+models.info_birthday_age = %1% años
+models.info_age = Edad
+models.info_country = País
+models.info_city = Localidad
+models.info_profession = Profesión
+models.info_ethnicity = Etnicidad
+models.info_hair = Pelo
+models.info_hair_values.1 = Negro
+models.info_hair_values.2 = Oscuro
+models.info_hair_values.3 = Rojo
+models.info_hair_values.4 = Marrón
+models.info_hair_values.5 = Rubio
+models.info_hair_values.6 = Gris
+models.info_hair_values.7 = Calvo
+models.info_hair_values.8 = Peluca
+models.info_eyes = Ojos
+models.info_eyes_values.1 = Azul
+models.info_eyes_values.2 = Gris
+models.info_eyes_values.3 = Verde
+models.info_eyes_values.4 = Ámbar
+models.info_eyes_values.5 = Marrón
+models.info_eyes_values.6 = Avellana
+models.info_eyes_values.7 = Negro
+models.info_height = Estatura
+models.info_weight = Peso
+models.info_measurements = Cuerpo
+models.info_categories = Categorías
+models.info_tags = Tags
+models.info_description = Descripción
+models.info_no_description = No hay descripción
+models.info_no_image = no hay imagen
+models.info_na = no hay datos
+models.info_albums = Albúmenes
+models.info_videos = Videos
+models.info_action_subscribe = Suscribirse
+models.info_action_unsubscribe = Darse de baja
+models.info_action_rate_like = Me gusta
+models.info_action_rate_dislike = No me gusta
+models.info_rating_message_success = ¡Gracias!
+models.info_rating_message_error = IP ha votado ya
+
+models.btn_profile = Perfil
+
+# ======================================================================================================================
+# Comments
+# ======================================================================================================================
+
+comments.label_anonymous_user = Anónimo
+comments.label_comment_deleted = Este comentario ha sido eliminado.
+
+comments.btn_add_comment = Agregar comentario
+comments.btn_send = Enviar
+comments.field_anonymous_name = Su nombre
+comments.field_comment = Comentario
+comments.field_comments = Comentarios
+comments.field_comments_empty = Agregar comentario
+comments.success_message = ¡Gracias! Su comentario ha sido enviado a la verificación.
+
+# ======================================================================================================================
+# Playlists
+# ======================================================================================================================
+
+playlists.list_label_no_videos = No hay videos
+playlists.list_label_views = %1% vistas
+
+playlists.list_action_select_all = Seleccionar todos
+playlists.list_action_delete_selected = Eliminar seleccionados
+playlists.list_action_delete_selected_confirm = Por favor, confirme la eliminación de [count]%1% listas de reproducción || 1: 1 lista de reproducción[/count] de sus favoritos.
+playlists.list_action_create_playlist = Nueva lista de reproducción...
+
+# ======================================================================================================================
+# Memberzone
+# ======================================================================================================================
+
+memberzone.profile_my_fav_videos.0 = Mis videos favoritos
+memberzone.profile_my_fav_videos.1 = Mis videos para futura vista
+memberzone.profile_my_fav_videos_playlists = Listas de reproducción
+memberzone.profile_my_fav_videos_playlists_create = Nueva lista de reproducción...
+memberzone.profile_my_playlist_videos = Mi lista de reproducción: %1%
+memberzone.profile_my_fav_albums.0 = Mis albúmenes favoritos
+memberzone.profile_my_fav_albums.1 = Mis albúmenes para futura vista
+memberzone.profile_my_fav_models = Mis modelos favoritos
+memberzone.profile_my_playlists = Mis listas de reproducción
+
+# ======================================================================================================================
+# Forms
+# ======================================================================================================================
+
+signup.title = Registrarse
+signup.field_username = Nombre de usuario
+signup.field_username_hint = su login, puede usar su email aquí
+signup.field_password = Contraseña
+signup.field_password_hint = no menos de 5 caracteres
+signup.field_password2 = Confirmación de contraseña
+signup.field_password2_hint = introduzca de nuevo la contraseña
+signup.field_email = Email
+signup.field_email_hint = se utilizará para recuperar el acceso
+signup.btn_continue = Continuar
+signup.success_message_active_member = ¡Gracias! Es el usuario activo de nuestro sitio.
+signup.success_message_premium_member = ¡Gracias! Es el usuario premium de nuestro sitio.
+signup.success_message_not_confirmed_member = ¡Gracias! Está sólo a un paso de ser usuario activo de nuestro sitio. Las instrucciones de activación de su perfil han sido enviadas a su email. Por favor, siga las instrucciones que encontrará en la carta. Si la carta no llegó por algunas causas contacte con nosotros.
+
+login.title = Entrar
+login.field_username = Nombre de usuario
+login.field_password = Contraseña
+login.field_remember_me = recordarme
+login.btn_log_in = Entrar
+login.link_reset_password = ¿Ha olvidado la contraseña?
+login.link_help = Soporte
+login.not_member = ¿No tiene perfil?
+login.error_message_only_for_members = Esta posibilidad está disponible sólo para los usuarios registrados de nuestros sitios.
+
+reset_password.title = Restablecer contraseña
+reset_password.field_email = Email
+reset_password.field_email_hint = indique email que ha indicado al registrarse
+reset_password.btn_reset_password = Restablecer
+reset_password.success_message = ¡Gracias! Nueva contraseña ha sido enviada a su email. Por favor, siga las instrucciones que encontrará en la carta. Si la carta no ha llegado por algunas causas contacte con nosotros.
+
+upgrade.title = Paquete premium de acceso
+upgrade.success_message_active_member = ¡Gracias! Su transacción ha sido procesada con éxito.
+upgrade.success_message_premium_member = ¡Gracias! Su transacción ha sido procesada con éxito. El usuario premium de nuestro sitio.
+upgrade.btn_continue = Continuar
+
+feedback.title = Feedback
+feedback.field_message = Su mensaje
+feedback.field_message_hint = puede expresar sus impresiones sobre nuestro sitio así como comunicar errores
+feedback.field_email = Email
+feedback.field_email_hint_optional = indique su email si está esperando nuestra respuesta
+feedback.field_email_hint_required = indique su email
+feedback.field_custom1 = Campo adicional 1
+feedback.field_custom1_hint = sugerencia
+feedback.field_custom2 = Campo adicional 2
+feedback.field_custom2_hint = sugerencia
+feedback.field_custom3 = Campo adicional 3
+feedback.field_custom3_hint = sugerencia
+feedback.field_custom4 = Campo adicional 4
+feedback.field_custom4_hint = sugerencia
+feedback.field_custom5 = Campo adicional 5
+feedback.field_custom5_hint = sugerencia
+feedback.btn_send = Enviar
+feedback.success_message = ¡Gracias! Estimamos su opinión y contestaremos en breve.
+
+edit_playlist.title_create_playlist = Nueva lista de reproducción
+edit_playlist.title_edit_playlist = Editar lista de reproducción
+edit_playlist.field_title = Nombre
+edit_playlist.btn_create_playlist = Crear
+edit_playlist.btn_edit_playlist = Guardar
+edit_playlist.success_message = Los datos de lista de reproducción "%1%" han sido cambiados.
+edit_playlist.success_message_create = Lista de reproducción "%1%" creada.
+
+select_playlist.title = Seleccionar lista de reproducción
+select_playlist.label_videos = [count]%1% videos || 1: 1 video[/count]
+select_playlist.btn_select = Seleccionar
+select_playlist.btn_new = Nueva...
+
+edit_profile.title = Mi perfil
+edit_profile.title_edit_profile = Editar perfil
+edit_profile.title_edit_password = Cambiar contraseña
+edit_profile.title_edit_email = Cambiar email
+edit_profile.field_old_password = Contraseña corriente
+edit_profile.field_old_email = Email corriente
+edit_profile.field_email = Nuevo email
+edit_profile.field_password = Nueva contraseña
+edit_profile.field_password_hint = no menos de 5 caracteres
+edit_profile.field_password2 = Confirmar nueva contraseña
+edit_profile.field_password2_hint = introduzca de nuevo la contraseña
+edit_profile.field_display_name = Nick
+edit_profile.field_display_name_hint = como otros usuarios le verán
+edit_profile.field_avatar = Foto
+edit_profile.field_avatar_hint = tamaño mínimo: %1%
+edit_profile.btn_change = Editar
+edit_profile.success_message_changed_profile = Los datos de su perfil han sido cambiados.
+edit_profile.success_message_changed_password = Su contraseña ha sido cambiada.
+edit_profile.success_message_changed_email = Su email ha sido cambiado.
+edit_profile.success_message_changed_email_confirm = Las instrucciones de activación de cambios de email han sido enviadas a su nuevo email. Por favor, siga las instrucciones que encontrará en la carta. Si la carta no llegó por algunas causas contacte con nosotros.
+
+email_links.title_confirm_signup = Activar perfil
+email_links.title_confirm_reset_password = Cambiar contraseña
+email_links.title_confirm_unblock = Desbloquear perfil
+email_links.title_confirm_change_email = Cambiar email
+email_links.message_confirm_signup_successful = ¡Gracias! Su perfil ha sido activado. Ahora es el usuario activo de nuestro sitio.
+email_links.message_confirm_reset_password_successful = ¡Gracias! Su contraseña ha sido cambiada. Ahora puede utilizar nueva contraseña.
+email_links.message_confirm_unblock_successful = ¡Gracias! Su perfil ha sido desbloqueado.
+email_links.message_confirm_email_change_successful = ¡Gracias! Su email ha sido cambiado.
+email_links.message_confirm_error = Utiliza el enlace incorrecto de confirmación. ¿Es posible que intente utilizarlo de nuevo? Por favor, contacte con nosotros.
+
+billing_links.title_payment_successful = Pago exitoso
+billing_links.title_payment_failed = Pago denegado
+billing_links.message_payment_successful = ¡Gracias! Su pago ha sido procesado.
+billing_links.message_payment_failed = Lamentablemente nuestro procesador de pago no pudo procesar su transacción. Por favor, contacte con nosotros.
+
+# ======================================================================================================================
+# Error messages
+# ======================================================================================================================
+
+validation.common.not_logged_in = Esta posibilidad está disponible sólo para usuarios registrados de nuestro sitio.
+validation.common.invalid_params = Se ha ocurrido un error imprevisto. Por favor, contacte con nosotros.
+validation.common.unknown_error = Se ha ocurrido un error imprevisto (%1%). Por favor, contacte con nosotros.
+validation.common.required = Campo obligatorio a rellenar
+validation.common.email_invalid = Email indicado no es correcto
+validation.common.code_invalid = El código indicado no es correcto, intente de nuevo
+validation.common.comment_minimum = El comentario debe contener lo mínimo %1% caracteres
+validation.common.playlist_locked = La administración ha bloqueado editar esta lista de reproducción.
+validation.common.video_locked = La administración ha bloqueado editar este video.
+validation.common.video_screenshots_locked = La administración ha bloqueado editar capturas de pantalla de este video.
+validation.common.album_locked = La administración ha bloqueado editar este álbum.
+validation.common.album_images_locked = La administración ha bloqueado editar fotos de este álbum.
+validation.common.title_minimum = El nombre debe contener no menos de %1% caracteres
+validation.common.category_ids_maximum = Puede seleccionar no más de %1% categorías
+validation.common.tokens_required_integer = Debe introducir el número entero
+validation.common.flagging_not_enough_tokens = Tiene tokens insuficientes para votar por esta bandera.
+validation.common.message_not_enough_tokens = Tiene tokens insuficientes para enviar mensajes a otros usuarios.
+
+validation.signup.username_minimum = El nombre de usuario debe contener no menos de %1% caracteres
+validation.signup.username_characters = Puede utilizar sólo carácteres latines: 0-9, A-Z, a-z, '_', '-', '@' y '.'
+validation.signup.username_exists = Este nombre de usuario está utilizado ya
+validation.signup.pass_minimum = La contraseña debe contener no menos de %1% caracteres
+validation.signup.pass2_invalid = Las contraseñas no coinciden
+validation.signup.email_exists = Este email está utilizado ya
+validation.signup.email_blocked = Disculpe, este email está bloqueado
+validation.signup.email_doesnt_exist = No existe perfil con tal email, verifique la corrección de escritura
+validation.signup.email_already_confirmed = Este perfil está activado ya
+validation.signup.display_name_minimum = Nick debe contener no menos de %1% caracteres
+validation.signup.display_name_exists = Este nick está utilizado ya
+validation.signup.birth_date_invalid = Debe seleccionar valores en todos los campos
+validation.signup.avatar_invalid_format = Se mantienen sólo archivos de imágenes
+validation.signup.avatar_invalid_size = El tamaño de foto debe ser más de %1%
+validation.signup.cover_invalid_format = Se mantienen sólo archivos de imágenes
+validation.signup.cover_invalid_size = El tamaño de foto debe ser más de %1%
+validation.signup.payment_option_required = Debe seleccionar el tipo de acceso
+validation.signup.sms_passcode_invalid = El código indicado no es correcto, intente de nuevo
+validation.signup.ip_blocked = Disculpe, su IP está bloqueado
+
+validation.logon.please_wait = Funcionó la protección. Por favor, espere unos minutos antes del siguiente intento.
+validation.logon.not_confirmed = Su perfil no está activado todavía. Ha sido enviado a email el mensaje con información sobre la activación de perfil que indicó al registrarse. Por favor, siga las instrucciones que encontrará en la carta. Si la carta no llegó por algunas causas contacte con nosotros.
+validation.logon.invalid_login = Nombre de usuario o contraseña incorrectos. El registro de letras (mayúsculas / minúsculas) tiene importancia.
+validation.logon.disabled_login = Su perfil ha sido excluido por la administración del sitio. Por favor, contacte con nosotros para desbloquearlo.
+validation.logon.tempbanned_login = Su perfil ha sido bloqueado ya que tenemos sospechas de que se utiliza por varias personas. Las instrucciones de desbloqueo han sido enviadas a su email. Por favor, siga las instrucciones que encontrará en la carta. Si la carta no llegó por algunas causas, contacte con nosotros.
+validation.logon.banned_login = Su perfil ha sido bloqueado ya que tenemos sospechas de que se utiliza por varias personas. Por favor, contacte con nosotros para desbloquearlo.
+
+validation.video_view.ip_already_voted = Ha votado ya por este video.
+validation.video_view.not_enough_tokens = Tiene tokens insuficientes para comprar acceso a este video.
+validation.album_view.ip_already_voted = Ha votado ya por este álbum.
+validation.album_view.not_enough_tokens = Tiene tokens insuficientes para comprar acceso a este álbum.
+
+validation.member_profile_edit.old_pass_invalid = Contraseña incorrecta
+validation.member_profile_edit.pass_minimum = La contraseña debe contener no menos de %1% caracteres
+validation.member_profile_edit.pass_blocked = Esta contraseña ha sido bloqueado, elija otra contraseña
+validation.member_profile_edit.pass2_invalid = Las contraseñas no coinciden
+validation.member_profile_edit.email_exists = Este email se utiliza ya
+validation.member_profile_edit.email_not_changed = No puede cambiar email a este mismo
+validation.member_profile_edit.display_name_minimum = Nick debe contener no menos de %1% caracteres
+validation.member_profile_edit.display_name_exists = Este nick se utiliza ya
+validation.member_profile_edit.birth_date_invalid = Debe seleccionar valores en todos los campos
+validation.member_profile_edit.avatar_invalid_format = Se mantienen sólo archivos de imágenes
+validation.member_profile_edit.avatar_invalid_size = El tamaño de foto debe ser más de %1%
+validation.member_profile_edit.cover_invalid_format = Se mantienen sólo archivos de imágenes
+validation.member_profile_edit.cover_invalid_size = El tamaño de foto debe ser más de %1%
+
+validation.playlist_edit.title_exists = Ya tiene la lista de reproducción con el mismo nombre
+
+# ======================================================================================================================
+# Custom texts added by user
+# ======================================================================================================================

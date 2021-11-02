@@ -1,0 +1,73 @@
+{{*
+	Developed by Kernel Team
+	http://kernel-team.com
+	Version: 1.0
+*}}
+
+{{if is_array($list_messages)}}
+	<div class="message">
+	{{foreach item=item from=$list_messages|smarty:nodefaults}}
+		<p>{{$item}}</p>
+	{{/foreach}}
+	</div>
+{{/if}}
+
+<form action="{{$page_name}}" method="post">
+	<div class="err_list {{if !is_array($smarty.post.errors)}}hidden{{/if}}">
+		<div class="err_header">{{if is_array($smarty.post.errors)}}{{$lang.validation.common_header}}{{/if}}</div>
+		<div class="err_content">
+			{{if is_array($smarty.post.errors)}}
+				<ul>
+				{{foreach name=data_err item=item_err from=$smarty.post.errors|smarty:nodefaults}}
+					<li>{{$item_err}}</li>
+				{{/foreach}}
+				</ul>
+			{{/if}}
+		</div>
+	</div>
+	<div>
+		<input type="hidden" name="action" value="save"/>
+		<input type="hidden" name="plugin_id" value="{{$smarty.request.plugin_id}}"/>
+	</div>
+	<table class="de">
+		<colgroup>
+			<col width="5%"/>
+			<col width="95%"/>
+		</colgroup>
+		<tr>
+			<td class="de_header" colspan="2"><div><a href="{{$page_name}}">{{$lang.plugins.submenu_plugins_home}}</a> / {{$lang.plugins.models_autogeneration.title}} &nbsp;[<a id="doc_expander" class="de_expand" href="javascript:stub()">{{$lang.plugins.plugin_divider_description}}</a>]</div></td>
+		</tr>
+		<tr class="doc_expander hidden">
+			<td class="de_control" colspan="2">
+				{{$lang.plugins.models_autogeneration.long_desc}}
+			</td>
+		</tr>
+		<tr>
+			<td class="de_label">{{$lang.plugins.models_autogeneration.field_enable_for_videos}}:</td>
+			<td class="de_control">
+				<select name="enable_for_videos">
+					<option value="0" {{if $smarty.post.enable_for_videos==0}}selected="selected"{{/if}}>{{$lang.plugins.models_autogeneration.field_enable_for_videos_disabled}}</option>
+					<option value="1" {{if $smarty.post.enable_for_videos==1}}selected="selected"{{/if}}>{{$lang.plugins.models_autogeneration.field_enable_for_videos_always}}</option>
+					<option value="2" {{if $smarty.post.enable_for_videos==2}}selected="selected"{{/if}}>{{$lang.plugins.models_autogeneration.field_enable_for_videos_empty}}</option>
+				</select>
+			</td>
+		</tr>
+		{{if $config.installation_type==4}}
+			<tr>
+				<td class="de_label">{{$lang.plugins.models_autogeneration.field_enable_for_albums}}:</td>
+				<td class="de_control">
+					<select name="enable_for_albums">
+						<option value="0" {{if $smarty.post.enable_for_albums==0}}selected="selected"{{/if}}>{{$lang.plugins.models_autogeneration.field_enable_for_albums_disabled}}</option>
+						<option value="1" {{if $smarty.post.enable_for_albums==1}}selected="selected"{{/if}}>{{$lang.plugins.models_autogeneration.field_enable_for_albums_always}}</option>
+						<option value="2" {{if $smarty.post.enable_for_albums==2}}selected="selected"{{/if}}>{{$lang.plugins.models_autogeneration.field_enable_for_albums_empty}}</option>
+					</select>
+				</td>
+			</tr>
+		{{/if}}
+		<tr>
+			<td class="de_action_group" colspan="2">
+				<input type="submit" name="save_default" value="{{$lang.plugins.models_autogeneration.btn_save}}"/>
+			</td>
+		</tr>
+	</table>
+</form>

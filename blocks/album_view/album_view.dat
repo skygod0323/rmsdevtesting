@@ -1,0 +1,8 @@
+<block>
+	<block_name>Album View Information</block_name>
+	<author>Kernel Team</author>
+	<version>5.2.0</version>
+	<package>ultimate</package>
+	<types>context</types>
+	<functionalities>albums</functionalities>
+</block>

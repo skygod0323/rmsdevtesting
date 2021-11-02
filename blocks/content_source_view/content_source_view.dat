@@ -1,0 +1,7 @@
+<block>
+	<block_name>Content Source View Information</block_name>
+	<author>Kernel Team</author>
+	<version>5.0.0</version>
+	<types>context</types>
+	<functionalities>categorization</functionalities>
+</block>

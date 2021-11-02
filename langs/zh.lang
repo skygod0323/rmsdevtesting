@@ -1,0 +1,724 @@
+# syntax rules:
+# #comment
+# key = value
+# key = array(value1, value2, ..., valueN)
+
+# ======================================================================================================================
+# common & global
+# ======================================================================================================================
+
+php.default_lang = zh_CN.UTF8
+header.default_lang = zh
+
+header.primary_menu_updates = 首页
+header.primary_menu_videos = 视频
+header.primary_menu_albums = 相册
+header.primary_menu_models = 模型
+header.primary_menu_categories = 类别
+header.primary_menu_playlists = 播放列表
+header.primary_menu_network = 网站
+header.primary_menu_get_premium = Premium
+header.primary_menu_login = 登录
+header.primary_menu_logout = 退出
+
+header.member_menu_profile = 个人中心
+header.member_menu_playlists = 播放列表
+header.member_menu_fav_videos = 视频标签
+header.member_menu_fav_albums = 相册标签
+header.member_menu_fav_models = 模型标签
+
+search_box.search_hint = 查看
+search_box.search_action = 搜索
+
+footer.primary_menu_updates = 首页
+footer.primary_menu_videos = 视频
+footer.primary_menu_albums = 相册
+footer.primary_menu_models = 模型
+footer.primary_menu_categories = 类别
+footer.primary_menu_get_premium = Premium
+footer.primary_menu_logout = 退出
+footer.primary_menu_login = 登录
+footer.primary_menu_terms = 规则
+footer.primary_menu_dmca = DMCA
+footer.primary_menu_2257 = 18 U.S.C. 2257
+footer.primary_menu_privacy = 隐私政策
+
+footer.copyright_year = 2017
+footer.copyright_text = All rights reserved.
+footer.site_text = All models were at least 18 years of age when photographed.
+
+common_list.link_more_items = 更多 (%1%)
+common_list.no_data = 该列表是空的。
+common_list.paginated_postfix = ，第%1%页
+common_list.load_more = ...
+
+common_list.get_access = Premium
+
+common_forms.file_upload_btn_browse = 浏览...
+common_forms.file_upload_btn_change = 改变...
+common_forms.field_select_day = 天...
+common_forms.field_select_month = 月...
+common_forms.field_select_month_values.1 = 一月
+common_forms.field_select_month_values.2 = 二月
+common_forms.field_select_month_values.3 = 三月
+common_forms.field_select_month_values.4 = 四月
+common_forms.field_select_month_values.5 = 五月
+common_forms.field_select_month_values.6 = 六月
+common_forms.field_select_month_values.7 = 七月
+common_forms.field_select_month_values.8 = 八月
+common_forms.field_select_month_values.9 = 九月
+common_forms.field_select_month_values.10 = 十月
+common_forms.field_select_month_values.11 = 十一月
+common_forms.field_select_month_values.12 = 十二月
+common_forms.field_select_year = 年...
+common_forms.field_select_default = 选择...
+common_forms.field_captcha = 验证码
+common_forms.field_captcha_image = 验证码
+common_forms.field_captcha_hint = 请确认您不是一个自动程序。
+common_forms.field_filter_hint = 请您写下名称以便缩短名单
+
+date_format.right_now = 正在
+date_format.unknown = 不知
+
+date_format.long.seconds = %1%秒钟前
+date_format.long.minutes = %1%分钟前
+date_format.long.hours = %1%小时前
+date_format.long.days = %1%天前
+date_format.long.weeks = %1%周前
+date_format.long.months = %1%月前
+date_format.long.years = %1%年前
+
+date_format.short.seconds = %1%秒
+date_format.short.minutes = %1%分
+date_format.short.hours = %1%小时
+date_format.short.days = %1%天
+date_format.short.weeks = %1%周
+date_format.short.months = %1%月
+date_format.short.years = %1%年
+
+error_404.title = 404/找不到网页
+
+# ======================================================================================================================
+# HTML page titles, descs and keywords, SE optimization
+# ======================================================================================================================
+
+html.default_title = 默认网站名称
+html.default_description = 默认网站描述。
+html.default_keywords = 默认关键词
+
+# %1% - original page title, %2% - page number
+html.default_paginated_title = %1%，页%2%
+html.default_paginated_description = %1%，页%2%。
+
+html.index_title = 首页
+html.index_description =
+html.index_keywords =
+
+html.error_404_title = 找不到网页
+html.error_404_description =
+html.error_404_keywords =
+
+html.email_links_title = 通过电子邮件确认
+html.email_links_description =
+html.email_links_keywords =
+
+html.payment_links_title = 付款处理
+html.payment_links_description =
+html.payment_links_keywords =
+
+# %search_keyword%
+html.search_videos_title = %search_keyword% - 视频 - %sort_by%
+html.search_videos_description =
+html.search_videos_keywords =
+
+# %search_keyword%
+html.search_albums_title = %search_keyword% - 相册 - %sort_by%
+html.search_albums_description =
+html.search_albums_keywords =
+
+# %search_keyword%
+html.search_models_title = %search_keyword% - 模型 - %sort_by%
+html.search_models_description =
+html.search_models_keywords =
+
+html.content_title = 视频 & 相册
+html.content_description =
+html.content_keywords =
+
+# %tag%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%
+# %first_object_title%, %first_object_description%
+html.content_by_tag_title = %tag% - 视频 & 相册
+html.content_by_tag_description =
+html.content_by_tag_keywords =
+
+# %title%, %description%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.content_by_category_title = %title% - 视频 & 相册
+html.content_by_category_description = %description%
+html.content_by_category_keywords =
+
+# %title%, %description%, %alias%, %country%, %city%, %height%, %weight%, %birth_date%, %age%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.content_by_model_title = %title% - 视频 & 相册
+html.content_by_model_description = %description%
+html.content_by_model_keywords = %categories_as_string%, %tags_as_string%
+
+html.videos_title = 视频 - %sort_by%
+html.videos_description =
+html.videos_keywords =
+
+# %tag%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%
+# %first_object_title%, %first_object_description%
+html.videos_by_tag_title = %tag% - 视频 - %sort_by%
+html.videos_by_tag_description =
+html.videos_by_tag_keywords =
+
+# %title%, %description%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.videos_by_category_title = %title% - 视频 - %sort_by%
+html.videos_by_category_description = %description%
+html.videos_by_category_keywords =
+
+# %title%, %description%, %alias%, %country%, %city%, %height%, %weight%, %birth_date%, %age%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.videos_by_model_title = %title% - 视频 - %sort_by%
+html.videos_by_model_description = %description%
+html.videos_by_model_keywords = %categories_as_string%, %tags_as_string%
+
+# %title%, %description%, %duration%, %rating%, %rating_amount%, %video_viewed%, %post_date%, %username%, %release_year%, %custom1% - %custom3%
+# %tags_as_string%, %categories_as_string%, %models_as_string%, %content_source_as_string%, %dvd_as_string%
+html.video_details_title = %title%
+html.video_details_description = %description%
+html.video_details_keywords = %categories_as_string%, %tags_as_string%, %models_as_string%
+
+html.albums_title = 相册 - %sort_by%
+html.albums_description =
+html.albums_keywords =
+
+# %tag%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%
+# %first_object_title%, %first_object_description%
+html.albums_by_tag_title = %tag% - 相册 - %sort_by%
+html.albums_by_tag_description =
+html.albums_by_tag_keywords =
+
+# %title%, %description%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.albums_by_category_title = %title% - 相册 - %sort_by%
+html.albums_by_category_description = %description%
+html.albums_by_category_keywords =
+
+# %title%, %description%, %alias%, %country%, %city%, %height%, %weight%, %birth_date%, %age%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.albums_by_model_title = %title% - 相册 - %sort_by%
+html.albums_by_model_description = %description%
+html.albums_by_model_keywords = %categories_as_string%, %tags_as_string%
+
+# %title%, %description%, %photos_amount%, %rating%, %rating_amount%, %album_viewed%, %post_date%, %username%, %custom1% - %custom3%
+# %tags_as_string%, %categories_as_string%, %models_as_string%, %content_source_as_string%
+html.album_details_title = %title%
+html.album_details_description = %description%
+html.album_details_keywords = %categories_as_string%, %tags_as_string%, %models_as_string%
+
+html.categories_title = 类别 - %sort_by%
+html.categories_description =
+html.categories_keywords =
+
+html.models_title = 模型 - %sort_by%
+html.models_description =
+html.models_keywords =
+
+# %title%, %description%, %total_videos%, %rating%, %rating_amount%, %playlist_viewed%, %added_date%, %username%
+# %tags_as_string%, %categories_as_string%
+html.playlist_details_title = %title%
+html.playlist_details_description = %description%
+html.playlist_details_keywords = %categories_as_string%, %tags_as_string%
+
+html.memberzone_my_profile_title = 我的主页
+html.memberzone_my_profile_description =
+html.memberzone_my_profile_keywords =
+
+html.memberzone_my_fav_videos_title = 我的视频标签
+html.memberzone_my_fav_videos_description =
+html.memberzone_my_fav_videos_keywords =
+
+# %title%, %description%, %total_videos%, %categories_as_string%
+html.memberzone_my_fav_videos_playlist_title = 我的播放列表：%title%
+html.memberzone_my_fav_videos_playlist_description =
+html.memberzone_my_fav_videos_playlist_keywords =
+
+html.memberzone_my_fav_albums_title = 我的相册标签
+html.memberzone_my_fav_albums_description =
+html.memberzone_my_fav_albums_keywords =
+
+html.memberzone_my_fav_models_title = 我的模型标签
+html.memberzone_my_fav_models_description =
+html.memberzone_my_fav_models_keywords =
+
+html.memberzone_my_playlists_title = 我的播放列表
+html.memberzone_my_playlists_description =
+html.memberzone_my_playlists_keywords =
+
+html.static_html_title.terms = 规则
+html.static_html_description.terms =
+html.static_html_keywords.terms =
+
+html.static_html_title.dmca = DMCA Notice of Copyright Infringement
+html.static_html_description.dmca =
+html.static_html_keywords.dmca =
+
+html.static_html_title.2257 = 18 USC 2257 Statement
+html.static_html_description.2257 =
+html.static_html_keywords.2257 =
+
+html.static_html_title.privacy = 隐私政策
+html.static_html_description.privacy =
+html.static_html_keywords.privacy =
+
+# ======================================================================================================================
+# Pagination
+# ======================================================================================================================
+
+pagination.first_page = 第一
+pagination.last_page = 最后
+pagination.prev_page = 往后
+pagination.next_page = 往前
+pagination.jump_left = ...
+pagination.jump_right = ...
+
+# ======================================================================================================================
+# Videos
+# ======================================================================================================================
+
+videos.list_title_by_sorting = 视频 - %1%
+videos.list_title_by_tag = %1% - 视频 - %2%
+videos.list_title_by_category = %1% - 视频 - %2%
+videos.list_title_by_model = %1% - 视频 - %2%
+videos.list_title_by_search = %1% - 视频 - %2%
+
+videos.list_sorting.post_date = 新的
+videos.list_sorting.rating = 最受欢迎的
+videos.list_sorting.rating_today = 今天最受欢迎的
+videos.list_sorting.rating_week = 一周最受欢迎的
+videos.list_sorting.rating_month = 一个月最受欢迎的
+videos.list_sorting.video_viewed = 热门的
+videos.list_sorting.video_viewed_today = 今天热门的
+videos.list_sorting.video_viewed_week = 一周热门的
+videos.list_sorting.video_viewed_month = 一个月热门的
+videos.list_sorting.duration = 长的
+videos.list_sorting.most_commented = 评论的
+videos.list_sorting.most_favourited = 在标签
+videos.list_sorting.relevance = 相关的
+
+videos.list_sorting_period.rating = 在所有的时间
+videos.list_sorting_period.rating_month = 在一个月
+videos.list_sorting_period.rating_week = 在一周
+videos.list_sorting_period.rating_today = 今天
+videos.list_sorting_period.video_viewed = 在所有的时间
+videos.list_sorting_period.video_viewed_month = 在一个月
+videos.list_sorting_period.video_viewed_week = 在一周
+videos.list_sorting_period.video_viewed_today = 今天
+
+videos.list_label_views = %1%浏览
+videos.list_label_playing = 视频正在播放
+
+videos.list_action_delete = 删除
+videos.list_action_delete_confirm_favourites = 请确认，您将从您的标签里删除"%1%"视频。
+videos.list_action_select_all = 选择所有的
+videos.list_action_delete_selected = 删除所有的
+videos.list_action_delete_selected_confirm_favourites = 请确认，您将从您的标签里删除%1%视频。
+videos.list_action_move_to_playlist = 转到...
+videos.list_action_edit_playlist = 改变播放列表...
+videos.list_action_delete_playlist = 删除播放列表
+videos.list_action_delete_playlist_confirm = 请确认删除播放列表"%1%"。
+
+videos.list_switch_favourites.0 = 标签
+videos.list_switch_favourites.1 = 稍后观看
+
+videos.video_details_rate_like = 我喜欢
+videos.video_details_rate_dislike = 我不喜欢
+videos.video_details_rate_not_allowed = 您不可以评论该视频
+videos.video_details_rating_votes = (%1%票)
+videos.video_details_rating_message_success = 谢谢！
+videos.video_details_rating_message_error = 此IP已经投票
+videos.video_details_action_add_to_favourites.0 = 加入标签
+videos.video_details_action_add_to_favourites.1 = 稍后观看
+videos.video_details_action_add_to_playlist = 加入<em class="mark-color">%1%</em>
+videos.video_details_action_add_to_new_playlist = 加入新的播放列表...
+videos.video_details_action_delete_from_favourites = [x]
+videos.video_details_label_description = 描述
+videos.video_details_label_duration = 时长
+videos.video_details_label_views = 浏览
+videos.video_details_label_added_date = 加入日期
+videos.video_details_label_categories = 类别
+videos.video_details_label_tags = 标签
+videos.video_details_label_download = 下载
+videos.video_details_label_screenshots = 截图
+
+videos.related_videos_title_default = 相关视频
+
+# ======================================================================================================================
+# Albums
+# ======================================================================================================================
+
+albums.list_title_by_sorting = 相册 - %1%
+albums.list_title_by_tag = %1% - 相册 - %2%
+albums.list_title_by_category = %1% - 相册 - %2%
+albums.list_title_by_model = %1% - 相册 - %2%
+albums.list_title_by_search = %1% - 相册 - %2%
+
+albums.list_sorting.post_date = 新的
+albums.list_sorting.rating = 最受欢迎的
+albums.list_sorting.rating_today = 今天最受欢迎的
+albums.list_sorting.rating_week = 一周最受欢迎的
+albums.list_sorting.rating_month = 一个月最受欢迎的
+albums.list_sorting.album_viewed = 热门的
+albums.list_sorting.album_viewed_today = 今天热门的
+albums.list_sorting.album_viewed_week = 一周热门的
+albums.list_sorting.album_viewed_month = 一个月热门的
+albums.list_sorting.most_commented = 评论的
+albums.list_sorting.most_favourited = 在标签
+albums.list_sorting.relevance = 相关的
+
+albums.list_sorting_period.rating = 在所有的时间
+albums.list_sorting_period.rating_month = 在一个月
+albums.list_sorting_period.rating_week = 在一周
+albums.list_sorting_period.rating_today = 今天
+albums.list_sorting_period.album_viewed = 在所有的时间
+albums.list_sorting_period.album_viewed_month = 在一个月
+albums.list_sorting_period.album_viewed_week = 在一周
+albums.list_sorting_period.album_viewed_today = 今天
+
+albums.list_label_photos = %1%
+albums.list_label_views = %1%浏览
+
+albums.list_action_select_all = 选择所有的
+albums.list_action_delete_selected = 删除选择的
+albums.list_action_delete_selected_confirm_favourites = 请确认，您将从您的标签里删除%1%相册。
+
+albums.list_switch_favourites.0 = 标签
+albums.list_switch_favourites.1 = 稍后观看
+
+albums.album_details_rate_like = 我喜欢
+albums.album_details_rate_dislike = 我不喜欢
+albums.album_details_rate_not_allowed = 您不可以评论该相册
+albums.album_details_rating_votes = (%1%票)
+albums.album_details_rating_message_success = 谢谢！
+albums.album_details_rating_message_error = 此IP已经投票
+albums.album_details_action_add_to_favourites.0 = 加入标签
+albums.album_details_action_add_to_favourites.1 = 稍后观看
+albums.album_details_action_delete_from_favourites = [x]
+albums.album_details_label_description = 描述
+albums.album_details_label_images = 照片
+albums.album_details_label_views = 浏览
+albums.album_details_label_added_date = 加入日期
+albums.album_details_label_categories = 类别
+albums.album_details_label_tags = 标签
+albums.album_details_label_models = 模型
+albums.album_details_label_download = 下载
+
+albums.related_albums_title_default = 相关的相册
+
+# ======================================================================================================================
+# Categories
+# ======================================================================================================================
+
+categories.list_title_by_sorting = 类别 - %1%
+
+categories.list_sorting.title = 按字母顺序
+categories.list_sorting.avg_videos_popularity = 热门的
+categories.list_sorting.avg_videos_rating = 最受欢迎的
+
+categories.list_label_no_image = 无头像
+categories.list_label_views = %1%浏览
+
+# ======================================================================================================================
+# Models
+# ======================================================================================================================
+
+models.list_title_by_sorting = 模型 - %1%
+models.list_title_by_section_sorting = 模型 - %2% - %1%
+models.list_title_by_search = %1% - 模型 - %2%
+
+models.list_sorting.title = 按字母顺序
+models.list_sorting.model_viewed = 热门的
+models.list_sorting.rating = 最受欢迎的
+models.list_sorting.comments_count = 评论的
+models.list_sorting.subscribers_count = 在标签
+
+models.list_label_no_image = 无头像
+models.list_label_views = %1%浏览
+
+models.list_action_select_all = 选择所有的
+models.list_action_delete_selected = 删除所有的
+models.list_action_delete_selected_confirm_subscriptions = 请确认取消%1%对象订阅。
+
+models.alphabet_title = A-Z的模型
+models.alphabet_all = 所有的
+models.alphabet_letters = array(A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z)
+
+models.info_title = %1%
+models.info_birthday = 生日日期
+models.info_birthday_age = %1%年
+models.info_age = 年龄
+models.info_country = 国家
+models.info_city = 城市
+models.info_profession = 职业
+models.info_ethnicity = 种族
+models.info_hair = 发
+models.info_hair_values.1 = 黑
+models.info_hair_values.2 = 黑暗
+models.info_hair_values.3 = 红
+models.info_hair_values.4 = 棕色
+models.info_hair_values.5 = 金发
+models.info_hair_values.6 = 灰色
+models.info_hair_values.7 = 秃
+models.info_hair_values.8 = 假发
+models.info_eyes = 眼睛
+models.info_eyes_values.1 = 蓝色
+models.info_eyes_values.2 = 灰色
+models.info_eyes_values.3 = 绿色
+models.info_eyes_values.4 = 琥珀色
+models.info_eyes_values.5 = 棕色
+models.info_eyes_values.6 = 榛
+models.info_eyes_values.7 = 黑
+models.info_height = 人類身高
+models.info_weight = 重量
+models.info_measurements = 人体
+models.info_categories = 类别
+models.info_tags = 标签
+models.info_description = 描述
+models.info_no_description = 没有描述
+models.info_no_image = 无头像
+models.info_na = 暂无相关信息
+models.info_albums = 相册
+models.info_videos = 视频
+models.info_action_subscribe = 订阅
+models.info_action_unsubscribe = 退订
+models.info_action_rate_like = 我喜欢
+models.info_action_rate_dislike = 我不喜欢
+models.info_rating_message_success = 谢谢！
+models.info_rating_message_error = 此IP已经投票
+
+models.btn_profile = 个人中心
+
+# ======================================================================================================================
+# Comments
+# ======================================================================================================================
+
+comments.label_anonymous_user = 匿名
+comments.label_comment_deleted = 该评论已被删除。
+
+comments.btn_add_comment = 加入评论
+comments.btn_send = 发送
+comments.field_anonymous_name = 您的名字
+comments.field_comment = 评论
+comments.field_comments = 评论
+comments.field_comments_empty = 加入评论
+comments.success_message = 谢谢！您的评论已送往审查。
+
+# ======================================================================================================================
+# Playlists
+# ======================================================================================================================
+
+playlists.list_label_no_videos = 没有视频
+playlists.list_label_views = %1%浏览
+
+playlists.list_action_select_all = 选择所有的
+playlists.list_action_delete_selected = 删除所选
+playlists.list_action_delete_selected_confirm = 请确认，您将从我们的网站删除%1%播放列表。
+playlists.list_action_create_playlist = 新的播放列表...
+
+# ======================================================================================================================
+# Memberzone
+# ======================================================================================================================
+
+memberzone.profile_my_fav_videos.0 = 我的视频标签
+memberzone.profile_my_fav_videos.1 = 我用于将来观看的视频
+memberzone.profile_my_fav_videos_playlists = 播放列表
+memberzone.profile_my_fav_videos_playlists_create = 新的播放列表...
+memberzone.profile_my_playlist_videos = 我的播放列表：%1%
+memberzone.profile_my_fav_albums.0 = 我的相册标签
+memberzone.profile_my_fav_albums.1 = 我用于将来观看的相册
+memberzone.profile_my_fav_models = 我的模型标签
+memberzone.profile_my_playlists = 我的播放列表
+
+# ======================================================================================================================
+# Forms
+# ======================================================================================================================
+
+signup.title = 注册
+signup.field_username = 用户名字
+signup.field_username_hint = 您的用户名，您可以在这里使用您的电子邮件地址
+signup.field_password = 密码
+signup.field_password_hint = 至少5个字符
+signup.field_password2 = 确认密码
+signup.field_password2_hint = 重复密码
+signup.field_email = 电子邮件
+signup.field_email_hint = 将用于恢复访问
+signup.btn_continue = 继续
+signup.success_message_active_member = 谢谢！您已经成为该网站的活跃用户。
+signup.success_message_premium_member = 谢谢！您已经成为我们网站的优质用户。
+signup.success_message_not_confirmed_member = 谢谢！您只差一个步骤就能够成为该网站的活跃用户。关于如何激活您私人资料的描述已发送到您的邮箱。请按照信中的指示操作。如果未能收到信件，请与我们联系。
+
+login.title = 输入
+login.field_username = 用户名字
+login.field_password = 密码
+login.field_remember_me = 记住我
+login.btn_log_in = 登入
+login.link_reset_password = 忘记密码？
+login.link_help = 反馈
+login.not_member = 没有私人主页吗？
+login.error_message_only_for_members = 此功能仅适用于我们网站的注册用户。
+
+reset_password.title = 密码重置
+reset_password.field_email = 电子邮件
+reset_password.field_email_hint = 输入电子邮件，您在注册时指定
+reset_password.btn_reset_password = 重置
+reset_password.success_message = 谢谢！请按照信中的指示操作。如果未能收到信件，请与我们联系。
+
+upgrade.title = 优质访问包
+upgrade.success_message_active_member = 谢谢！您的交易已成功处理。
+upgrade.success_message_premium_member = 谢谢！您的交易已成功处理。您成为该网站的优质用户。
+upgrade.btn_continue = 继续
+
+feedback.title = 反馈
+feedback.field_message = 您的消息
+feedback.field_message_hint = 您可以把我们网站留下印象，而且告诉我们关于错误
+feedback.field_email = 电子邮件
+feedback.field_email_hint_optional = 输入您的电子邮件，如果你期望我们的应答
+feedback.field_email_hint_required = 输入您的电子邮件
+feedback.field_custom1 = 附加字段1
+feedback.field_custom1_hint = 提示
+feedback.field_custom2 = 附加字段2
+feedback.field_custom2_hint = 提示
+feedback.field_custom3 = 附加字段3
+feedback.field_custom3_hint = 提示
+feedback.field_custom4 = 附加字段4
+feedback.field_custom4_hint = 提示
+feedback.field_custom5 = 附加字段5
+feedback.field_custom5_hint = 提示
+feedback.btn_send = 发送
+feedback.success_message = 谢谢！感谢您的反馈，并会尽快回复。
+
+edit_playlist.title_create_playlist = 新的播放列表
+edit_playlist.title_edit_playlist = 编辑播放列表
+edit_playlist.field_title = 名称
+edit_playlist.btn_create_playlist = 创造
+edit_playlist.btn_edit_playlist = 保存
+edit_playlist.success_message = 播放列表"%1%"的数据改变了。
+edit_playlist.success_message_create = 播放列表"%1%"创建了。
+
+select_playlist.title = 选择播放列表
+select_playlist.label_videos = %1%视频
+select_playlist.btn_select = 选择
+select_playlist.btn_new = 新的播放列表...
+
+edit_profile.title = 我的主页
+edit_profile.title_edit_profile = 私人主页编辑
+edit_profile.title_edit_password = 更改密码
+edit_profile.title_edit_email = 更改电子邮件
+edit_profile.field_old_password = 当前密码
+edit_profile.field_old_email = 当前电子邮件
+edit_profile.field_email = 新的电子邮件
+edit_profile.field_password = 新的密码
+edit_profile.field_password_hint = 至少5个字符
+edit_profile.field_password2 = 确认新密码
+edit_profile.field_password2_hint = 重复密码
+edit_profile.field_display_name = 网名
+edit_profile.field_display_name_hint = 其他用户将看到您
+edit_profile.field_avatar = 照片
+edit_profile.field_avatar_hint = 最小大小：%1%
+edit_profile.btn_change = 改变
+edit_profile.success_message_changed_profile = 您私人主页改变了。
+edit_profile.success_message_changed_password = 您的密码改变了。
+edit_profile.success_message_changed_email = 您的电子邮件改变。
+edit_profile.success_message_changed_email_confirm = 关于如何激活您个人资料的说明已发送到您的邮箱。请按照信中的指示操作。如果未能收到信件，请与我们联系。
+
+email_links.title_confirm_signup = 激活私人主页
+email_links.title_confirm_reset_password = 更改密码
+email_links.title_confirm_unblock = 解锁私人主页
+email_links.title_confirm_change_email = 改变电子邮件
+email_links.message_confirm_signup_successful = 谢谢！您的私人主页被激活！您已经成为我们网站的优质用户。
+email_links.message_confirm_reset_password_successful = 谢谢！您的密码改变了。现在您可以使用心得密码。
+email_links.message_confirm_unblock_successful = 谢谢！您的私人主页被解锁。
+email_links.message_confirm_email_change_successful = 谢谢！您电子邮件被改变了。
+email_links.message_confirm_error = 您正在使用一个不正确的确认链接。您可能试图再次使用它？请与我们联。
+
+billing_links.title_payment_successful = 成功付款
+billing_links.title_payment_failed = 付款遭拒
+billing_links.message_payment_successful = 谢谢！您的付款处理。
+billing_links.message_payment_failed = 不幸的是我们的支付处理器无法处理您的交易。请与我们联系。
+
+# ======================================================================================================================
+# Error messages
+# ======================================================================================================================
+
+validation.common.not_logged_in = 此功能仅适用于我们网站的注册用户。
+validation.common.invalid_params = 发生意外错误。请与我们联系。
+validation.common.unknown_error = 发生意外错误（%1%）请与我们联系。
+validation.common.required = 必填字段
+validation.common.email_invalid = 该电子邮件地址无效
+validation.common.code_invalid = 这个代码不正确，再试一次
+validation.common.comment_minimum = 评论必须至少包含%1%个字符
+validation.common.playlist_locked = 管理封锁编辑该播放列表。
+validation.common.video_locked = 管理封锁编辑该视频。
+validation.common.video_screenshots_locked = 管理封锁编辑该视频截图。
+validation.common.album_locked = 管理封锁编辑该相册。
+validation.common.album_images_locked = 管理封锁编辑该相册的照片。
+validation.common.title_minimum = 名称必须至少包含%1%个字符
+validation.common.category_ids_maximum = 您可以选择不过%1%的类别
+validation.common.tokens_required_integer = 您应该输入整数
+validation.common.flagging_not_enough_tokens = 您没有足够的代币投票这个旗子。
+validation.common.message_not_enough_tokens = 您没有足够的代币发送消息其他的用户。
+
+validation.signup.username_minimum = 用户名必须至少包含%1%个字符
+validation.signup.username_characters = 您只能使用拉丁字符：0-9，A-Z，a-z，_，-，@和.
+validation.signup.username_exists = 该用户名已被使用
+validation.signup.pass_minimum = 密码必须至少包含%1%个字符
+validation.signup.pass2_invalid = 密码不匹配
+validation.signup.email_exists = 该电子邮件已被使用
+validation.signup.email_blocked = 对不起，该 email（邮箱）被封锁了
+validation.signup.email_doesnt_exist = 与该电子邮件的私人主页不存在，请检查拼写
+validation.signup.email_already_confirmed = 该私人主页已经被激活
+validation.signup.display_name_minimum = 网名必须至少包含%1%个字符
+validation.signup.display_name_exists = 这个网名已在使用
+validation.signup.birth_date_invalid = 您必须选择在各个领域的价值
+validation.signup.avatar_invalid_format = 仅支持图片文件
+validation.signup.avatar_invalid_size = 照片尺寸应超过%1%
+validation.signup.cover_invalid_format = 仅支持图片文件
+validation.signup.cover_invalid_size = 照片尺寸应超过%1%
+validation.signup.payment_option_required = 您必须选择访问的类型
+validation.signup.sms_passcode_invalid = 这个代码不正确，再试一次
+validation.signup.ip_blocked = 对不起，您的 IP 被封锁了
+
+validation.logon.please_wait = 保护被激活。重试之前，请等待几分钟。
+validation.logon.not_confirmed = 您的私人主页尚未激活。关于如何激活您个人资料的说明已发送到您的邮箱。请按照信中的指示操作。如果未能收到信件，请与我们联系。
+validation.logon.invalid_login = 错误的用户名或密码。区分大小写（大/小）事做。
+validation.logon.disabled_login = 您的私人主页已被管理员封锁。请与我们联系解锁。
+validation.logon.tempbanned_login = 您的私人主页已被封锁，因为我们有一个怀疑它正在被使用由不同的人。请与我们联系解锁。关于如何解锁您个人资料的说明已发送到您的邮箱。请按照信中的指示操作。如果未能收到信件，请与我们联系。
+validation.logon.banned_login = 您的私人主页已被封锁，因为我们有一个怀疑它正在被使用由不同的人。请与我们联系解锁。
+
+validation.video_view.ip_already_voted = 您已经投给了该视频。
+validation.video_view.not_enough_tokens = 您没有足够的代币，购买上网该视频。
+validation.album_view.ip_already_voted = 您已经投给了该相册。
+validation.album_view.not_enough_tokens = 您没有足够的代币，购买上网该相册。
+
+validation.member_profile_edit.old_pass_invalid = 密码不正确的
+validation.member_profile_edit.pass_minimum = 密码必须至少包含%1%个字符
+validation.member_profile_edit.pass_blocked = 此密码被锁定，选择一个不同的密码
+validation.member_profile_edit.pass2_invalid = 密码不匹配
+validation.member_profile_edit.email_exists = 此电子邮件已被使用
+validation.member_profile_edit.email_not_changed = 您不能改变完全相同的邮件
+validation.member_profile_edit.display_name_minimum = 网名必须至少包含%1%个字符
+validation.member_profile_edit.display_name_exists = 这个网名已被使用
+validation.member_profile_edit.birth_date_invalid = 您必须选择在各个领域的价值
+validation.member_profile_edit.avatar_invalid_format = 仅支持图片文件
+validation.member_profile_edit.avatar_invalid_size = 照片大小应超过%1%
+validation.member_profile_edit.cover_invalid_format = 仅支持图片文件
+validation.member_profile_edit.cover_invalid_size = 照片大小应超过%1%
+
+validation.playlist_edit.title_exists = 您已经有该名称的播放列表
+
+# ======================================================================================================================
+# Custom texts added by user
+# ======================================================================================================================

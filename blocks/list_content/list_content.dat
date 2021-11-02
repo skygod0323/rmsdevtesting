@@ -1,0 +1,7 @@
+<block>
+	<block_name>Content List</block_name>
+	<author>Kernel Team</author>
+	<version>5.2.0</version>
+	<package>ultimate</package>
+	<types>list</types>
+</block>

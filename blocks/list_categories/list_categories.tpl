@@ -1,0 +1,43 @@
+{{* variables supported to control this list *}}
+{{assign var="list_categories_header_level" value="1"}} {{* whether to render H1 or H2 *}}
+{{assign var="list_categories_title" value="Categories"}} {{* title *}}
+
+<div id="{{$block_uid}}" class="list-categories">
+	<h{{$list_categories_header_level|default:"2"}}>{{$list_categories_title|default:"Categories"}}</h{{$list_categories_header_level|default:"2"}}>
+	{{if count($data)>0}}
+		<div class="items">
+			{{foreach item="item" from=$data}}
+				<a class="item" title="{{$item.title}}" href="{{$config.project_url}}/categories/{{$item.dir}}/">
+					ID: {{$item.category_id}}<br/>
+					Title: {{$item.title}}<br/>
+					Description: {{$item.description}}<br/>
+					Directory: {{$item.dir}}<br/>
+					Synonyms: {{$item.synonyms}}<br/>
+					Total videos: {{$item.total_videos}}<br/>
+					Today videos: {{$item.today_videos}}<br/>
+					Total albums: {{$item.total_albums}}<br/>
+					Today albums: {{$item.today_albums}}<br/>
+					Total photos: {{$item.total_photos}}<br/>
+					Total posts: {{$item.total_posts}}<br/>
+					Today posts: {{$item.today_posts}}<br/>
+					Total playlists: {{$item.total_playlists}}<br/>
+					Total models: {{$item.total_models}}<br/>
+					Total channels: {{$item.total_dvds}}<br/>
+					Total channel groups: {{$item.total_dvd_groups}}<br/>
+					Total content sources: {{$item.total_cs}}<br/>
+					Added: {{$item.added_date|date_format:"%d %B, %Y"}}<br/>
+					Screenshot 1: {{if $item.screenshot1}}{{$item.base_files_url}}/{{$item.screenshot1}}{{/if}}<br/>
+					Screenshot 2: {{if $item.screenshot2}}{{$item.base_files_url}}/{{$item.screenshot2}}{{/if}}<br/>
+					Custom text 1: {{$item.custom1}}<br/>
+					Custom file 1: {{if $item.custom_file1}}{{$item.base_files_url}}/{{$item.custom_file1}}{{/if}}<br/>
+				</a>
+			{{/foreach}}
+		</div>
+
+		{{* include pagination here *}}
+	{{else}}
+		<div class="text">
+			There is no data in this list.
+		</div>
+	{{/if}}
+</div>

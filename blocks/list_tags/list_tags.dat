@@ -1,0 +1,7 @@
+<block>
+	<block_name>Tags List</block_name>
+	<author>Kernel Team</author>
+	<version>5.2.0</version>
+	<types>list</types>
+	<functionalities>categorization</functionalities>
+</block>

@@ -1,0 +1,8 @@
+<block>
+	<block_name>Sign Up</block_name>
+	<author>Kernel Team</author>
+	<version>5.2.0</version>
+	<package>advanced</package>
+	<types>form</types>
+	<functionalities>memberzone</functionalities>
+</block>

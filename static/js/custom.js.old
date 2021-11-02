@@ -1,0 +1,24 @@
+$(document).ready(function() {
+	$(".js-guest").on("click", function () {
+		var date = new Date(new Date().getTime() + 365 * 24 * 60 * 60 * 1000);
+		document.cookie = "kt_rt_first=hidden; path=/; expires=" + date.toUTCString();
+		$('.first-visit').addClass('hidden');
+	});
+
+	$('body').on('click', '.js-close', function(){
+		$('.fancybox-close').click();
+	});
+
+	$("[data-select]").change(function () {
+		var selected = $(this).attr('data-select');
+		$('.category_ids').html('');
+		$('[data-select~=' + selected + ']').each(function() {
+			if ($(this).find('option:selected') !== '') {
+				$(this).val().forEach(function(item) {
+					var html = '<input type="hidden" name="category_ids[]" value="' + item + '">';
+					$('.category_ids').append(html);
+				});
+			}
+		});
+	})
+});

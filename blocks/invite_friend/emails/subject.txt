@@ -1,0 +1,1 @@
+Your friend has sent you an invitation to visit {{$project_name}}!

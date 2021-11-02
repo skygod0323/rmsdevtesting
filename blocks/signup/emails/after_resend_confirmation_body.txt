@@ -1,0 +1,6 @@
+Please, confirm your registration by the following link:
+
+{{$link}}
+
+Thank you,
+{{$project_name}}

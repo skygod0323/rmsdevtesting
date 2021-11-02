@@ -1,0 +1,8 @@
+<block>
+	<block_name>Logon</block_name>
+	<author>Kernel Team</author>
+	<version>5.2.0</version>
+	<package>advanced</package>
+	<types>form</types>
+	<functionalities>memberzone</functionalities>
+</block>

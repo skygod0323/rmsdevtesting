@@ -1,0 +1,8 @@
+<block>
+	<block_name>Member Profile View Information</block_name>
+	<author>Kernel Team</author>
+	<version>5.2.0</version>
+	<package>premium</package>
+	<types>context</types>
+	<functionalities>community</functionalities>
+</block>

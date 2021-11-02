@@ -1,0 +1,7 @@
+<block>
+	<block_name>Video View Information</block_name>
+	<author>Kernel Team</author>
+	<version>5.2.0</version>
+	<types>context</types>
+	<functionalities>videos</functionalities>
+</block>

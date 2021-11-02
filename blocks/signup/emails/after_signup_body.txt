@@ -1,0 +1,11 @@
+Thank you! Please, confirm your registration by the following link:
+
+{{$link}}
+
+Your login information:
+
+Username: {{$username}}
+Password: {{$pass}}
+
+Thank you,
+{{$project_name}}

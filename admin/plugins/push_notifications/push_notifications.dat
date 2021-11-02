@@ -1,0 +1,7 @@
+<plugin>
+	<plugin_name>Push Notifications</plugin_name>
+	<author>Kernel Team</author>
+	<version>1.2</version>
+	<kvs_version>5.1.1</kvs_version>
+	<plugin_types>api</plugin_types>
+</plugin>

@@ -1,0 +1,37 @@
+
+ 
+ Test Signup
+ 
+REQUEST : {"mode":"async","function":"get_block","block_id":"signup_signup_form_premium","global":"true"}
+ 
+ Test Signup
+ 
+REQUEST : {"mode":"async","function":"get_block","block_id":"signup_signup_form_premium","global":"true","username":"tester25","pass":"demo1234","pass2":"demo1234","email":"tester24@gmail.com","payment_option":"2","card_package_id":"6","action":"signup","email_link":"https:\/\/www.rmsdevtesting.com\/email\/","back_link":"https:\/\/www.rmsdevtesting.com\/payments\/","format":"json"}
+ 
+ Test Signup
+ 
+REQUEST :
+{
+"mode":"async",
+"function":"get_block",
+"block_id":"signup_signup_form_premium",
+"global":"true",
+"username":"tester25",
+"pass":"demo1234",
+"pass2":"demo1234",
+"email":"tester25@gmail.com",
+"payment_option":"2",
+"card_package_id":"6",
+"action":"signup",
+"email_link":"https:\/\/www.rmsdevtesting.com\/email\/",
+"back_link":"https:\/\/www.rmsdevtesting.com\/payments\/",
+"format":"json"
+}
+ 
+ Test Signup
+ 
+REQUEST : {"mode":"async","function":"get_block","block_id":"signup_signup_form_premium","global":"true"}
+ 
+ Test Signup
+ 
+REQUEST : {"mode":"async","function":"get_block","block_id":"signup_signup_form_premium","global":"true","username":"tester26","pass":"demo1234","pass2":"demo1234","email":"tester26@gmail.com","payment_option":"2","card_package_id":"6","action":"signup","email_link":"https:\/\/www.rmsdevtesting.com\/email\/","back_link":"https:\/\/www.rmsdevtesting.com\/payments\/","format":"json"}

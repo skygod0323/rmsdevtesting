@@ -1,0 +1,724 @@
+# syntax rules:
+# #comment
+# key = value
+# key = array(value1, value2, ..., valueN)
+
+# ======================================================================================================================
+# common & global
+# ======================================================================================================================
+
+php.default_lang = en_US.UTF8
+header.default_lang = tr
+
+header.primary_menu_updates = Anasayfa
+header.primary_menu_videos = Video
+header.primary_menu_albums = Albümler
+header.primary_menu_models = Modeller
+header.primary_menu_categories = Kategoriler
+header.primary_menu_playlists = Oynatma listeleri
+header.primary_menu_network = Siteler
+header.primary_menu_get_premium = Sınırsız Erişimi
+header.primary_menu_login = Üyeler
+header.primary_menu_logout = Çıkış
+
+header.member_menu_profile = Profil
+header.member_menu_playlists = Oynatma listesi
+header.member_menu_fav_videos = Beğendiğim videolar
+header.member_menu_fav_albums = Beğendiğim albümler
+header.member_menu_fav_models = Beğendiğim modeller
+
+search_box.search_hint = Arama
+search_box.search_action = Ara
+
+footer.primary_menu_updates = Anasayfa
+footer.primary_menu_videos = Video
+footer.primary_menu_albums = Albümler
+footer.primary_menu_models = Modeller
+footer.primary_menu_categories = Kategoriler
+footer.primary_menu_get_premium = Sınırsız Erişimi
+footer.primary_menu_logout = Çıkış
+footer.primary_menu_login = Üyeler
+footer.primary_menu_terms = Kullanma şartları
+footer.primary_menu_dmca = DMCA
+footer.primary_menu_2257 = 18 U.S.C. 2257
+footer.primary_menu_privacy = Gizlilik politikası
+
+footer.copyright_year = 2017
+footer.copyright_text = All rights reserved.
+footer.site_text = All models were at least 18 years of age when photographed.
+
+common_list.link_more_items = Daha fazla (%1%)
+common_list.no_data = Boş liste.
+common_list.paginated_postfix = , sayfa %1%
+common_list.load_more = Daha fazla göster
+
+common_list.get_access = Sınırsız Erişimi
+
+common_forms.file_upload_btn_browse = Seç...
+common_forms.file_upload_btn_change = Değiştir...
+common_forms.field_select_day = gün...
+common_forms.field_select_month = ay...
+common_forms.field_select_month_values.1 = Ocak
+common_forms.field_select_month_values.2 = Şubat
+common_forms.field_select_month_values.3 = Mart
+common_forms.field_select_month_values.4 = Nisan
+common_forms.field_select_month_values.5 = Mayıs
+common_forms.field_select_month_values.6 = Haziran
+common_forms.field_select_month_values.7 = Temmuz
+common_forms.field_select_month_values.8 = Ağustos
+common_forms.field_select_month_values.9 = Eylül
+common_forms.field_select_month_values.10 = Ekim
+common_forms.field_select_month_values.11 = Kasım
+common_forms.field_select_month_values.12 = Aralık
+common_forms.field_select_year = yıl...
+common_forms.field_select_default = seç...
+common_forms.field_captcha = Captcha güvenlik kodu
+common_forms.field_captcha_image = Captcha resmi
+common_forms.field_captcha_hint = Lütfen, otomatik bir program olmadığınızı kanıtlayın.
+common_forms.field_filter_hint = Listeyi kısaltmak için yazmaya başlayın
+
+date_format.right_now = şimdi
+date_format.unknown = bilinmiyor
+
+date_format.long.seconds = %1% saniye önce
+date_format.long.minutes = %1% dakika önce
+date_format.long.hours = %1% saat önce
+date_format.long.days = %1% gün önce
+date_format.long.weeks = %1% hafta önce
+date_format.long.months = %1% ay önce
+date_format.long.years = %1% sene önce
+
+date_format.short.seconds = %1% saniye
+date_format.short.minutes = %1% dakika
+date_format.short.hours = %1% saat
+date_format.short.days = %1% gün
+date_format.short.weeks = %1% hafta
+date_format.short.months = %1% ay
+date_format.short.years = %1% sene
+
+error_404.title = 404 / Sayfa bulunamadı
+
+# ======================================================================================================================
+# HTML page titles, descs and keywords, SE optimization
+# ======================================================================================================================
+
+html.default_title = Varsayılan başlık
+html.default_description = Varsayılan site tanıtım.
+html.default_keywords = Varsayılan anahtar kelimeler
+
+# %1% - original page title, %2% - page number
+html.default_paginated_title = %1%, sayfa %2%
+html.default_paginated_description = %1% sayfa %2%.
+
+html.index_title = Anasayfa
+html.index_description =
+html.index_keywords =
+
+html.error_404_title = Sayfa bulunamadı
+html.error_404_description =
+html.error_404_keywords =
+
+html.email_links_title = E-posta adresi doğrulama
+html.email_links_description =
+html.email_links_keywords =
+
+html.payment_links_title = Ödeme işlemlerin işlenmesi
+html.payment_links_description =
+html.payment_links_keywords =
+
+# %search_keyword%
+html.search_videos_title = %search_keyword% - Video - %sort_by%
+html.search_videos_description =
+html.search_videos_keywords =
+
+# %search_keyword%
+html.search_albums_title = %search_keyword% - Albümler - %sort_by%
+html.search_albums_description =
+html.search_albums_keywords =
+
+# %search_keyword%
+html.search_models_title = %search_keyword% - Modeller - %sort_by%
+html.search_models_description =
+html.search_models_keywords =
+
+html.content_title = Video & Albümler
+html.content_description =
+html.content_keywords =
+
+# %tag%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%
+# %first_object_title%, %first_object_description%
+html.content_by_tag_title = %tag% - Video & Albümler
+html.content_by_tag_description =
+html.content_by_tag_keywords =
+
+# %title%, %description%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.content_by_category_title = %title% - Video & Albümler
+html.content_by_category_description = %description%
+html.content_by_category_keywords =
+
+# %title%, %description%, %alias%, %country%, %city%, %height%, %weight%, %birth_date%, %age%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.content_by_model_title = %title% - Video & Albümler
+html.content_by_model_description = %description%
+html.content_by_model_keywords = %categories_as_string%, %tags_as_string%
+
+html.videos_title = Video - %sort_by%
+html.videos_description =
+html.videos_keywords =
+
+# %tag%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%
+# %first_object_title%, %first_object_description%
+html.videos_by_tag_title = %tag% - Video - %sort_by%
+html.videos_by_tag_description =
+html.videos_by_tag_keywords =
+
+# %title%, %description%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.videos_by_category_title = %title% - Video - %sort_by%
+html.videos_by_category_description = %description%
+html.videos_by_category_keywords =
+
+# %title%, %description%, %alias%, %country%, %city%, %height%, %weight%, %birth_date%, %age%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.videos_by_model_title = %title% - Video - %sort_by%
+html.videos_by_model_description = %description%
+html.videos_by_model_keywords = %categories_as_string%, %tags_as_string%
+
+# %title%, %description%, %duration%, %rating%, %rating_amount%, %video_viewed%, %post_date%, %username%, %release_year%, %custom1% - %custom3%
+# %tags_as_string%, %categories_as_string%, %models_as_string%, %content_source_as_string%, %dvd_as_string%
+html.video_details_title = %title%
+html.video_details_description = %description%
+html.video_details_keywords = %categories_as_string%, %tags_as_string%, %models_as_string%
+
+html.albums_title = Albümler - %sort_by%
+html.albums_description =
+html.albums_keywords =
+
+# %tag%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%
+# %first_object_title%, %first_object_description%
+html.albums_by_tag_title = %tag% - Albümler - %sort_by%
+html.albums_by_tag_description =
+html.albums_by_tag_keywords =
+
+# %title%, %description%, %synonyms%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.albums_by_category_title = %title% - Albümler - %sort_by%
+html.albums_by_category_description = %description%
+html.albums_by_category_keywords =
+
+# %title%, %description%, %alias%, %country%, %city%, %height%, %weight%, %birth_date%, %age%, %total_videos%, %total_albums%, %total_photos%, %today_videos%, %today_albums%, %custom1% - %custom10%
+# %first_object_title%, %first_object_description%
+html.albums_by_model_title = %title% - Albümler - %sort_by%
+html.albums_by_model_description = %description%
+html.albums_by_model_keywords = %categories_as_string%, %tags_as_string%
+
+# %title%, %description%, %photos_amount%, %rating%, %rating_amount%, %album_viewed%, %post_date%, %username%, %custom1% - %custom3%
+# %tags_as_string%, %categories_as_string%, %models_as_string%, %content_source_as_string%
+html.album_details_title = %title%
+html.album_details_description = %description%
+html.album_details_keywords = %categories_as_string%, %tags_as_string%, %models_as_string%
+
+html.categories_title = Kategoriler - %sort_by%
+html.categories_description =
+html.categories_keywords =
+
+html.models_title = Modeller - %sort_by%
+html.models_description =
+html.models_keywords =
+
+# %title%, %description%, %total_videos%, %rating%, %rating_amount%, %playlist_viewed%, %added_date%, %username%
+# %tags_as_string%, %categories_as_string%
+html.playlist_details_title = %title%
+html.playlist_details_description = %description%
+html.playlist_details_keywords = %categories_as_string%, %tags_as_string%
+
+html.memberzone_my_profile_title = Profilim
+html.memberzone_my_profile_description =
+html.memberzone_my_profile_keywords =
+
+html.memberzone_my_fav_videos_title = Beğendiğim videolar
+html.memberzone_my_fav_videos_description =
+html.memberzone_my_fav_videos_keywords =
+
+# %title%, %description%, %total_videos%, %categories_as_string%
+html.memberzone_my_fav_videos_playlist_title = Oynatma listem: %title%
+html.memberzone_my_fav_videos_playlist_description =
+html.memberzone_my_fav_videos_playlist_keywords =
+
+html.memberzone_my_fav_albums_title = Beğendiğim albümler
+html.memberzone_my_fav_albums_description =
+html.memberzone_my_fav_albums_keywords =
+
+html.memberzone_my_fav_models_title = Beğendiğim modeller
+html.memberzone_my_fav_models_description =
+html.memberzone_my_fav_models_keywords =
+
+html.memberzone_my_playlists_title = Oynatma listelerim
+html.memberzone_my_playlists_description =
+html.memberzone_my_playlists_keywords =
+
+html.static_html_title.terms = Kurallar
+html.static_html_description.terms =
+html.static_html_keywords.terms =
+
+html.static_html_title.dmca = DMCA Notice of Copyright Infringement
+html.static_html_description.dmca =
+html.static_html_keywords.dmca =
+
+html.static_html_title.2257 = 18 USC 2257 Statement
+html.static_html_description.2257 =
+html.static_html_keywords.2257 =
+
+html.static_html_title.privacy = Gizlilik politikası
+html.static_html_description.privacy =
+html.static_html_keywords.privacy =
+
+# ======================================================================================================================
+# Pagination
+# ======================================================================================================================
+
+pagination.first_page = İlk
+pagination.last_page = Son
+pagination.prev_page = Geri
+pagination.next_page = İleri
+pagination.jump_left = ...
+pagination.jump_right = ...
+
+# ======================================================================================================================
+# Videos
+# ======================================================================================================================
+
+videos.list_title_by_sorting = Video - %1%
+videos.list_title_by_tag = %1% - Video - %2%
+videos.list_title_by_category = %1% - Video - %2%
+videos.list_title_by_model = %1% - Video - %2%
+videos.list_title_by_search = %1% - Video - %2%
+
+videos.list_sorting.post_date = Yeni
+videos.list_sorting.rating = Yüksek reytingli
+videos.list_sorting.rating_today = Bugünün yüksek reytingli
+videos.list_sorting.rating_week = Bu haftanın yüksek reytingli
+videos.list_sorting.rating_month = Bu ayın yüksek reytingli
+videos.list_sorting.video_viewed = En çok izlenen
+videos.list_sorting.video_viewed_today = Bugünün en çok izlenen
+videos.list_sorting.video_viewed_week = Bu haftanın en çok izlenen
+videos.list_sorting.video_viewed_month = Bu ayın en çok izlenen
+videos.list_sorting.duration = Uzun süreli
+videos.list_sorting.most_commented = En çok yorum alan
+videos.list_sorting.most_favourited = En beğenilen
+videos.list_sorting.relevance = Konu ile ilgili
+
+videos.list_sorting_period.rating = Gelmiş geçmiş
+videos.list_sorting_period.rating_month = Bu ay
+videos.list_sorting_period.rating_week = Bu hafta
+videos.list_sorting_period.rating_today = Bugün
+videos.list_sorting_period.video_viewed = Gelmiş geçmiş
+videos.list_sorting_period.video_viewed_month = Bu ay
+videos.list_sorting_period.video_viewed_week = Bu hafta
+videos.list_sorting_period.video_viewed_today = Bugün
+
+videos.list_label_views = %1% izlenme
+videos.list_label_playing = Şimdi yürütülüyor
+
+videos.list_action_delete = Sil
+videos.list_action_delete_confirm_favourites = "%1%" videosunu favorilerinizden silmek istediğinizi onaylayın.
+videos.list_action_select_all = Tümünü seç
+videos.list_action_delete_selected = Seçileni sil
+videos.list_action_delete_selected_confirm_favourites = %1% videosunu favorilerinizden silmek istediğinizi onaylayın.
+videos.list_action_move_to_playlist = Oynatma listesine taşı...
+videos.list_action_edit_playlist = Oynatma listesini düzenle...
+videos.list_action_delete_playlist = Oynatma listesini kaldır
+videos.list_action_delete_playlist_confirm = "%1%" oynatma listesini silmek istediğinizi onaylayın.
+
+videos.list_switch_favourites.0 = Favori
+videos.list_switch_favourites.1 = Daha sonra izle
+
+videos.video_details_rate_like = Beğen
+videos.video_details_rate_dislike = Beğenme
+videos.video_details_rate_not_allowed = Bu video için oy veremezsiniz
+videos.video_details_rating_votes = (%1% oy)
+videos.video_details_rating_message_success = Teşekkürler!
+videos.video_details_rating_message_error = IP artık oyunu kullanmıştı
+videos.video_details_action_add_to_favourites.0 = Favoriye ekle
+videos.video_details_action_add_to_favourites.1 = Daha sonra izle
+videos.video_details_action_add_to_playlist = <em class="mark-color">%1%</em> oynatma listesine ekle
+videos.video_details_action_add_to_new_playlist = Yeni oynatma listesine ekle...
+videos.video_details_action_delete_from_favourites = [x]
+videos.video_details_label_description = Video tarifi
+videos.video_details_label_duration = Video süresi
+videos.video_details_label_views = İzlenme
+videos.video_details_label_added_date = Eklenme tarihi
+videos.video_details_label_categories = Kategoriler
+videos.video_details_label_tags = Etiketler
+videos.video_details_label_download = İndir
+videos.video_details_label_screenshots = Ekran resimleri
+
+videos.related_videos_title_default = Benzer videolar
+
+# ======================================================================================================================
+# Albums
+# ======================================================================================================================
+
+albums.list_title_by_sorting = Albümler - %1%
+albums.list_title_by_tag = %1% - Albümler - %2%
+albums.list_title_by_category = %1% - Albümler - %2%
+albums.list_title_by_model = %1% - Albümler - %2%
+albums.list_title_by_search = %1% - Albümler - %2%
+
+albums.list_sorting.post_date = Yeni
+albums.list_sorting.rating = Yüksek reytingli
+albums.list_sorting.rating_today = Bugünün yüksek reytingli
+albums.list_sorting.rating_week = Bu haftanın yüksek reytingli
+albums.list_sorting.rating_month = Bu ayın yüksek reytingli
+albums.list_sorting.album_viewed = En çok izlenen
+albums.list_sorting.album_viewed_today = Bugünün en çok izlenen
+albums.list_sorting.album_viewed_week = Bu haftanın en çok izlenen
+albums.list_sorting.album_viewed_month = Bu ayın en çok izlenen
+albums.list_sorting.most_commented = En çok yorum alan
+albums.list_sorting.most_favourited = En beğenilen
+albums.list_sorting.relevance = Konu ile ilgili
+
+albums.list_sorting_period.rating = Gelmiş geçmiş
+albums.list_sorting_period.rating_month = Bu ay
+albums.list_sorting_period.rating_week = Bu hafta
+albums.list_sorting_period.rating_today = Bugün
+albums.list_sorting_period.album_viewed = Gelmiş geçmiş
+albums.list_sorting_period.album_viewed_month = Bu ay
+albums.list_sorting_period.album_viewed_week = Bu hafta
+albums.list_sorting_period.album_viewed_today = Bugün
+
+albums.list_label_photos = %1%
+albums.list_label_views = %1% izlenme
+
+albums.list_action_select_all = Tümünü seç
+albums.list_action_delete_selected = Seçileni sil
+albums.list_action_delete_selected_confirm_favourites = %1% albümlerini favorilerinizden silmek istediğinizi onaylayın.
+
+albums.list_switch_favourites.0 = Favoriler
+albums.list_switch_favourites.1 = Daha sonra izle
+
+albums.album_details_rate_like = Beğen
+albums.album_details_rate_dislike = Beğenme
+albums.album_details_rate_not_allowed = Bu albüm için oy veremezsiniz
+albums.album_details_rating_votes = (%1% oy)
+albums.album_details_rating_message_success = Teşekkürler!
+albums.album_details_rating_message_error = IP artık oyunu kullanmıştı
+albums.album_details_action_add_to_favourites.0 = Favoriye ekle
+albums.album_details_action_add_to_favourites.1 = Daha sonra izle
+albums.album_details_action_delete_from_favourites = [x]
+albums.album_details_label_description = Albüm tarifi
+albums.album_details_label_images = Resim sayısı
+albums.album_details_label_views = İzlenme
+albums.album_details_label_added_date = Eklenme tarihi
+albums.album_details_label_categories = Kategoriler
+albums.album_details_label_tags = Etiketler
+albums.album_details_label_models = Modeller
+albums.album_details_label_download = İndir
+
+albums.related_albums_title_default = Benzer albümler
+
+# ======================================================================================================================
+# Categories
+# ======================================================================================================================
+
+categories.list_title_by_sorting = Kategoriler - %1%
+
+categories.list_sorting.title = Alfabe sırasına göre
+categories.list_sorting.avg_videos_popularity = Popüler
+categories.list_sorting.avg_videos_rating = Yüksek reytingli
+
+categories.list_label_no_image = resim yok
+categories.list_label_views = %1% izlenme
+
+# ======================================================================================================================
+# Models
+# ======================================================================================================================
+
+models.list_title_by_sorting = Modeller - %1%
+models.list_title_by_section_sorting = Modeller - %2% - %1%
+models.list_title_by_search = %1% - Modeller - %2%
+
+models.list_sorting.title = Alfabe sırasına göre
+models.list_sorting.model_viewed = Popüler
+models.list_sorting.rating = Yüksek reytingli
+models.list_sorting.comments_count = En çok yorum alan
+models.list_sorting.subscribers_count = En beğenilen
+
+models.list_label_no_image = resim yok
+models.list_label_views = %1% izlenme
+
+models.list_action_select_all = Tümünü seç
+models.list_action_delete_selected = Seçileni sil
+models.list_action_delete_selected_confirm_subscriptions = %1% öğe aboneliklerinizden iptal etmek istediğinizi onaylayın.
+
+models.alphabet_title = A'dan Z'ye modeller
+models.alphabet_all = Hepsi
+models.alphabet_letters = array(A,B,C,Ç,D,E,F,G,H,I,İ,J,K,L,M,N,O,Ö,P,R,S,Ş,T,U,Ü,V,Y,Z,Q,W)
+
+models.info_title = %1%
+models.info_birthday = Doğum tarihi
+models.info_birthday_age = %1% yaşında
+models.info_age = Yaş
+models.info_country = Ülke
+models.info_city = Şehir
+models.info_profession = Meslek
+models.info_ethnicity = Milliyet
+models.info_hair = Saç
+models.info_hair_values.1 = Siyah
+models.info_hair_values.2 = Koyu
+models.info_hair_values.3 = Kızıl
+models.info_hair_values.4 = Kahverengi
+models.info_hair_values.5 = Sarışın
+models.info_hair_values.6 = Gri
+models.info_hair_values.7 = Kel
+models.info_hair_values.8 = Peruk
+models.info_eyes = Gözler
+models.info_eyes_values.1 = Mavi
+models.info_eyes_values.2 = Gri
+models.info_eyes_values.3 = Yeşil
+models.info_eyes_values.4 = Kehribar
+models.info_eyes_values.5 = Kahverengi
+models.info_eyes_values.6 = Elâ
+models.info_eyes_values.7 = Siyah
+models.info_height = Boy
+models.info_weight = Kilo
+models.info_measurements = Beden
+models.info_categories = Kategoriler
+models.info_tags = Etiketler
+models.info_description = Albüm tarifi
+models.info_no_description = tarif yok
+models.info_no_image = resim yok
+models.info_na = bilgi yok
+models.info_albums = Albümler
+models.info_videos = Video
+models.info_action_subscribe = Abone ol
+models.info_action_unsubscribe = Aboneliği kaldır
+models.info_action_rate_like = Beğen
+models.info_action_rate_dislike = Beğenme
+models.info_rating_message_success = Teşekkürler!
+models.info_rating_message_error = IP artık oyunu kullanmıştı
+
+models.btn_profile = Profil
+
+# ======================================================================================================================
+# Comments
+# ======================================================================================================================
+
+comments.label_anonymous_user = Anonim
+comments.label_comment_deleted = Yorum silindi.
+
+comments.btn_add_comment = Yorum ekle
+comments.btn_send = Gönder
+comments.field_anonymous_name = Adınız
+comments.field_comment = Yorum
+comments.field_comments = Yorumlar
+comments.field_comments_empty = Yorum ekle
+comments.success_message = Teşekkürler! Yorumunuz denetim için bekliyor.
+
+# ======================================================================================================================
+# Playlists
+# ======================================================================================================================
+
+playlists.list_label_no_videos = Video yok
+playlists.list_label_views = %1% izlenme
+
+playlists.list_action_select_all = Tümünü seç
+playlists.list_action_delete_selected = Seçileni sil
+playlists.list_action_delete_selected_confirm = "%1%" oynatma listelerini favorilerinizden silmek istediğinizi onaylayın.
+playlists.list_action_create_playlist = Yeni oynatma listesi...
+
+# ======================================================================================================================
+# Memberzone
+# ======================================================================================================================
+
+memberzone.profile_my_fav_videos.0 = Favori videolarım
+memberzone.profile_my_fav_videos.1 = Daha sonra izlenecek videolarım
+memberzone.profile_my_fav_videos_playlists = Oynatma listeleri
+memberzone.profile_my_fav_videos_playlists_create = Yeni oynatma listesi...
+memberzone.profile_my_playlist_videos = Oynatma listem: %1%
+memberzone.profile_my_fav_albums.0 = Favori albümlerim
+memberzone.profile_my_fav_albums.1 = Daha sonra izlenecek albümlerim
+memberzone.profile_my_fav_models = Favori modellerim
+memberzone.profile_my_playlists = Oynatma listelerim
+
+# ======================================================================================================================
+# Forms
+# ======================================================================================================================
+
+signup.title = Üye ol
+signup.field_username = Kullanıcı adı
+signup.field_username_hint = kullanıcı adınız, burada e-posta adresinizi kullanabilirsiniz
+signup.field_password = Şifre
+signup.field_password_hint = en az 5 karakter
+signup.field_password2 = Şifre onaylama
+signup.field_password2_hint = şifrenizi tekrar giriniz
+signup.field_email = E-posta adresiniz
+signup.field_email_hint = erişim kurtarma için kullanılacak
+signup.btn_continue = Devam et
+signup.success_message_active_member = Teşekkürler! Sitemize aktif kullanıcı olarak katıldınız.
+signup.success_message_premium_member = Teşekkürler! Sitemize premium kullanıcı olarak katıldınız.
+signup.success_message_not_confirmed_member = Teşekkürler! Sitemize aktif kullanıcı olarak katılmanıza bir adım kaldı. Kullanıcı aktivasyona ilişkin bir mektup e-posta adresinize gönderildi. Lütfen, bu mektuptaki talimatları yerine getirin. Gelen kutunuzda aktivasyon e-postası görünmüyorsa bize ulaşın.
+
+login.title = Giriş
+login.field_username = Kullanıcı adı
+login.field_password = Şifre
+login.field_remember_me = beni hatırla
+login.btn_log_in = Giriş yap
+login.link_reset_password = Şifrenizi unuttunuz mu?
+login.link_help = Destek
+login.not_member = Profiliniz yok mu?
+login.error_message_only_for_members = Bunu kullanabilmeniz için sitemize üye olmanız gerekmektedir.
+
+reset_password.title = Şifreyi sıfırla
+reset_password.field_email = E-posta
+reset_password.field_email_hint = hesap oluştururken kullandığınız e-posta adresini girin
+reset_password.btn_reset_password = Sıfırla
+reset_password.success_message = Teşekkürler! Yeni şifreniz e-posta adresinize gönderilmiştir. Lütfen, mektuptaki talimatları yerine getirin. Gelen kutunuzda mektup görünmüyorsa bize ulaşın.
+
+upgrade.title = Premium erişim paketi
+upgrade.success_message_active_member = Teşekkürler! İşleminiz gerçekleştirildi.
+upgrade.success_message_premium_member = Teşekkürler! İşleminiz gerçekleştirildi. Sitemizin premium kullanıcısı oldunuz.
+upgrade.btn_continue = Devam et
+
+feedback.title = Bize ulaşın
+feedback.field_message = Mesajınız
+feedback.field_message_hint = burada sitemiz ile ilgili fikirlerinizi paylaşıp hata bildirim yapabilirsiniz
+feedback.field_email = E-posta
+feedback.field_email_hint_optional = bizden cevap almak istiyorsanız e-posta adresinizi girin
+feedback.field_email_hint_required = e-posta adresinizi girin
+feedback.field_custom1 = İlave alan 1
+feedback.field_custom1_hint = ipucu
+feedback.field_custom2 = İlave alan 2
+feedback.field_custom2_hint = ipucu
+feedback.field_custom3 = İlave alan 3
+feedback.field_custom3_hint = ipucu
+feedback.field_custom4 = İlave alan 4
+feedback.field_custom4_hint = ipucu
+feedback.field_custom5 = İlave alan 5
+feedback.field_custom5_hint = ipucu
+feedback.btn_send = Gönder
+feedback.success_message = Teşekkürler! Fikirleriniz bizim için çok önemli. En yakın zamanda size cevap göndeririz.
+
+edit_playlist.title_create_playlist = Yeni oynatma listesi
+edit_playlist.title_edit_playlist = Oynatma listesini düzenle
+edit_playlist.field_title = İsim
+edit_playlist.btn_create_playlist = Oluştur
+edit_playlist.btn_edit_playlist = Kayıt et
+edit_playlist.success_message = "%1%" oynatma listesinin özellikleri değiştirildi.
+edit_playlist.success_message_create = "%1%" oynatma listesi oluşturuldu.
+
+select_playlist.title = Oynatma listesi seçimi
+select_playlist.label_videos = %1% video
+select_playlist.btn_select = Seç
+select_playlist.btn_new = Yeni...
+
+edit_profile.title = Profilim
+edit_profile.title_edit_profile = Profili düzenle
+edit_profile.title_edit_password = Şifreyi değiştir
+edit_profile.title_edit_email = E-postayı değiştir
+edit_profile.field_old_password = Şimdiki şifre
+edit_profile.field_old_email = Şimdiki e-posta
+edit_profile.field_email = Yeni e-posta
+edit_profile.field_password = Yeni şifre
+edit_profile.field_password_hint = en az 5 karakter
+edit_profile.field_password2 = Yeni şifreyi onayla
+edit_profile.field_password2_hint = şifreyi tekrar yazınız
+edit_profile.field_display_name = Takma ad
+edit_profile.field_display_name_hint = diğer kullanıcılarımız sizi böyle görecekler
+edit_profile.field_avatar = Resim
+edit_profile.field_avatar_hint = asgari boyut: %1%
+edit_profile.btn_change = Değiştir
+edit_profile.success_message_changed_profile = Profilinizin özellikleri değiştirildi.
+edit_profile.success_message_changed_password = Şifreniz değiştirildi.
+edit_profile.success_message_changed_email = E-postanız değiştirildi
+edit_profile.success_message_changed_email_confirm = E-posta değiştirme aktivasyon işlemine ilişkin bir mektup e-posta adresinize gönderildi. Lütfen, bu mektuptaki talimatları yerine getirin. Gelen kutunuzda aktivasyon e-postası görünmüyorsa bize ulaşın.
+
+email_links.title_confirm_signup = Profil oluşturma aktivasyonu
+email_links.title_confirm_reset_password = Şifreyi değiştir
+email_links.title_confirm_unblock = Profil engeli kaldır
+email_links.title_confirm_change_email = E-posta değiştir
+email_links.message_confirm_signup_successful = Teşekkürler! Profiliniz aktif hale getirildi. Sitemize aktif kullanıcı olarak katıldınız.
+email_links.message_confirm_reset_password_successful = Teşekkürler! Şifreniz değiştirildi. Şimdi yeni şifrenizi kullanabilirsiniz.
+email_links.message_confirm_unblock_successful = Teşekkürler! Profilinizin engeli kaldırıldı.
+email_links.message_confirm_email_change_successful = Teşekkürler! E-postanız değiştirildi.
+email_links.message_confirm_error = Kullandığınız doğrulama bağlantısı yanlıştır. Bu bağlantıyı tekrar mı kullanmaktasınız? Lütfen, bize ulaşın.
+
+billing_links.title_payment_successful = Ödeme işleminiz gerçekleştirildi
+billing_links.title_payment_failed = Ödeme işleminiz gerçekleştirilemiyor
+billing_links.message_payment_successful = Teşekkürler! Ödeme işleminiz gerçekleştirildi.
+billing_links.message_payment_failed = Maalesef ödeme işleminizi gerçekleştiremedik. Lütfen, bize ulaşın.
+
+# ======================================================================================================================
+# Error messages
+# ======================================================================================================================
+
+validation.common.not_logged_in = Bu tür olanaklar sadece üye olan site kullanıcılarımız için mevcuttur.
+validation.common.invalid_params = Beklenmeyen bir hata oluştu. Lütfen bize ulaşın.
+validation.common.unknown_error = Beklenmeyen bir hata oluştu (%1%). Lütfen bize ulaşın.
+validation.common.required = Bu formu doldurmanız şart
+validation.common.email_invalid = Yazdığınız e-posta adresi doğru değildir
+validation.common.code_invalid = Güvenlik kodunu yanlış girdiniz. Tekrar deneyiniz
+validation.common.comment_minimum = Yorum içinde en az %1% karakter olmalı
+validation.common.playlist_locked = Bu oynatma listesinin değiştirilmesi site yönetimi tarafından engellenmiştir.
+validation.common.video_locked = Bu videonun değiştirilmesi site yönetimi tarafından engellenmiştir.
+validation.common.video_screenshots_locked = Bu videodaki ekran görüntüsünün değiştirilmesi site yönetimi tarafından engellenmiştir.
+validation.common.album_locked = Bu albümün değiştirilmesi site yönetimi tarafından engellenmiştir.
+validation.common.album_images_locked = Bu albümdeki resimlerin değiştirilmesi site yönetimi tarafından engellenmiştir.
+validation.common.title_minimum = İsim içinde en az %1% karakter olmalı
+validation.common.category_ids_maximum = En çok %1% kategori seçebilirsiniz
+validation.common.tokens_required_integer = Lütfen bir tamsayı girin
+validation.common.flagging_not_enough_tokens = Bu olanağı kullanmanız için yeterli tokeniniz yok.
+validation.common.message_not_enough_tokens = Diğer kullanıcılara mesaj göndermeniz için yeterli tokeniniz yok.
+
+validation.signup.username_minimum = Kullanıcı adı içinde en az %1% karakter olmalı
+validation.signup.username_characters = Sadece Latin karakterleri kullanabilirsiniz: 0-9, A-Z, a-z, '_', '-', '@' ve '.'
+validation.signup.username_exists = İstediğiniz kullanıcı adı uygun değil
+validation.signup.pass_minimum = Şifre içinde en az %1% karakter olmalı
+validation.signup.pass2_invalid = Yazdığınız şifre uygun değil
+validation.signup.email_exists = Yazdığınız e-posta adresi uygun değil
+validation.signup.email_blocked = Yazdığınız e-posta adresi engellenmişti
+validation.signup.email_doesnt_exist = Yazdığınız e-posta adresi için profil yok. Doğru yazdığınızı kontrol ediniz.
+validation.signup.email_already_confirmed = Bu profil artık aktif
+validation.signup.display_name_minimum = Takma ad içinde en az %1% karakter olmalı
+validation.signup.display_name_exists = İstediğiniz takma ad uygun değil
+validation.signup.birth_date_invalid = Bütün formları doldurmanız şart
+validation.signup.avatar_invalid_format = Buraya sadece resim yükleyebilirsiniz
+validation.signup.avatar_invalid_size = Resmin boyutu %1% ölçüsünden daha çok olmalı
+validation.signup.cover_invalid_format = Buraya sadece resim yükleyebilirsiniz
+validation.signup.cover_invalid_size = Resmin boyutu %1% ölçüsünden daha çok olmalı
+validation.signup.payment_option_required = Erişim formatı seçiniz
+validation.signup.sms_passcode_invalid = Güvenlik kodunu yanlış girdiniz. Tekrar deneyiniz.
+validation.signup.ip_blocked = İP adresiniz engellenmişti
+
+validation.logon.please_wait = Güvenlik uyarı. Tekrar denemek için bir kaç dakika bekleyiniz.
+validation.logon.not_confirmed = Profiliniz aktif değildir. Aktivasyon işlemine ilişkin bir mektup e-posta adresinize gönderildi. Mektuptaki talimatları yerine getirin. Gelen kutunuzda mektup görünmüyorsa bize ulaşın.
+validation.logon.invalid_login = Kullanıcı adı ya da şifre uygun değildir. Yazdığınız harfleri (büyük/küçük) kontrol ediniz.
+validation.logon.disabled_login = Profiliniz site yönetimi tarafından engellenmiştir. Engeli kaldırmak için bize ulaşın.
+validation.logon.tempbanned_login = Profilinizi başka kişiler kullanıyor olabilir diye engel koyduk. Engel kaldırma ile ilgili talimatlar e-posta adresinize gönderildi. Mektuptaki talimatları yerine getirin. Gelen kutunuzda mektup görünmüyorsa bize ulaşın.
+validation.logon.banned_login = Profilinizi başka kişiler kullanıyor olabilir diye engel koyduk. Engeli kaldırmak için bize ulaşın.
+
+validation.video_view.ip_already_voted = Bu video için oyunuzu kullanmıştınız.
+validation.video_view.not_enough_tokens = Bu videoya erişebilmek için yeterli tokeniniz yok.
+validation.album_view.ip_already_voted = Bu albüm için oyunuzu kullanmıştınız.
+validation.album_view.not_enough_tokens = Bu albüme erişebilmek için yeterli tokeniniz yok.
+
+validation.member_profile_edit.old_pass_invalid = Yanlış şifre
+validation.member_profile_edit.pass_minimum = Şifre içinde en az %1% karakter olmalı
+validation.member_profile_edit.pass_blocked = Bu şifre engellenmiştir. Başka şifreyi kullanın
+validation.member_profile_edit.pass2_invalid = Şifreler uygun değil
+validation.member_profile_edit.email_exists = Yazdığınız e-posta kullanılmaktadır
+validation.member_profile_edit.email_not_changed = E-posta adresini ayınısına değiştiremezsiniz
+validation.member_profile_edit.display_name_minimum = Takma ad içinde en az %1% karakter olmalı
+validation.member_profile_edit.display_name_exists = Bu takma ad kullanılmaktadır
+validation.member_profile_edit.birth_date_invalid = Bütün formları doldurmanız şart
+validation.member_profile_edit.avatar_invalid_format = Buraya sadece resim yükleyebilirsiniz
+validation.member_profile_edit.avatar_invalid_size = Resmin boyutu %1% ölçüsünden daha çok olmalı
+validation.member_profile_edit.cover_invalid_format = Buraya sadece resim yükleyebilirsiniz
+validation.member_profile_edit.cover_invalid_size = Resmin boyutu %1% ölçüsünden daha çok olmalı
+
+validation.playlist_edit.title_exists = Adı aynı olan oynatma listeniz var
+
+# ======================================================================================================================
+# Custom texts added by user
+# ======================================================================================================================

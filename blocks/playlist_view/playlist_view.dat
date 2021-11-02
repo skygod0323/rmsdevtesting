@@ -1,0 +1,8 @@
+<block>
+	<block_name>Playlist View Information</block_name>
+	<author>Kernel Team</author>
+	<version>5.0.0</version>
+	<package>advanced</package>
+	<types>context</types>
+	<functionalities>memberzone,community</functionalities>
+</block>

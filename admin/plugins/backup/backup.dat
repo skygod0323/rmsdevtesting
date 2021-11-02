@@ -1,0 +1,8 @@
+<plugin>
+	<plugin_name>Backup</plugin_name>
+	<author>Kernel Team</author>
+	<version>1.20</version>
+	<kvs_version>5.2.0</kvs_version>
+	<plugin_types>manual,cron</plugin_types>
+	<audit>true</audit>
+</plugin>
